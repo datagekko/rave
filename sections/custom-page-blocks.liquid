@@ -211,9 +211,13 @@
                 {% endif %}
                 <div class="page-block__accordion-container">
                   {% for i in (1..10) %}
-                    {% assign event_title = block.settings['event' | append: i | append: '_title'] %}
-                    {% assign event_description = block.settings['event' | append: i | append: '_description'] %}
-                    {% assign event_image = block.settings['event' | append: i | append: '_image'] %}
+                    {% assign event_title_key = 'event' | append: i | append: '_title' %}
+                    {% assign event_description_key = 'event' | append: i | append: '_description' %}
+                    {% assign event_image_key = 'event' | append: i | append: '_image' %}
+
+                    {% assign event_title = block.settings[event_title_key] %}
+                    {% assign event_description = block.settings[event_description_key] %}
+                    {% assign event_image = block.settings[event_image_key] %}
 
                     {% if event_title != blank %}
                       <div
@@ -240,8 +244,11 @@
               <div class="page-block__column page-block__column--images">
                 <div class="page-block__event-images">
                   {% for i in (1..10) %}
-                    {% assign event_image = block.settings['event' | append: i | append: '_image'] %}
-                    {% assign event_title = block.settings['event' | append: i | append: '_title'] %}
+                    {% assign event_image_key = 'event' | append: i | append: '_image' %}
+                    {% assign event_title_key = 'event' | append: i | append: '_title' %}
+
+                    {% assign event_image = block.settings[event_image_key] %}
+                    {% assign event_title = block.settings[event_title_key] %}
 
                     {% if event_image != blank %}
                       <div class="page-block__event-image" id="Event-Image-{{ i }}-{{ block.id }}">
