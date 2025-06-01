@@ -2323,32 +2323,35 @@ li.product__media-item.grid__item.is-active.scroll-trigger.animate--fade-in {
   }
 }
 
-/* Product Media Height Fix - Making images display in their original 2:3 aspect ratio on desktop */
+/* Product Media Height Fix - Making images display in 4:5 aspect ratio on desktop */
 @media screen and (min-width: 750px) {
-
   /* Set product media container aspect ratio */
   .product-media-container {
     max-height: none !important;
-    aspect-ratio: 4/5 !important; /* Updated to 4:5 to match mobile */
+    position: relative !important;
+    height: 0 !important;
+    padding-bottom: 125% !important; /* 4:5 ratio = 125% */
+    overflow: hidden !important;
   }
 
   /* Ensure the product__media div (direct parent of the image) fills the entire container */
   .product-media-container .product__media,
   .product-media-container .media,
   .product-media-container .media--transparent {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
     height: 100% !important;
-    max-height: none !important;
-    position: relative !important;
   }
 
   /* Fix for product page media container */
   .template-product .product-media-container.media-type-image {
     height: 0 !important;
-    /* Reset height to let aspect-ratio control it */
-    padding-bottom: 125% !important;
-    /* 4:5 ratio = 125% */
+    padding-bottom: 125% !important; /* 4:5 ratio = 125% */
     min-height: 0 !important;
     position: relative !important;
+    overflow: hidden !important;
   }
 
   /* Make sure modal opener fills entire container */
@@ -2364,12 +2367,12 @@ li.product__media-item.grid__item.is-active.scroll-trigger.animate--fade-in {
   .product-media-container .media img,
   .product-media-container .product__media img,
   .product-media-container .media--transparent img {
-    width: 100% !important;
-    height: 100% !important;
-    object-fit: cover !important;
     position: absolute !important;
     top: 0 !important;
     left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
   }
 
   /* Ensure product media wrapper allows full height */
@@ -2381,11 +2384,10 @@ li.product__media-item.grid__item.is-active.scroll-trigger.animate--fade-in {
   .product-media-container.constrain-height {
     max-height: none !important;
     height: 0 !important;
-    /* Use padding-bottom instead */
-    padding-bottom: 125% !important;
-    /* 4:5 ratio */
+    padding-bottom: 125% !important; /* 4:5 ratio */
     min-height: 0 !important;
     position: relative !important;
+    overflow: hidden !important;
   }
 
   /* For contain mode, ensure proper ratio is maintained */
@@ -3024,26 +3026,71 @@ button.shopify-payment-button__button--unbranded:after,
     width: 100% !important;
     height: 100% !important;
     object-fit: cover !important;
-    aspect-ratio: 4/5 !important;
     padding: 0 !important;
   }
 
-  /* Ensure container uses proper ratio */
+  /* Ensure container uses proper ratio but maintains width */
   .product-mobile-slider .product__media-list.product-mobile-slider__list .product__media-item .product__media {
-    aspect-ratio: 4/5 !important;
-    padding: 0 !important;
+    position: relative !important;
+    padding-bottom: 125% !important; /* 4:5 ratio = 125% */
+    height: 0 !important;
+    overflow: hidden !important;
   }
 
-  /* Remove any padding on the product media items */
-  .product-mobile-slider .product__media-list.product-mobile-slider__list .product__media-item {
-    padding: 0 !important;
-    margin: 0 !important;
+  /* Ensure images maintain aspect ratio while positioned absolutely */
+  .product-mobile-slider .product__media-list.product-mobile-slider__list .product__media-item .product__media img {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
   }
 
-  /* Ensure the full-width display by removing padding on the list */
+  /* Preserve horizontal slider layout */
   .product-mobile-slider .product__media-list.product-mobile-slider__list {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    scroll-snap-type: x mandatory !important;
+    -webkit-overflow-scrolling: touch !important;
     padding: 0 !important;
     margin: 0 !important;
+    width: 100% !important;
+  }
+
+  /* Style each product media item for the horizontal slider */
+  .product-mobile-slider .product__media-list.product-mobile-slider__list .product__media-item {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    scroll-snap-align: start !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+}
+
+/* Fix for desktop product media aspect ratio */
+@media screen and (min-width: 750px) {
+  /* Fix for product page media container */
+  .template-product .product-media-container.media-type-image {
+    height: 0 !important;
+    padding-bottom: 125% !important; /* 4:5 ratio = 125% */
+    min-height: 0 !important;
+    position: relative !important;
+    overflow: hidden !important;
+  }
+
+  /* Target the actual image to fill the space */
+  .product-media-container .media img,
+  .product-media-container .product__media img,
+  .product-media-container .media--transparent img {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
   }
 }
 
