@@ -291,8 +291,26 @@ header.header {
   border-left: 1px solid var(--rave-color-primary-text, #3D2120);
 }
 
-/* Remove bottom border from last row items (for 3-column layout) */
-.collection .product-grid .grid__item:nth-last-child(-n+3) {
+/* IMPROVED: Instead of using nth-last-child to remove bottom borders, 
+   use a combination of modulo-based selectors to handle any number of products correctly */
+
+/* For 3-column layout (default desktop):
+   - If total count mod 3 = 0 (full last row), remove border from last 3 items
+   - If total count mod 3 = 1, remove border from only the last item 
+   - If total count mod 3 = 2, remove border from last 2 items */
+
+/* Last item in the grid (regardless of layout) */
+.collection .product-grid .grid__item:last-child {
+  border-bottom: none;
+}
+
+/* Second last item when last row has exactly 2 items */
+.collection .product-grid .grid__item:nth-child(3n+2):nth-last-child(2) {
+  border-bottom: none;
+}
+
+/* Third last item when last row is full (3 items) */
+.collection .product-grid .grid__item:nth-child(3n):nth-last-child(3) {
   border-bottom: none;
 }
 
@@ -311,8 +329,24 @@ header.header {
     border-left: none;
   }
   
-  /* Remove bottom border from last row items (for 4-column layout) */
-  .grid--4-col-desktop > .grid__item:nth-last-child(-n+4) {
+  /* IMPROVED: Handle last row for 4-column layout */
+  /* Last item always has no bottom border */
+  .grid--4-col-desktop > .grid__item:last-child {
+    border-bottom: none;
+  }
+  
+  /* Second last item when last row has exactly 2 items */
+  .grid--4-col-desktop > .grid__item:nth-child(4n+2):nth-last-child(2) {
+    border-bottom: none;
+  }
+  
+  /* Third last item when last row has exactly 3 items */
+  .grid--4-col-desktop > .grid__item:nth-child(4n+3):nth-last-child(3) {
+    border-bottom: none;
+  }
+  
+  /* Fourth last item when last row is full (4 items) */
+  .grid--4-col-desktop > .grid__item:nth-child(4n):nth-last-child(4) {
     border-bottom: none;
   }
 }
@@ -332,8 +366,14 @@ header.header {
     border-left: none;
   }
   
-  /* Remove bottom border from last row items (for 2-column layout) */
-  .collection .product-grid .grid__item:nth-last-child(-n+2) {
+  /* IMPROVED: Handle last row for 2-column layout */
+  /* Last item always has no bottom border */
+  .collection .product-grid .grid__item:last-child {
+    border-bottom: none;
+  }
+  
+  /* Second last item when last row is full (2 items) */
+  .collection .product-grid .grid__item:nth-child(2n):nth-last-child(2) {
     border-bottom: none;
   }
 }

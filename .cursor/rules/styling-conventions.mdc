@@ -46,33 +46,29 @@ The collection page features a consistent 1px border system that creates clean s
     *   Right and bottom borders on all grid items
     *   Top border only on first row items
     *   Left border only on first column items 
-    *   Bottom border removed from last row to prevent overlap with footer border
+    *   Bottom border intelligently removed from last row items based on actual grid layout
 *   **Responsive Handling:**
     *   Mobile (max-width: 749px): 2-column grid with adapted border rules
     *   Desktop (min-width: 990px): 3-column grid (default) or 4-column grid with appropriate border rules
 *   **Border Color:** Uses `var(--rave-color-primary-text, #3D2120)` for consistency with brand standards
-*   **CSS Pattern:**
+*   **Error-Proof Last Row Handling:** Uses a combination of modulo-based selectors to handle incomplete last rows correctly:
     ```css
-    /* Base borders for all items */
-    .collection .grid__item {
-      border-right: 1px solid var(--rave-color-primary-text, #3D2120);
-      border-bottom: 1px solid var(--rave-color-primary-text, #3D2120);
+    /* Last item always has no bottom border */
+    .collection .product-grid .grid__item:last-child {
+      border-bottom: none;
     }
     
-    /* Selective top and left borders */
-    .collection .product-grid .grid__item:nth-child(-n+3) {
-      border-top: 1px solid var(--rave-color-primary-text, #3D2120);
+    /* Second last item when last row has exactly 2 items */
+    .collection .product-grid .grid__item:nth-child(3n+2):nth-last-child(2) {
+      border-bottom: none;
     }
     
-    .collection .product-grid .grid__item:nth-child(3n+1) {
-      border-left: 1px solid var(--rave-color-primary-text, #3D2120);
-    }
-    
-    /* Remove bottom border from last row */
-    .collection .product-grid .grid__item:nth-last-child(-n+3) {
+    /* Third last item when last row is full (3 items) */
+    .collection .product-grid .grid__item:nth-child(3n):nth-last-child(3) {
       border-bottom: none;
     }
     ```
+*   **Advantage:** This approach works correctly regardless of the total number of products, ensuring consistent borders even with incomplete last rows.
 
 ## CSS File Structure (`[assets/rave-custom.css](mdc:assets/rave-custom.css)`)
 
