@@ -2487,152 +2487,238 @@ footer.footer .footer__content-bottom,
 }
 
 /* === Complementary Products Styling === */
-/* Remove the separate styling - complementary products should use standard accordion styles */
-.product .complementary-products.is-accordion {
-  /* Remove any special styling that conflicts with standard accordion */
-}
-
-/* Remove extra border that's causing double border effect */
-.product .complementary-products.product__accordion.accordion {
-  border-top: none !important; /* Let the standard accordion border handle this */
-}
-
-/* Ensure complementary products summary follows same styling as other accordion summaries */
-.product .complementary-products.accordion summary {
-  /* Inherits all styling from .product .accordion summary */
-  /* No overrides needed - let standard accordion styling apply */
-}
-
-/* Fix complementary products title to match other accordion titles */
-.product .complementary-products .accordion__title {
-  font-family: "Inter", sans-serif !important;
-  font-size: 9px !important;
-  text-transform: uppercase;
-  font-weight: normal !important; /* Remove bold - should match other tabs */
-  letter-spacing: 0.1em;
-}
-
-/* Promotional message styling */
-.product .complementary-products__promotional-message {
-  padding: 0.5rem var(--product-info-padding-right) 1rem var(--product-info-padding-left);
-  margin-bottom: 1rem;
-}
-
-.product .complementary-products__promotional-message p {
-  font-family: "Inter", sans-serif !important;
-  font-size: 9px !important;
-  line-height: 1.6;
-  color: var(--rave-color-secondary-text, #555555);
+/* Make complementary products match other accordion sections */
+.product .complementary-products.is-accordion,
+.product .complementary-products.product__accordion.accordion,
+.product details.complementary-products,
+product-recommendations.complementary-products,
+.product .complementary-products aside,
+.product aside.complementary-products {
+  padding: 0;
   margin: 0;
-  font-style: italic;
+  border-top: none;
+  border-bottom: 1px solid rgba(var(--color-foreground), 0.1);
 }
 
-/* Ensure complementary products container doesn't add extra padding */
-.product .complementary-products__container {
+/* Standard border for all accordion items except the last one */
+.product .accordion:not(:last-child),
+.product .collapsible-tab:not(:last-child),
+.product .complementary-products:not(:last-child),
+.product details.complementary-products:not(:last-child),
+product-recommendations.complementary-products:not(:last-child) {
+  border-bottom: 1px solid rgba(var(--color-foreground), 0.1);
+}
+
+/* Fix duplicate border issue by removing bottom border on last elements */
+.product .complementary-products:last-child,
+.product .complementary-products:last-of-type,
+.product .accordion:last-of-type,
+.product details.complementary-products:last-of-type,
+product-recommendations.complementary-products:last-of-type,
+.product .collapsible-tab:last-of-type {
+  border-bottom: none;
+}
+
+/* Ensure consistent summary styling */
+.product .complementary-products.accordion summary,
+.product .complementary-products summary,
+product-recommendations.complementary-products summary,
+.product .complementary-products aside summary {
+  padding: 1.5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  position: relative;
+  outline: none;
+  border-bottom: none;
+}
+
+/* Fix icon alignment and ensure consistent caret usage */
+.product .complementary-products summary .icon-caret,
+.product .complementary-products.accordion summary .icon-caret,
+product-recommendations.complementary-products summary .icon-caret,
+.product .complementary-products aside summary .icon-caret {
+  height: 0.6rem;
+  width: 1rem;
+  right: 0;
+  position: absolute;
+}
+
+/* Hide default accordion icons */
+.product .complementary-products summary .icon,
+.product .complementary-products.accordion summary .icon,
+.product .complementary-products summary .icon-accordion,
+.product .complementary-products.accordion summary .icon-accordion,
+.product .complementary-products aside summary .icon,
+.product .complementary-products aside summary .icon-accordion {
+  display: none;
+}
+
+/* Fix text alignment in title */
+.product .complementary-products .accordion__title,
+.product .complementary-products .summary__title,
+product-recommendations .accordion__title,
+product-recommendations .summary__title,
+.product .complementary-products aside .accordion__title,
+.product .complementary-products aside .summary__title {
   padding-left: 0;
-  padding-right: 0;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  font-family: var(--font-heading-family);
+  font-style: var(--font-heading-style);
+  font-weight: var(--font-heading-weight);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.9rem;
 }
 
-/* Remove custom padding from summary title - let standard accordion handle it */
-.product .complementary-products .summary__title {
-  padding-left: 0 !important;
-  padding-right: 0 !important;
+/* Ensure consistent text styling */
+.product .complementary-products .card__heading,
+.product .complementary-products h4,
+.product .complementary-products h3,
+product-recommendations .card__heading,
+product-recommendations h4,
+product-recommendations h3 {
+  margin: 0;
+  font-size: var(--font-heading-scale) * 1.4rem;
+  letter-spacing: 0.06rem;
+  line-height: calc(1 + 0.6 / var(--font-heading-scale));
+  text-align: left;
 }
 
-/* Hide icons in complementary products on mobile to match request */
+/* Fix promotional message alignment */
+.product .complementary-products__promotional-message,
+product-recommendations .complementary-products__promotional-message {
+  padding-left: 0;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  color: var(--rave-color-primary-text, #3D2120);
+  text-align: left;
+}
+
+.product .complementary-products__promotional-message p,
+product-recommendations .complementary-products__promotional-message p {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+/* Fix container padding */
+.product .complementary-products__container,
+product-recommendations .complementary-products__container {
+  padding: 0 0 1.5rem 0;
+}
+
+/* Match content alignment with other accordions */
+.product .complementary-products__content,
+product-recommendations .complementary-products__content {
+  padding-left: 0;
+  margin-left: 0;
+}
+
+/* Mobile specific adjustments */
 @media screen and (max-width: 749px) {
-  .product .complementary-products .icon-accordion,
-  .product .complementary-products .summary__title .icon,
-  .product .complementary-products .summary__title svg {
-    display: none !important;
+  .product .complementary-products summary,
+  .product .complementary-products.accordion summary,
+  product-recommendations.complementary-products summary,
+  .product .complementary-products aside summary {
+    padding: 1.5rem 0;
+  }
+  
+  .product .complementary-products summary::after,
+  .product .complementary-products.accordion summary::after,
+  product-recommendations.complementary-products summary::after,
+  .product .complementary-products aside summary::after {
+    right: 0;
+  }
+  
+  .product .complementary-products__container,
+  product-recommendations .complementary-products__container {
+    padding: 0 0 1.5rem 0;
+  }
+  
+  .product .complementary-products__promotional-message,
+  product-recommendations .complementary-products__promotional-message {
+    padding-left: 0;
+  }
+  
+  /* Remove duplicate border on mobile */
+  .product .accordion:last-child,
+  .product .complementary-products:last-child,
+  .product .complementary-products.accordion:last-child,
+  product-recommendations.complementary-products:last-child,
+  .product .collapsible-tab:last-child {
+    border-bottom: none !important;
   }
 }
 
-/* Product cards within complementary products */
-.product .complementary-products .card__heading,
-.product .complementary-products .price {
-  font-family: "Inter", sans-serif !important;
-  font-size: 9px !important;
+/* Loading spinner for complementary products */
+.complementary-products__loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+  min-height: 150px;
 }
 
-/* Align complementary products card with promotional message text */
-.product .complementary-products .card-wrapper,
-.product .complementary-products .card,
-.product .complementary-products .complementary-slide,
-.product .complementary-products .contains-card {
-  padding-left: 0.5rem !important;
-  margin-left: 0 !important;
+.complementary-products__loading .loading-overlay__spinner {
+  width: 3rem;
+  height: 3rem;
 }
 
-/* Ensure the product list within complementary products also has proper alignment */
-.product .complementary-products ul.list-unstyled,
-.product .complementary-products .complementary-slider {
-  padding-left: 0 !important;
-  margin-left: 0 !important;
+.complementary-products__loading .spinner {
+  animation: rotator 1s linear infinite;
 }
 
-/* === Complementary Products Border & Icon Styling === */
-/* Remove ALL borders from complementary products section - targeting the actual aside element */
-.product .complementary-products,
-.product .complementary-products.is-accordion,
-.product .complementary-products.quick-add-hidden,
-.product .complementary-products.product__accordion,
-.product .complementary-products.accordion,
-.product details.complementary-products,
-.product-form .complementary-products,
-/* Target the aside element specifically */
-.product .complementary-products aside,
-.product .complementary-products aside.product__accordion,
-.product .complementary-products aside.accordion,
-aside.product__accordion.accordion[aria-label*="complementary"],
-aside[aria-label*="complementary"].product__accordion {
-  border-top: none !important;
-  /* Keep bottom border for last item - only remove from specific elements that shouldn't have it */
+.complementary-products__loading .path {
+  stroke: var(--rave-color-brown, #412F26);
+  stroke-dasharray: 90, 150;
+  stroke-dashoffset: 0;
+  stroke-width: 6;
+  animation: dash 1.5s ease-in-out infinite;
 }
 
-/* Only remove bottom border from non-last elements */
-.product .complementary-products:not(:last-child),
-.product .complementary-products.is-accordion:not(:last-child),
-.product .complementary-products aside:not(:last-child) {
-  border-bottom: none !important;
+/* Fallback message for complementary products */
+.complementary-products__message {
+  text-align: center;
+  padding: 1.5rem 0;
+  color: var(--rave-color-brown, #412F26);
+  font-family: var(--rave-font-stack-primary, var(--font-body-family));
+  font-size: 1rem;
+  line-height: 1.5;
 }
 
-/* Ensure the LAST complementary products section (which should be last accordion) has bottom border */
-.product .complementary-products:last-of-type,
-.product .complementary-products.is-accordion:last-of-type,
-.product .complementary-products aside:last-of-type {
-  border-bottom: 1px solid var(--rave-color-primary-text, #3D2120) !important;
+.complementary-products__message a {
+  color: var(--rave-color-accent, #412F26);
+  text-decoration: underline;
+  font-weight: 500;
+  transition: color 0.2s ease;
 }
 
-/* Remove all icons from complementary products section */
-.product .complementary-products .icon,
-.product .complementary-products svg,
-.product .complementary-products .icon-accordion,
-.product .complementary-products .summary__title .icon,
-.product .complementary-products .summary__title svg,
-.product .complementary-products details summary .icon,
-.product .complementary-products details summary svg {
-  display: none !important;
-  visibility: hidden !important;
-  opacity: 0 !important;
+.complementary-products__message a:hover {
+  color: var(--rave-color-accent-darker, #3D2120);
 }
 
-/* Ensure no borders are inherited from Dawn's component styles - except bottom border for last item */
-.complementary-products,
-.complementary-products.is-accordion,
-.complementary-products.quick-add-hidden {
-  border-top: none !important;
-  border-left: none !important;
-  border-right: none !important;
+@keyframes rotator {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(270deg); }
 }
 
-/* Target Dawn's default component styling specifically - preserve bottom border for last item */
-.product__accordion.complementary-products,
-.product__accordion.complementary-products.is-accordion,
-product-recommendations aside.product__accordion.accordion {
-  border-top: none !important;
-  border-left: none !important;
-  border-right: none !important;
+@keyframes dash {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dashoffset: 45;
+    transform: rotate(135deg);
+  }
+  100% {
+    stroke-dashoffset: 90;
+    transform: rotate(450deg);
+  }
 }
 
 /* == CART DRAWER == */
