@@ -2329,7 +2329,7 @@ li.product__media-item.grid__item.is-active.scroll-trigger.animate--fade-in {
   /* Set product media container aspect ratio */
   .product-media-container {
     max-height: none !important;
-    aspect-ratio: 4/5 !important;
+    aspect-ratio: 4/5 !important; /* Updated to 4:5 to match mobile */
   }
 
   /* Ensure the product__media div (direct parent of the image) fills the entire container */
@@ -3015,4 +3015,58 @@ button.shopify-payment-button__button--unbranded:after,
   .main-hero__button {
     width: 100%;
   }
+}
+
+/* Style product media images on mobile with 4:5 aspect ratio */
+@media screen and (max-width: 749px) {
+  /* Update product images on mobile to use 4:5 aspect ratio and remove padding */
+  .product-mobile-slider .product__media-list.product-mobile-slider__list .product__media-item .product__media img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    aspect-ratio: 4/5 !important;
+    padding: 0 !important;
+  }
+
+  /* Ensure container uses proper ratio */
+  .product-mobile-slider .product__media-list.product-mobile-slider__list .product__media-item .product__media {
+    aspect-ratio: 4/5 !important;
+    padding: 0 !important;
+  }
+
+  /* Remove any padding on the product media items */
+  .product-mobile-slider .product__media-list.product-mobile-slider__list .product__media-item {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  /* Ensure the full-width display by removing padding on the list */
+  .product-mobile-slider .product__media-list.product-mobile-slider__list {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+}
+
+/* Style complementary products quick add button */
+.complementary-products__container .quick-add__submit {
+  color: var(--rave-color-accent, #412F26) !important;
+  font-weight: 500 !important;
+  transition: all 0.2s ease !important;
+}
+
+.complementary-products__container .quick-add__submit:hover {
+  text-decoration: underline !important;
+  text-underline-offset: 3px !important;
+  text-decoration-color: var(--rave-color-accent, #412F26) !important;
+  text-decoration-thickness: 1px !important;
+}
+
+/* Override any default button styling that might conflict */
+.complementary-products__container .quick-add__submit:after,
+.complementary-products__container .quick-add__submit:hover:after,
+.complementary-products__container .quick-add__submit:before,
+.complementary-products__container .quick-add__submit:hover:before {
+  display: none !important;
+  box-shadow: none !important;
+  background-color: transparent !important;
 }
