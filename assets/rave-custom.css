@@ -258,122 +258,63 @@ header.header {
 
 /* == COLLECTION PAGE == */
 /* Product Grid & Cards - Final Structure */
+/* == COLLECTION PRODUCT GRID BORDERS - FLEXBOX APPROACH == */
 .collection .product-grid {
-  /* Remove spacing between grid items */
-  --grid-desktop-horizontal-spacing: 0 !important;
-  --grid-desktop-vertical-spacing: 0 !important;
-  --grid-mobile-horizontal-spacing: 0 !important;
-  --grid-mobile-vertical-spacing: 0 !important;
-  gap: 0 !important;
-  /* Remove the background color approach */
+  display: flex;
+  flex-wrap: wrap;
+  margin: -0.5px; /* Compensate for border overlap */
+  padding: 0;
   background-color: transparent;
-  padding: 0 !important;
-  box-sizing: border-box;
+  position: relative;
+}
+
+.collection .product-grid::before {
+  content: '';
+  position: absolute;
+  top: -0.5px;
+  left: -0.5px;
+  right: -0.5px;
+  bottom: -0.5px;
+  border: 1px solid var(--rave-color-primary-text, #3D2120);
+  border-bottom: none; /* Prevent overlap with footer border */
+  pointer-events: none;
+  z-index: 1;
 }
 
 .collection .grid__item {
-  padding: 0 !important;
-  margin: 0 !important;
-  background-color: #fff; /* White background for the product cards */
-  /* Add right and bottom borders to all items */
-  border-right: 1px solid var(--rave-color-primary-text, #3D2120);
-  border-bottom: 1px solid var(--rave-color-primary-text, #3D2120);
-  position: relative; /* For pseudo-elements */
+  box-sizing: border-box;
+  margin: -0.5px;
+  border: 1px solid var(--rave-color-primary-text, #3D2120);
+  background-color: #fff;
+  flex: 0 0 33.333%;
+  max-width: 33.333%;
+  padding: 0;
+  position: relative;
 }
 
-/* Add top border to first row items */
-.collection .product-grid .grid__item:nth-child(-n+3) {
-  border-top: 1px solid var(--rave-color-primary-text, #3D2120);
-}
-
-/* Add left border to first column items */
-.collection .product-grid .grid__item:nth-child(3n+1) {
-  border-left: 1px solid var(--rave-color-primary-text, #3D2120);
-}
-
-/* IMPROVED: Instead of using nth-last-child to remove bottom borders, 
-   use a combination of modulo-based selectors to handle any number of products correctly */
-
-/* For 3-column layout (default desktop):
-   - If total count mod 3 = 0 (full last row), remove border from last 3 items
-   - If total count mod 3 = 1, remove border from only the last item 
-   - If total count mod 3 = 2, remove border from last 2 items */
-
-/* Last item in the grid (regardless of layout) */
-.collection .product-grid .grid__item:last-child {
+/* Override bottom border for last row */
+.collection .grid__item:nth-last-child(-n+3) {
   border-bottom: none;
 }
 
-/* Second last item when last row has exactly 2 items */
-.collection .product-grid .grid__item:nth-child(3n+2):nth-last-child(2) {
-  border-bottom: none;
-}
-
-/* Third last item when last row is full (3 items) */
-.collection .product-grid .grid__item:nth-child(3n):nth-last-child(3) {
-  border-bottom: none;
-}
-
-/* Handle 4-column layout on desktop if needed */
 @media screen and (min-width: 990px) {
-  .grid--4-col-desktop > .grid__item:nth-child(-n+4) {
-    border-top: 1px solid var(--rave-color-primary-text, #3D2120);
+  .collection .grid--4-col-desktop .grid__item {
+    flex: 0 0 25%;
+    max-width: 25%;
   }
   
-  .grid--4-col-desktop > .grid__item:nth-child(4n+1) {
-    border-left: 1px solid var(--rave-color-primary-text, #3D2120);
-  }
-  
-  /* Reset 3-column borders for 4-column layout */
-  .grid--4-col-desktop > .grid__item:nth-child(3n+1):not(:nth-child(4n+1)) {
-    border-left: none;
-  }
-  
-  /* IMPROVED: Handle last row for 4-column layout */
-  /* Last item always has no bottom border */
-  .grid--4-col-desktop > .grid__item:last-child {
-    border-bottom: none;
-  }
-  
-  /* Second last item when last row has exactly 2 items */
-  .grid--4-col-desktop > .grid__item:nth-child(4n+2):nth-last-child(2) {
-    border-bottom: none;
-  }
-  
-  /* Third last item when last row has exactly 3 items */
-  .grid--4-col-desktop > .grid__item:nth-child(4n+3):nth-last-child(3) {
-    border-bottom: none;
-  }
-  
-  /* Fourth last item when last row is full (4 items) */
-  .grid--4-col-desktop > .grid__item:nth-child(4n):nth-last-child(4) {
+  .collection .grid--4-col-desktop .grid__item:nth-last-child(-n+4) {
     border-bottom: none;
   }
 }
 
-/* Handle 2-column layout on mobile */
 @media screen and (max-width: 749px) {
-  .collection .product-grid .grid__item:nth-child(-n+2) {
-    border-top: 1px solid var(--rave-color-primary-text, #3D2120);
+  .collection .grid__item {
+    flex: 0 0 50%;
+    max-width: 50%;
   }
   
-  .collection .product-grid .grid__item:nth-child(2n+1) {
-    border-left: 1px solid var(--rave-color-primary-text, #3D2120);
-  }
-  
-  /* Reset 3-column borders for 2-column layout */
-  .collection .product-grid .grid__item:nth-child(3n+1):not(:nth-child(2n+1)) {
-    border-left: none;
-  }
-  
-  /* IMPROVED: Handle last row for 2-column layout */
-  /* Last item always has no bottom border */
-  .collection .product-grid .grid__item:last-child {
-    border-bottom: none;
-  }
-  
-  /* Second last item when last row is full (2 items) */
-  .collection .product-grid .grid__item:nth-child(2n):nth-last-child(2) {
+  .collection .grid__item:nth-last-child(-n+2) {
     border-bottom: none;
   }
 }
@@ -391,13 +332,14 @@ header.header {
   column-gap: 0 !important;
 }
 
+/* Clean up card wrapper styles */
 .collection .card-wrapper {
-  /* Remove border from card-wrapper */
   border: none;
-  width: 100%;
+  background: transparent;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  background-color: transparent !important;
+  width: 100%;
   box-sizing: border-box;
 }
 
@@ -433,352 +375,163 @@ header.header {
   display: none !important;
 }
 
-/* The rest of the card styling remains the same */
-.collection .card-wrapper>.card {
-  /* The main .card element from Shopify */
-  display: flex;
-  flex-direction: column;
-  /* Stack .card__inner and the main .card__content */
-  width: 100%;
-  flex-grow: 1;
-  background-color: transparent !important;
-  border: none !important;
-  box-shadow: none !important;
-  padding: 0 !important;
-  margin: 0 !important;
+/* == HEADER == */
+
+/* Apply Grid to header for split nav layout when logo is middle-center - DESKTOP ONLY */
+@media screen and (min-width: 990px) {
+
+  /* Dawn's desktop breakpoint */
+  header.header--middle-center {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    /* Left Nav - Logo - Right Nav */
+    align-items: center;
+    width: 100%;
+    /* Ensure header takes full width */
+  }
+
+  /* Target direct children for grid placement */
+  header.header--middle-center>nav.header__inline-menu--left {
+    grid-column: 1 / 2;
+    justify-self: start;
+    /* Align left nav to the start */
+  }
+
+  header.header--middle-center>.header__heading {
+    grid-column: 2 / 3;
+    justify-self: center;
+    /* Center the logo */
+
+  }
+
+  header.header--middle-center>nav.header__inline-menu--right {
+    grid-column: 3 / 4;
+    justify-self: end;
+    /* Align right nav to the end */
+  }
+
+  /* Hide original desktop nav containers if split nav is active */
+  .header--middle-center header-navigation,
+  .header--middle-center details-disclosure.header__menu {
+    display: none;
+  }
+
+  /* Ensure split nav containers are visible (override default hides) */
+  .header--middle-center .header__inline-menu {
+    display: block;
+    /* Or inline-block / flex depending on internal structure */
+  }
 }
 
-/* .card__inner usually contains the media and the problematic first/empty .card__content */
-.collection .card-wrapper>.card>.card__inner {
-  width: 100%;
-  padding: 0 !important;
-  margin: 0 !important;
-  position: relative;
-  /* For .card__media */
-  /* It should not grow beyond its content (.card__media) */
-  /* display: flex; flex-direction: column; might also be useful here if it has multiple children it needs to stack */
-  overflow: visible !important;
-}
-
-/* This is the problematic empty card__content INSIDE card__inner, identified from your screenshot */
-.collection .card-wrapper>.card>.card__inner>.card__content {
-  display: none !important;
-  /* Hide this empty block */
-}
-
-/* Container 1: Image Area (Square) */
-/* .card__media is inside .card__inner */
-.collection .card-wrapper>.card>.card__inner>.card__media {
-  width: 100%;
-  aspect-ratio: 1 / 1;
-  /* Make image container square */
-  position: relative;
-  overflow: hidden;
-  border: none !important;
-  display: block;
-  padding: 0 !important;
-  margin: 0 !important;
-}
-
-/* The .media div is the direct parent of the <img> tag */
-.collection .card-wrapper>.card>.card__inner>.card__media>.media {
-  display: block;
-  /* Or 'flex' if it helps center the image, though 100/100 should fill */
-  width: 100%;
-  height: 100%;
-  /* Make it fill the square card__media */
-}
-
-.collection .card-wrapper>.card>.card__inner>.card__media>.media>img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  /* Critical to fill the square card__media's .media div */
-  object-fit: cover;
-  /* Ensures image covers the square, cropping if necessary */
-}
-
-/* Container 2: Text Area (Below Image) */
-/* This .card__content is a direct child of .card, and sibling to .card__inner */
-.collection .card-wrapper>.card>.card__content {
-  width: 100%;
-  padding: 8px 12px;
-  /* Standard padding for the text block */
-  box-sizing: border-box;
-  /* Ensure padding doesn't expand width */
-  /* This is the one that should be visible */
-}
-
-/* The .card__information div is inside the main .card__content (text block) */
-.collection .card-wrapper>.card>.card__content>.card__information {
-  display: flex;
-  justify-content: flex-end;
-  /* Aligns children (heading, nested card-information for price) to the right */
-  align-items: center;
-  /* Vertically aligns if items have different heights */
-  gap: 0.5rem;
-  /* Space between title and price block if they become direct children */
-  font-family: "Inter", sans-serif !important;
-  padding-top: 0 !important;
-  padding-bottom: 0 !important;
-}
-
-/* The h3.card__heading is typically inside the .card__information div */
-.collection .card-wrapper>.card>.card__content>.card__information>.card__heading {
-  font-size: 12px;
-  color: var(--rave-color-primary-text, #3D2120);
-  margin: 0;
-  text-transform: none;
-  font-weight: normal;
-  white-space: nowrap;
-  /* Prevents wrapping */
-  overflow: visible;
-  text-align: right;
-  font-family: "Inter", sans-serif !important;
-  flex-shrink: 1;
-  /* Allow heading to shrink if necessary, but nowrap should prevent issues */
-  min-width: 0;
-  /* Allow shrinking */
-}
-
-.collection .card-wrapper>.card>.card__content>.card__information>.card__heading a {
-  text-decoration: none;
-  color: inherit;
-  font-family: "Inter", sans-serif !important;
-}
-
-/* The price is within a NESTED div.card-information, which is a child of the main div.card__information */
-.collection .card-wrapper>.card>.card__content>.card__information>.card-information {
-  /* This div acts as a container for price and potentially other details like vendor, rating */
-  /* It should align with the heading due to the parent flex settings */
-  display: flex;
-  /* If it contains multiple price items or sale price */
-  align-items: center;
-  justify-content: flex-end;
-  /* Ensure content within this also tends right */
-  gap: 0.25rem;
-  /* Smaller gap if there are multiple price elements */
-  flex-shrink: 0;
-  /* Price should not shrink */
-}
-
-.collection .card-wrapper>.card>.card__content>.card__information>.card-information .price {
-  font-size: 12px;
-  color: var(--rave-color-primary-text, #3D2120);
-  margin: 0;
-  font-weight: normal;
-  white-space: nowrap;
-  text-align: right;
-  font-family: "Inter", sans-serif !important;
-}
-
-.collection .card-wrapper>.card>.card__content>.card__information>.card-information .price .price-item {
-  margin: 0;
-  /* Reset margin on individual price items */
-}
-
-/* Hide "Sold out" badge as requested */
-/* The badge is usually in the first card__content (inside card__inner) which is now hidden */
-/* .collection .card-wrapper > .card > .card__inner > .card__content .card__badge  -- This rule is now redundant */
-
-/* More general rule if its location varies but it's within a card and not the hidden block */
-/* REMOVING: .collection .card .card__badge {
-  display: none !important;
-} */
-
-/* Badge styling for "Sold Out" and "On Sale" labels */
-.collection .card .card__badge {
-  display: block !important;
-  position: absolute !important;
-  z-index: 2 !important;
-  width: 100% !important;
-  top: 0 !important;
-  left: 0 !important;
-  right: 0 !important;
-  margin: 0 !important;
-  padding: 0 !important;
-}
-
-/* Override all badge positions to always appear at top */
-.collection .card .card__badge.bottom.left,
-.collection .card .card__badge.bottom.right,
-.collection .card .card__badge.top.right,
-.collection .card .card__badge.top.left {
-  top: 0 !important;
-  left: 0 !important;
-  bottom: auto !important;
-  right: 0 !important;
-  margin: 0 !important;
-  padding: 0 !important;
-}
-
-/* Override badge classes with direct descendant selectors for better specificity */
-.collection .card .card__badge>.badge,
-.collection .card .card__badge>.badge.badge--bottom-left,
-.collection .card .card__badge>.badge.badge--bottom-right,
-.collection .card .card__badge>.badge.badge--top-left,
-.collection .card .card__badge>.badge.badge--top-right,
-.collection .card .card__badge>.badge.color-scheme-1,
-.collection .card .card__badge>.badge.color-scheme-2,
-.collection .card .card__badge>.badge.color-scheme-3,
-.collection .card .card__badge>.badge.color-scheme-4,
-.collection .card .card__badge>.badge.color-scheme-5 {
-  font-family: "Inter", sans-serif !important;
-  font-size: 12px !important;
-  font-weight: 400 !important;
-  background-color: var(--rave-color-primary-text, #3D2120) !important;
-  color: #FFFFFF !important;
-  border-radius: 0 !important;
-  border: none !important;
-  padding: 0 0 0 12px !important;
-  text-transform: uppercase !important;
-  letter-spacing: 0.05em !important;
-  width: 100% !important;
-  display: block !important;
-  text-align: left !important;
-  box-sizing: border-box !important;
-  margin: 0 !important;
-  line-height: 2.5 !important;
-}
-
-/* General .badge style if needed elsewhere (e.g. for "Sale" if that's ever re-enabled) */
-.badge {
-  font-family: "Inter", sans-serif !important;
-}
-
-/* Filters and Sorting */
-.facets-container {
-  /* General container for filters and sorting */
-  margin-bottom: 0 !important;
-  /* Changed from 2rem to 0 */
-  /* Space below the controls */
+/* Style for the navigation containers (applies to both desktop split and potentially mobile if needed, but primarily for desktop) */
+.header__inline-menu ul {
   padding: 0;
-  /* Remove padding */
+  /* Remove default padding */
 }
 
-.facet-filters__label {
-  font-size: 12px;
+/* Style for the navigation links */
+.header__inline-menu .header__menu-item {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  /* Adjust as needed */
+  letter-spacing: 0;
+  /* Adjust as needed */
   color: var(--rave-color-primary-text, #3D2120);
-  margin-right: 0.5rem;
-  margin-bottom: 0;
-  font-weight: normal;
-  text-transform: none;
+  /* Use brand color */
+  font-family: "Inter", BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
+  font-weight: 600 !important;
 }
 
-.facet-filters__summary,
-.facet-filters__sort {
-  background-color: var(--rave-color-background-main, #FFFFFF);
-  border: 1px solid var(--rave-color-primary-text, #3D2120);
-  border-radius: 0;
-  /* Sharp corners */
-  padding: 0.25rem 0.5rem;
-  color: var(--rave-color-primary-text, #3D2120);
-  min-height: auto;
-  /* Reset Dawn's min height */
-  font-size: 12px;
+.header__inline-menu .header__menu-item span {
+  /* Add hover effect if needed */
+  font-family: inherit !important;
+  /* Ensure span inherits the font */
 }
 
-.facet-filters__summary .icon-fallback,
-.select .icon-caret {
-  fill: var(--rave-color-primary-text, #3D2120) !important;
-  /* Change icon color */
-  height: 0.75rem;
-  width: 0.75rem;
+/* Hide mobile menu toggle if desktop menu is split */
+/* (May need refinement based on mobile design) */
+/* 
+@media screen and (min-width: 990px) {
+  .header--middle-center header-drawer {
+    display: none;
+  }
 }
+*/
 
-.facets-horizontal .facet-filters.sorting,
-.facets-horizontal .facet-filters__field {
-  display: flex;
-  /* Align label and select */
-  align-items: center;
-  /* Center vertically */
-  margin-left: 1rem;
-  /* Add spacing between filter and sort */
-}
-
-.facets-horizontal .facets__disclosure {
-  margin-right: 1rem;
-  /* Add spacing between disclosure elements */
-}
-
-/* Make sure the sorting is properly aligned */
-.facets-horizontal .facets__form {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  margin-bottom: 0 !important;
-  /* Added to remove margin */
-}
-
-/* Style for the active filters area */
-.active-facets {
-  margin-top: 0rem;
-  margin-bottom: 0rem;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-}
-
-.active-facets__button {
-  background-color: var(--rave-color-primary-text, #3D2120);
-  color: var(--rave-color-background-main, #FFFFFF);
-  border: 1px solid var(--rave-color-primary-text, #3D2120);
-  border-radius: 0;
-  padding: 0.25rem 0.5rem;
-  font-size: 12px;
-  margin-right: 0.5rem;
-  margin-bottom: 0.5rem;
-}
-
-.active-facets__button .icon-close {
-  fill: var(--rave-color-background-main, #FFFFFF);
-  height: 0.75rem;
-  width: 0.75rem;
-}
-
-/* Mobile-specific styles */
+/* Mobile Header Specific Styles (below 749px) */
 @media screen and (max-width: 749px) {
 
-  .collection .grid--1-col-tablet-down .grid__item,
-  .collection .grid--2-col-tablet-down .grid__item {
-    /* Set grid item to 50% width on mobile with 0 padding */
-    flex-basis: 50%;
-    max-width: 50%;
+  /* Ensure header is a flex container for mobile if mobile_logo_position is 'left' */
+  header.header--mobile-left {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    /* Adjust padding for consistency and potentially a tighter feel */
+    padding-left: 1rem;
+    /* Was 1.5rem */
+    padding-right: 1rem;
+    /* Was 1.5rem */
+  }
+
+  /* Elevate the entire header bar above the menu panel */
+  header.header {
+    position: relative;
+    z-index: 101;
+    /* Above menu panel (100) */
+    /* Ensure background is set if it was transparent and menu shows through */
+    background-color: rgb(var(--color-background));
+    /* Or your desired header background */
+  }
+
+  /* Styles for when mobile logo is set to 'left' */
+  header.header--mobile-left .header__heading {
+    order: 1 !important;
+    justify-self: start !important;
+    /* Override potential grid centering */
+    margin-left: 0 !important;
+    /* Ensure no conflicting left margin */
+    margin-right: auto !important;
+    /* Push other items to the right in flex context */
+  }
+
+  header.header--mobile-left header-drawer {
+    order: 2 !important;
+    justify-self: end;
+    margin-left: 0;
+  }
+
+  /* Make hamburger icon/button wider and ensure icon is centered */
+  header.header summary.header__icon--menu {
+    width: 5.5rem;
+    /* Increased from Dawn's default 4.4rem, adjust as needed */
+    height: 4.4rem;
+    /* Keep height or adjust if necessary */
     padding: 0;
+    /* Reset padding if any was added previously by us */
+    display: flex;
+    /* Enable flex to center icon */
+    justify-content: center;
+    align-items: center;
+    /* z-index: 101; This is fine, it will be 101 within its parent stacking context */
+    /* No change needed here as its parent header.header is now 101 */
   }
 
-  .collection .card__media .media img {
-    aspect-ratio: 1/1;
-    /* Force square aspect ratio on mobile */
-  }
+  /* Ensure logo also stays above the menu panel - REMOVED as parent header.header now handles this */
+  /* header.header .header__heading {
+    position: relative;
+    z-index: 101; 
+  } */
 
-  .facets-container {
-    padding: 0 1rem;
-    /* Add some padding on mobile */
-  }
+  /* Optional: Adjust SVG size within if needed, though default might be fine */
+  /* header.header summary.header__icon--menu svg {
+    width: 2.2rem; 
+    height: 2.2rem; 
+  } */
 
-  .facets__show-filter button {
-    border: 1px solid var(--rave-color-primary-text, #3D2120);
-    border-radius: 0;
-    background-color: transparent;
-    color: var(--rave-color-primary-text, #3D2120);
-    font-size: 12px;
-    padding: 0.5rem 1rem;
-  }
-
-  .drawer__header .drawer__close svg {
-    fill: var(--rave-color-primary-text, #3D2120);
-    width: 1rem;
-    height: 1rem;
-  }
-
-  /* Remove horizontal padding for .page-width on collection template for mobile */
-  body.template-collection .main-page-content.page-width,
-  body.template-collection .page-width {
-    /* More general fallback if main-page-content isn't always there */
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-  }
+  /* General mobile header rules if not already covered or if mobile_logo_position is 'center' and needs override */
+  /* For instance, if you want to force flex even for 'center' mobile logo, you'd add rules for header.header--mobile-center */
 
   /* Ensure our desktop split nav is hidden (though small-hide/medium-hide should cover it) */
   .header__inline-menu--left,

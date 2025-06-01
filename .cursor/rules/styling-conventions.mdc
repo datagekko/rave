@@ -42,33 +42,19 @@ These are the primary brand colors, accessible via their respective CSS variable
 
 The collection page features a consistent 1px border system that creates clean separation between product cards:
 
-*   **Implementation:** Uses direct border application on grid items with selective targeting:
-    *   Right and bottom borders on all grid items
-    *   Top border only on first row items
-    *   Left border only on first column items 
-    *   Bottom border intelligently removed from last row items based on actual grid layout
+*   **Implementation:** Uses a flexbox approach with negative margins and a pseudo-element for the outer border:
+    *   Outer border around the entire grid via `::before` pseudo-element
+    *   Individual borders on each grid item
+    *   Special handling to remove bottom borders from last row
+*   **Key Techniques:**
+    *   Negative margins (`-0.5px`) to prevent double borders at intersections
+    *   Flexbox layout for proper responsive handling
+    *   Pseudo-element for clean outer border without affecting layout
+    *   No bottom border on outer container to prevent overlap with footer
 *   **Responsive Handling:**
-    *   Mobile (max-width: 749px): 2-column grid with adapted border rules
-    *   Desktop (min-width: 990px): 3-column grid (default) or 4-column grid with appropriate border rules
+    *   Mobile (max-width: 749px): 2-column grid with 50% width
+    *   Desktop (min-width: 990px): 3-column grid (default) or 4-column grid
 *   **Border Color:** Uses `var(--rave-color-primary-text, #3D2120)` for consistency with brand standards
-*   **Error-Proof Last Row Handling:** Uses a combination of modulo-based selectors to handle incomplete last rows correctly:
-    ```css
-    /* Last item always has no bottom border */
-    .collection .product-grid .grid__item:last-child {
-      border-bottom: none;
-    }
-    
-    /* Second last item when last row has exactly 2 items */
-    .collection .product-grid .grid__item:nth-child(3n+2):nth-last-child(2) {
-      border-bottom: none;
-    }
-    
-    /* Third last item when last row is full (3 items) */
-    .collection .product-grid .grid__item:nth-child(3n):nth-last-child(3) {
-      border-bottom: none;
-    }
-    ```
-*   **Advantage:** This approach works correctly regardless of the total number of products, ensuring consistent borders even with incomplete last rows.
 
 ## CSS File Structure (`[assets/rave-custom.css](mdc:assets/rave-custom.css)`)
 
