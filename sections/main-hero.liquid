@@ -7,7 +7,7 @@
 -%}
 
 <div class="main-hero">
-  {%- if hero_link != blank -%}
+  {%- if hero_link != blank and section.settings.enable_full_hero_link -%}
     <a href="{{ hero_link }}" class="main-hero__link">
   {%- endif -%}
 
@@ -54,9 +54,43 @@
     {{ 'lifestyle-2' | placeholder_svg_tag: 'placeholder-svg placeholder main-hero__placeholder' }}
   {%- endif -%}
 
-  {%- if hero_link != blank -%}
+  {%- if hero_link != blank and section.settings.enable_full_hero_link -%}
     </a>
   {%- endif -%}
+
+  <div class="main-hero__content-wrapper">
+    <div class="main-hero__content">
+      {%- if section.settings.logo != blank -%}
+        <div class="main-hero__logo">
+          <img
+            src="{{ section.settings.logo | image_url: width: section.settings.logo.width }}"
+            alt="{{ section.settings.logo.alt | escape }}"
+            width="{{ section.settings.logo.width }}"
+            height="{{ section.settings.logo.height }}"
+            loading="lazy"
+          >
+        </div>
+      {%- endif -%}
+
+      {%- if section.settings.subheadline != blank -%}
+        <h2 class="main-hero__subheadline">{{ section.settings.subheadline }}</h2>
+      {%- endif -%}
+
+      <div class="main-hero__buttons">
+        {%- if section.settings.button_text_1 != blank and section.settings.button_link_1 != blank -%}
+          <a href="{{ section.settings.button_link_1 }}" class="main-hero__button main-hero__button--primary">
+            {{ section.settings.button_text_1 }}
+          </a>
+        {%- endif -%}
+
+        {%- if section.settings.button_text_2 != blank and section.settings.button_link_2 != blank -%}
+          <a href="{{ section.settings.button_link_2 }}" class="main-hero__button main-hero__button--secondary">
+            {{ section.settings.button_text_2 }}
+          </a>
+        {%- endif -%}
+      </div>
+    </div>
+  </div>
 </div>
 
 {% schema %}
@@ -65,6 +99,10 @@
   "tag": "section",
   "class": "section-main-hero",
   "settings": [
+    {
+      "type": "header",
+      "content": "Media"
+    },
     {
       "type": "image_picker",
       "id": "image_desktop",
@@ -84,10 +122,63 @@
       "info": "Optional. Replaces images if a valid URL is provided. Autoplays muted and looped."
     },
     {
+      "type": "header",
+      "content": "Content"
+    },
+    {
+      "type": "image_picker",
+      "id": "logo",
+      "label": "Logo",
+      "info": "Optional. Adds a logo to the hero section."
+    },
+    {
+      "type": "text",
+      "id": "subheadline",
+      "label": "Subheadline",
+      "default": "Your journey begins here"
+    },
+    {
+      "type": "header",
+      "content": "Buttons"
+    },
+    {
+      "type": "text",
+      "id": "button_text_1",
+      "label": "Primary Button Text",
+      "default": "Shop Now"
+    },
+    {
+      "type": "url",
+      "id": "button_link_1",
+      "label": "Primary Button Link"
+    },
+    {
+      "type": "text",
+      "id": "button_text_2",
+      "label": "Secondary Button Text",
+      "default": "Learn More"
+    },
+    {
+      "type": "url",
+      "id": "button_link_2",
+      "label": "Secondary Button Link"
+    },
+    {
+      "type": "header",
+      "content": "Links"
+    },
+    {
       "type": "url",
       "id": "hero_link",
       "label": "Hero Link",
-      "info": "Optional. Makes the entire hero section a clickable link."
+      "info": "Optional. Used for both full-hero link and button links."
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_full_hero_link",
+      "label": "Enable full hero clickable link",
+      "default": false,
+      "info": "When enabled, the entire hero section becomes clickable using the Hero Link."
     }
   ],
   "presets": [

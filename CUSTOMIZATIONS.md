@@ -12,12 +12,13 @@
 - **Product Page Enhancements**: Complementary products with accordion styling
 - **Collection Page**: Product grid with RAVE brand styling and badges
 - **Brand Color System**: Custom CSS variables and theme settings integration
+- **Homepage Hero Section**: Enhanced hero section with logo, subheadline, and dual-style buttons
 
 ### 🚧 In Progress
-- TBD
+- Footer customizations
+- Additional product page features
 
 ### 📋 Upcoming Features
-- Homepage hero section
 - Footer customizations
 - Additional product page features
 
@@ -65,7 +66,79 @@ This document tracks all customizations made to the base Dawn theme for the Rave
 
 ### Home Page
 
-- **Hero Banner:** (Details to be added)
+#### Hero Section (2024-12-21)
+
+**Implementation Summary:**
+- Enhanced the main hero section with branding elements and navigation buttons
+- Added customizable content overlaid on the hero image/video
+- Maintained full-width responsive design with mobile optimizations
+
+**Key Files Modified:**
+- `sections/main-hero.liquid`: Added new customizer options and content elements
+- `assets/rave-custom.css`: Added styling for new hero elements
+
+**New Elements Added:**
+1. **Logo Display**
+   - Optional brand logo that can be uploaded via the theme customizer
+   - Responsive sizing (180px desktop, 140px mobile)
+   - Centered placement over hero image/video
+
+2. **Subheadline**
+   - Customizable text field for brand messaging
+   - Styled with Rave brand typography and colors
+   - Text shadow for readability over varying background images
+
+3. **Dual-Style Action Buttons**
+   - Primary Button: Filled brown background with white text, reverses on hover
+   - Secondary Button: Outline style with brown border and text, fills on hover
+   - Fully responsive layout (horizontal on desktop, stacked on mobile)
+   - Customizable text and URLs for each button
+
+4. **Hero Link Option**
+   - Toggle option to make the entire hero section clickable
+   - Can be used alongside or instead of the specific buttons
+
+**Shopify Customizer Settings Added:**
+- `logo`: Image picker for brand logo
+- `subheadline`: Text field for heading content (default: "Your journey begins here")
+- `button_text_1`: Text for primary button (default: "Shop Now")
+- `button_link_1`: URL for primary button
+- `button_text_2`: Text for secondary button (default: "Learn More")
+- `button_link_2`: URL for secondary button
+- `enable_full_hero_link`: Toggle to make entire hero section clickable (default: false)
+
+**Design Integration Details:**
+- Content overlay uses absolute positioning with flexbox for centered alignment
+- All text elements use Rave CSS variables for consistent brand styling
+- Buttons use the brand accent color (#412F26) with hover state transitions
+- Mobile-responsive design with adjusted sizing and layout for small screens
+
+**CSS Architecture:**
+- Structured using BEM methodology (e.g., `main-hero__button--primary`)
+- Responsive styling with mobile-specific media queries
+- Uses brand CSS variables for colors and typography
+- Smooth transitions for interactive elements
+
+**Accessibility Considerations:**
+- Maintains proper heading hierarchy with h2 for subheadline
+- Preserves image alt text from the uploaded assets
+- Button contrast ratios meet WCAG guidelines
+- Interactive elements sized appropriately for touch targets
+
+**Browser Compatibility:**
+- Tested across Chrome, Safari, Firefox, and Edge
+- Flexbox layout supported in all modern browsers
+- Fallback styling for older browsers
+
+**Known Limitations:**
+- Text readability depends on chosen background image/video contrast
+- For dark images, the text shadow may need adjustment in the CSS
+
+**Future Enhancement Possibilities:**
+- Text color options based on background image darkness
+- Animation options for content entrance
+- Multiple content positioning options (left, center, right)
+- Additional button style variations
 
 ### Collection Page
 
