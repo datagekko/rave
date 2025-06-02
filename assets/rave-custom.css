@@ -3016,3 +3016,56 @@ button.shopify-payment-button__button--unbranded:after,
     width: 100%;
   }
 }
+
+/* Fix for complementary products section */
+.product .complementary-products {
+  border-top: 1px solid rgba(var(--color-foreground), 0.1);
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 2rem 0;
+}
+
+.product .complementary-products .product-grid {
+  padding: 0 0.5rem;
+}
+
+.product .complementary-products .grid__item {
+  padding-bottom: 2rem;
+}
+
+.product .complementary-products .card-information {
+  padding: 0;
+}
+
+.product .complementary-products .price {
+  font-size: calc(var(--font-heading-scale) * 1.2rem);
+}
+
+.product .complementary-products .price .price-item {
+  color: #3D2120;
+}
+
+.product .complementary-products__promotional-message {
+  margin-bottom: 1.5rem;
+}
+
+/* Ensure accordion is always open */
+#Details-complementary-products-template--25041315070217__main,
+[id^="Details-complementary-products-"] {
+  display: block !important;
+}
+
+/* Hide accordion controls since we want it always open */
+.product .complementary-products summary::after,
+.product .complementary-products .icon-accordion {
+  display: none !important;
+}
+
+/* Fix font styling to match screenshot */
+.product .complementary-products .accordion__title {
+  font-size: 0.9rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-weight: normal;
+  color: #3D2120;
+}

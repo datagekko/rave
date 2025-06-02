@@ -146,37 +146,23 @@
   };
 
   /**
-   * Fixed version: Initialize product recommendations in the correct accordion section
+   * Initialize product recommendations in the correct accordion section
    */
   function initializeProductRecommendations() {
-    console.log('DEBUG: Starting product recommendations initialization');
-
-    // First check if we're on a product page
-    if (!window.location.pathname.includes('/products/')) {
-      console.log('DEBUG: Not on a product page, exiting');
-      return;
-    }
-
-    // Log DOM structure to help debugging
-    console.log('DEBUG: Accordion elements present:', document.querySelectorAll('.product__accordion details').length);
-
-    // Log all accordion titles to help identify the right one
-    document.querySelectorAll('.product__accordion details .accordion__title').forEach((title) => {
-      console.log('DEBUG: Found accordion title:', title.textContent.trim());
-    });
+    // Skip if not on a product page
+    if (!window.location.pathname.includes('/products/')) return;
 
     // Get the product ID
     let productId = null;
     const productInfo = document.querySelector('product-info');
+
     if (productInfo && productInfo.dataset.productId) {
       productId = productInfo.dataset.productId;
-      console.log('DEBUG: Found product ID from product-info:', productId);
     } else {
       // Try other methods to find product ID
       const productMetaTag = document.querySelector('meta[property="og:product_id"]');
       if (productMetaTag) {
         productId = productMetaTag.getAttribute('content');
-        console.log('DEBUG: Found product ID from meta tag:', productId);
       }
 
       // If still not found, try data attributes on any product form
@@ -184,101 +170,44 @@
         const productForm = document.querySelector('form[action*="/cart/add"]');
         if (productForm && productForm.dataset.productId) {
           productId = productForm.dataset.productId;
-          console.log('DEBUG: Found product ID from form:', productId);
         }
       }
     }
 
-    if (!productId) {
-      console.warn('Could not find product ID for recommendations');
-      return;
-    }
+    if (!productId) return;
 
-    // Find or create the Complementary Products accordion
-    let targetContainer = null;
+    // Try to find the existing complementary products container by ID pattern
+    let targetContainer = document.querySelector('[id^="Details-complementary-products-"]');
     let contentContainer = null;
-    let isNewAccordion = false;
 
-    // First try to find an existing Complementary Products accordion
-    const allAccordions = document.querySelectorAll('.product__accordion details');
-    for (const accordion of allAccordions) {
-      const title = accordion.querySelector('.accordion__title');
-      if (
-        title &&
-        title.textContent &&
-        (title.textContent.trim().toLowerCase().includes('complementary') ||
-          title.textContent.trim().toLowerCase().includes('complete your') ||
-          title.textContent.trim().toLowerCase().includes('you might also like') ||
-          title.textContent.trim().toLowerCase().includes('recommended'))
-      ) {
-        targetContainer = accordion;
-        contentContainer = accordion.querySelector('.accordion__content');
-        console.log('DEBUG: Found complementary products accordion by title:', title.textContent.trim());
-        break;
-      }
-    }
-
-    // If we didn't find one, create a new accordion for complementary products
+    // If we didn't find it by ID, try to find by title text
     if (!targetContainer) {
-      console.log('DEBUG: Creating new Complementary Products accordion');
-
-      // Find the accordion container
-      const accordionContainer = document.querySelector('.product__accordion');
-      if (!accordionContainer) {
-        console.warn('DEBUG: Could not find accordion container');
-        return;
+      const allAccordions = document.querySelectorAll('.product__accordion details');
+      for (const accordion of allAccordions) {
+        const title = accordion.querySelector('.accordion__title');
+        if (
+          title &&
+          title.textContent &&
+          (title.textContent.trim().toLowerCase().includes('complementary') ||
+            title.textContent.trim().toLowerCase().includes('complete your') ||
+            title.textContent.trim().toLowerCase().includes('you might also like'))
+        ) {
+          targetContainer = accordion;
+          break;
+        }
       }
+    }
 
-      // Create new accordion
-      targetContainer = document.createElement('details');
-      targetContainer.setAttribute('id', 'Details-complementary-products-custom');
+    // If we found a container, get its content area
+    if (targetContainer) {
+      contentContainer = targetContainer.querySelector('.accordion__content');
+
+      // Ensure the accordion is open
       targetContainer.setAttribute('open', 'true');
-
-      // Create summary element with title
-      const summary = document.createElement('summary');
-      const summaryTitle = document.createElement('h2');
-      summaryTitle.className = 'h4 accordion__title';
-      summaryTitle.textContent = 'You might also like';
-
-      const summaryTitleDiv = document.createElement('div');
-      summaryTitleDiv.className = 'summary__title';
-
-      // Add icon if we can find one to match style
-      const existingIcon = document.querySelector('.product__accordion details .summary__title svg');
-      if (existingIcon) {
-        summaryTitleDiv.appendChild(existingIcon.cloneNode(true));
-      }
-
-      summaryTitleDiv.appendChild(summaryTitle);
-      summary.appendChild(summaryTitleDiv);
-
-      // Add caret icon
-      const caretSVG = document.createElement('div');
-      caretSVG.innerHTML = `<svg aria-hidden="true" focusable="false" class="icon icon-caret" viewBox="0 0 10 6">
-        <path fill-rule="evenodd" clip-rule="evenodd" d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z" fill="currentColor"></path>
-      </svg>`;
-      summary.appendChild(caretSVG.firstChild);
-
-      // Create content container
-      contentContainer = document.createElement('div');
-      contentContainer.className = 'accordion__content rte';
-      contentContainer.setAttribute('id', 'ProductAccordion-complementary-products-custom');
-
-      // Assemble accordion
-      targetContainer.appendChild(summary);
-      targetContainer.appendChild(contentContainer);
-
-      // Add to page
-      accordionContainer.appendChild(targetContainer);
-      isNewAccordion = true;
-
-      console.log('DEBUG: Created new accordion for complementary products');
     }
 
-    if (!contentContainer) {
-      console.warn('DEBUG: No content container available');
-      return;
-    }
+    // If no content container found, exit
+    if (!contentContainer) return;
 
     // Show loading indicator
     contentContainer.innerHTML = `
@@ -296,54 +225,25 @@
 
     // Fetch recommendations
     const url = `/recommendations/products?product_id=${productId}&section_id=${sectionId}&limit=6&intent=complementary`;
-    console.log('DEBUG: Fetching recommendations from URL:', url);
 
     fetch(url)
-      .then((response) => {
-        console.log('DEBUG: Response status:', response.status);
-        return response.text();
-      })
+      .then((response) => response.text())
       .then((text) => {
-        console.log('DEBUG: Received response text length:', text.length);
         const tempContainer = document.createElement('div');
         tempContainer.innerHTML = text;
-
-        // Log what we found in the response
-        console.log(
-          'DEBUG: Response contains complementary-products:',
-          !!tempContainer.querySelector('.complementary-products')
-        );
-        console.log(
-          'DEBUG: Response contains product-recommendations:',
-          !!tempContainer.querySelector('.product-recommendations')
-        );
-        console.log('DEBUG: Response contains grid--uniform:', !!tempContainer.querySelector('.grid--uniform'));
 
         // Try different selectors to find product recommendations content
         let recommendationsContent = extractRecommendationsContent(tempContainer);
 
         if (recommendationsContent) {
-          console.log('DEBUG: Found recommendations content');
-
           // Clear the container
           contentContainer.innerHTML = '';
 
           // Insert the recommendations
           contentContainer.appendChild(recommendationsContent);
-          console.log('DEBUG: Inserted recommendations into container');
 
           // Make sure accordion is open
           targetContainer.open = true;
-          console.log('DEBUG: Ensured accordion is open');
-
-          // If it's a new accordion, we need to handle events properly
-          if (isNewAccordion) {
-            // Add click event to toggle accordion
-            targetContainer.querySelector('summary').addEventListener('click', function (event) {
-              event.preventDefault();
-              targetContainer.toggleAttribute('open');
-            });
-          }
 
           // Initialize any quick add buttons
           contentContainer.querySelectorAll('.quick-add__submit').forEach((button) => {
@@ -359,23 +259,11 @@
             }
           });
         } else {
-          console.warn('DEBUG: No recommendations content found in response');
           contentContainer.innerHTML = '<p>No recommended products found</p>';
-
-          // If we created a new accordion but didn't find any products, remove it
-          if (isNewAccordion) {
-            targetContainer.remove();
-          }
         }
       })
       .catch((error) => {
-        console.error('DEBUG: Error loading recommendations:', error);
         contentContainer.innerHTML = '<p>Error loading recommendations</p>';
-
-        // If we created a new accordion but encountered an error, remove it
-        if (isNewAccordion) {
-          targetContainer.remove();
-        }
       });
   }
 
@@ -412,8 +300,6 @@
         // Add the grid to the container
         container.appendChild(productGridContainer);
         recommendationsContent = container;
-
-        console.log('DEBUG: Created custom grid for recommendations with', productCards.length, 'items');
       }
     }
 
