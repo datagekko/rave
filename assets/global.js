@@ -1,3 +1,17 @@
+/**
+ * This file contains global utility functions and variables used throughout the theme.
+ * It should be loaded before other JavaScript files.
+ *
+ * @file Provides utility functions and variables for the Dawn theme.
+ */
+
+function safeCall(obj, method, ...args) {
+  if (obj && typeof obj[method] === 'function') {
+    return obj[method](...args);
+  }
+  return undefined;
+}
+
 function getFocusableElements(container) {
   return Array.from(
     container.querySelectorAll(
@@ -25,49 +39,53 @@ if (typeof ThemeSectionId === 'undefined') {
       return `${sectionId}${ThemeSectionId.#separator}${sectionName}`;
     }
   }
+  window.ThemeSectionId = ThemeSectionId;
 }
 
-class HTMLUpdateUtility {
-  /**
-   * Used to swap an HTML node with a new node.
-   * The new node is inserted as a previous sibling to the old node, the old node is hidden, and then the old node is removed.
-   *
-   * The function currently uses a double buffer approach, but this should be replaced by a view transition once it is more widely supported https://developer.mozilla.org/en-US/docs/Web/API/View_Transitions_API
-   */
-  static viewTransition(oldNode, newContent, preProcessCallbacks = [], postProcessCallbacks = []) {
-    preProcessCallbacks?.forEach((callback) => callback(newContent));
+if (typeof HTMLUpdateUtility === 'undefined' && typeof window.HTMLUpdateUtility === 'undefined') {
+  class HTMLUpdateUtility {
+    /**
+     * Used to swap an HTML node with a new node.
+     * The new node is inserted as a previous sibling to the old node, the old node is hidden, and then the old node is removed.
+     *
+     * The function currently uses a double buffer approach, but this should be replaced by a view transition once it is more widely supported https://developer.mozilla.org/en-US/docs/Web/API/View_Transitions_API
+     */
+    static viewTransition(oldNode, newContent, preProcessCallbacks = [], postProcessCallbacks = []) {
+      preProcessCallbacks?.forEach((callback) => callback(newContent));
 
-    const newNodeWrapper = document.createElement('div');
-    HTMLUpdateUtility.setInnerHTML(newNodeWrapper, newContent.outerHTML);
-    const newNode = newNodeWrapper.firstChild;
+      const newNodeWrapper = document.createElement('div');
+      HTMLUpdateUtility.setInnerHTML(newNodeWrapper, newContent.outerHTML);
+      const newNode = newNodeWrapper.firstChild;
 
-    // dedupe IDs
-    const uniqueKey = Date.now();
-    oldNode.querySelectorAll('[id], [form]').forEach((element) => {
-      element.id && (element.id = `${element.id}-${uniqueKey}`);
-      element.form && element.setAttribute('form', `${element.form.getAttribute('id')}-${uniqueKey}`);
-    });
-
-    oldNode.parentNode.insertBefore(newNode, oldNode);
-    oldNode.style.display = 'none';
-
-    postProcessCallbacks?.forEach((callback) => callback(newNode));
-
-    setTimeout(() => oldNode.remove(), 500);
-  }
-
-  // Sets inner HTML and reinjects the script tags to allow execution. By default, scripts are disabled when using element.innerHTML.
-  static setInnerHTML(element, html) {
-    element.innerHTML = html;
-    element.querySelectorAll('script').forEach((oldScriptTag) => {
-      const newScriptTag = document.createElement('script');
-      Array.from(oldScriptTag.attributes).forEach((attribute) => {
-        newScriptTag.setAttribute(attribute.name, attribute.value);
+      // dedupe IDs
+      const uniqueKey = Date.now();
+      oldNode.querySelectorAll('[id], [form]').forEach((element) => {
+        element.id && (element.id = `${element.id}-${uniqueKey}`);
+        element.form && element.setAttribute('form', `${element.form.getAttribute('id')}-${uniqueKey}`);
       });
-      newScriptTag.appendChild(document.createTextNode(oldScriptTag.innerHTML));
-      oldScriptTag.parentNode.replaceChild(newScriptTag, oldScriptTag);
-    });
+
+      oldNode.parentNode.insertBefore(newNode, oldNode);
+      oldNode.style.display = 'none';
+
+      postProcessCallbacks?.forEach((callback) => callback(newNode));
+
+      setTimeout(() => oldNode.remove(), 500);
+    }
+
+    // Sets inner HTML and reinjects the script tags to allow execution. By default, scripts are disabled when using element.innerHTML.
+    static setInnerHTML(element, html) {
+      element.innerHTML = html;
+      element.querySelectorAll('script').forEach((oldScriptTag) => {
+        const newScriptTag = document.createElement('script');
+        Array.from(oldScriptTag.attributes).forEach((attribute) => {
+          newScriptTag.setAttribute(attribute.name, attribute.value);
+        });
+        newScriptTag.appendChild(document.createTextNode(oldScriptTag.innerHTML));
+        oldScriptTag.parentNode.replaceChild(newScriptTag, oldScriptTag);
+      });
+    }
   }
+  window.HTMLUpdateUtility = HTMLUpdateUtility;
 }
 
 document.querySelectorAll('[id^="Details-"] summary').forEach((summary) => {
@@ -86,7 +104,10 @@ document.querySelectorAll('[id^="Details-"] summary').forEach((summary) => {
   summary.parentElement.addEventListener('keyup', onKeyUpEscape);
 });
 
-const trapFocusHandlers = {};
+// Check if a variable exists and is defined before using it
+if (typeof trapFocusHandlers === 'undefined') {
+  const trapFocusHandlers = {};
+}
 
 function trapFocus(container, elementToFocus = container) {
   var elements = getFocusableElements(container);
@@ -288,7 +309,6 @@ function debounce(fn, wait) {
     t = setTimeout(() => fn.apply(this, args), wait);
   };
 }
-
 
 function throttle(fn, delay) {
   let lastCall = 0;
@@ -1127,57 +1147,106 @@ class VariantSelects extends HTMLElement {
 
 customElements.define('variant-selects', VariantSelects);
 
-class ProductRecommendations extends HTMLElement {
-  observer = undefined;
+// Only define ProductRecommendations if it doesn't exist already
+if (!customElements.get('product-recommendations')) {
+  class ProductRecommendations extends HTMLElement {
+    observer = undefined;
 
-  constructor() {
-    super();
-  }
+    constructor() {
+      super();
+    }
 
-  connectedCallback() {
-    this.initializeRecommendations(this.dataset.productId);
-  }
+    connectedCallback() {
+      const productId = this.dataset.productId;
+      if (productId) {
+        this.initializeRecommendations(productId);
+      } else {
+        console.warn('ProductRecommendations: No product ID provided');
+      }
+    }
 
-  initializeRecommendations(productId) {
-    this.observer?.unobserve(this);
-    this.observer = new IntersectionObserver(
-      (entries, observer) => {
-        if (!entries[0].isIntersecting) return;
-        observer.unobserve(this);
-        this.loadRecommendations(productId);
-      },
-      { rootMargin: '0px 0px 400px 0px' }
-    );
-    this.observer.observe(this);
-  }
+    initializeRecommendations(productId) {
+      this.observer?.unobserve(this);
+      this.observer = new IntersectionObserver(
+        (entries, observer) => {
+          if (!entries[0].isIntersecting) return;
+          observer.unobserve(this);
+          this.loadRecommendations(productId);
+        },
+        { rootMargin: '0px 0px 400px 0px' }
+      );
+      this.observer.observe(this);
+    }
 
-  loadRecommendations(productId) {
-    fetch(`${this.dataset.url}&product_id=${productId}&section_id=${this.dataset.sectionId}`)
-      .then((response) => response.text())
-      .then((text) => {
-        const html = document.createElement('div');
-        html.innerHTML = text;
-        const recommendations = html.querySelector('product-recommendations');
+    loadRecommendations(productId) {
+      // Fix the URL construction to ensure it's properly formatted
+      const baseUrl = this.dataset.url || '/recommendations/products';
+      const sectionId = this.dataset.sectionId || 'product-recommendations';
 
-        if (recommendations?.innerHTML.trim().length) {
-          this.innerHTML = recommendations.innerHTML;
+      // Ensure the URL is properly formatted with ? or & for parameters
+      const separator = baseUrl.includes('?') ? '&' : '?';
+      const url = `${baseUrl}${separator}product_id=${productId}&section_id=${sectionId}`;
+
+      console.log('Loading product recommendations from:', url);
+
+      fetch(url)
+        .then((response) => {
+          if (!response.ok) {
+            throw new Error(`HTTP error! Status: ${response.status}`);
+          }
+          return response.text();
+        })
+        .then((text) => {
+          const html = document.createElement('div');
+          html.innerHTML = text;
+          const recommendations = html.querySelector('product-recommendations');
+
+          if (recommendations?.innerHTML.trim().length) {
+            this.innerHTML = recommendations.innerHTML;
+            this.initializeQuickAddButtons();
+          } else {
+            console.warn('No recommendations found in response HTML');
+          }
+
+          if (!this.querySelector('slideshow-component') && this.classList.contains('complementary-products')) {
+            this.remove();
+          }
+
+          if (html.querySelector('.grid__item')) {
+            this.classList.add('product-recommendations--loaded');
+          }
+        })
+        .catch((e) => {
+          console.error('Failed to load product recommendations:', e);
+        });
+    }
+
+    initializeQuickAddButtons() {
+      // Initialize any quick-add buttons after loading
+      this.querySelectorAll('.quick-add__submit').forEach((button) => {
+        if (!button.hasAttribute('data-listener-added')) {
+          button.setAttribute('data-listener-added', 'true');
+          button.addEventListener('click', (event) => {
+            // Prevent default only if not already handled
+            if (!event.defaultPrevented) {
+              event.preventDefault();
+              console.log('Quick add button clicked');
+
+              // If there's a form, submit it
+              const form = button.closest('form');
+              if (form) {
+                form.submit();
+              }
+            }
+          });
         }
-
-        if (!this.querySelector('slideshow-component') && this.classList.contains('complementary-products')) {
-          this.remove();
-        }
-
-        if (html.querySelector('.grid__item')) {
-          this.classList.add('product-recommendations--loaded');
-        }
-      })
-      .catch((e) => {
-        console.error(e);
       });
+    }
   }
-}
 
-customElements.define('product-recommendations', ProductRecommendations);
+  customElements.define('product-recommendations', ProductRecommendations);
+  window.ProductRecommendations = ProductRecommendations;
+}
 
 class AccountIcon extends HTMLElement {
   constructor() {
@@ -1284,51 +1353,134 @@ if (!customElements.get('bulk-add')) {
 }
 
 class CartPerformance {
-  static #metric_prefix = "cart-performance"
+  static #metric_prefix = 'cart-performance';
 
   static createStartingMarker(benchmarkName) {
-    const metricName = `${CartPerformance.#metric_prefix}:${benchmarkName}`
+    const metricName = `${CartPerformance.#metric_prefix}:${benchmarkName}`;
     return performance.mark(`${metricName}:start`);
   }
 
   static measureFromEvent(benchmarkName, event) {
-    const metricName = `${CartPerformance.#metric_prefix}:${benchmarkName}`
+    const metricName = `${CartPerformance.#metric_prefix}:${benchmarkName}`;
     const startMarker = performance.mark(`${metricName}:start`, {
-      startTime: event.timeStamp
+      startTime: event.timeStamp,
     });
 
     const endMarker = performance.mark(`${metricName}:end`);
 
-    performance.measure(
-      metricName,
-      `${metricName}:start`,
-      `${metricName}:end`
-    );
+    performance.measure(metricName, `${metricName}:start`, `${metricName}:end`);
   }
 
   static measureFromMarker(benchmarkName, startMarker) {
-    const metricName = `${CartPerformance.#metric_prefix}:${benchmarkName}`
+    const metricName = `${CartPerformance.#metric_prefix}:${benchmarkName}`;
     const endMarker = performance.mark(`${metricName}:end`);
 
-    performance.measure(
-      metricName,
-      startMarker.name,
-      `${metricName}:end`
-    );
+    performance.measure(metricName, startMarker.name, `${metricName}:end`);
   }
 
   static measure(benchmarkName, callback) {
-    const metricName = `${CartPerformance.#metric_prefix}:${benchmarkName}`
+    const metricName = `${CartPerformance.#metric_prefix}:${benchmarkName}`;
     const startMarker = performance.mark(`${metricName}:start`);
 
     callback();
 
     const endMarker = performance.mark(`${metricName}:end`);
 
-    performance.measure(
-      metricName,
-      `${metricName}:start`,
-      `${metricName}:end`
-    );
+    performance.measure(metricName, `${metricName}:start`, `${metricName}:end`);
   }
+}
+
+class StickyHeader extends HTMLElement {
+  constructor() {
+    super();
+    this.header = document.querySelector('.section-header');
+    this.headerBounds = {};
+    this.currentScrollTop = 0;
+    this.preventReveal = false;
+    this.pendingReveal = false;
+
+    this.onScrollHandler = this.onScroll.bind(this);
+    this.hideHeaderOnScrollUp = () => (this.preventReveal = true);
+
+    this.addEventListener('preventHeaderReveal', this.hideHeaderOnScrollUp);
+    window.addEventListener('scroll', this.onScrollHandler, false);
+
+    this.createObserver();
+  }
+
+  disconnectedCallback() {
+    this.removeEventListener('preventHeaderReveal', this.hideHeaderOnScrollUp);
+    window.removeEventListener('scroll', this.onScrollHandler);
+  }
+
+  createObserver() {
+    let observer = new IntersectionObserver((entries, observer) => {
+      this.headerBounds = entries[0].intersectionRect;
+      observer.disconnect();
+    });
+
+    observer.observe(this.header);
+  }
+
+  onScroll() {
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+    if (this.predictiveSearch && this.predictiveSearch.isOpen) return;
+
+    // Account for cases where the header might be hidden but we shouldn't reveal it
+    if (this.preventReveal) {
+      this.currentScrollTop = scrollTop;
+      return;
+    }
+
+    // Handle the sticky header behavior based on scroll direction
+    if (scrollTop > this.currentScrollTop && scrollTop > this.headerBounds.bottom) {
+      // Scrolling down past the header = hide it
+      requestAnimationFrame(this.hide.bind(this));
+    } else if (scrollTop < this.currentScrollTop && this.currentScrollTop - scrollTop > 50) {
+      // Scrolling up significantly = reveal it
+      requestAnimationFrame(this.reveal.bind(this));
+    }
+
+    this.currentScrollTop = scrollTop;
+  }
+
+  hide() {
+    this.header.classList.add('shopify-section-header-hidden', 'shopify-section-header-sticky');
+
+    // Safely close search modal if it exists
+    try {
+      if (this.searchModal && typeof this.closeSearchModal === 'function') {
+        this.closeSearchModal();
+      } else if (this.searchModal) {
+        // Use a more direct approach if method is missing
+        this.searchModal.classList.remove('search-modal__overlay--active');
+        document.body.classList.remove('overflow-hidden');
+      }
+    } catch (e) {
+      console.warn('Error closing search modal:', e);
+    }
+  }
+
+  reveal() {
+    this.header.classList.add('shopify-section-header-sticky', 'animate');
+    this.header.classList.remove('shopify-section-header-hidden');
+  }
+
+  closeSearchModal(event) {
+    // Add null check for search modal
+    if (!this.searchModal) return;
+
+    this.searchModal.classList.remove('search-modal__overlay--active');
+    document.body.classList.remove('overflow-hidden');
+
+    if (event === undefined) return;
+    this.searchModal.removeEventListener('keyup', this.eventHandlers.keyupHandler);
+    event.preventDefault();
+  }
+}
+
+// Ensure StickyHeader is properly registered
+if (!customElements.get('sticky-header')) {
+  customElements.define('sticky-header', StickyHeader);
 }
