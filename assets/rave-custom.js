@@ -176,11 +176,15 @@
 
     if (!productId) return;
 
-    // Try to find the existing complementary products container by ID pattern
-    let targetContainer = document.querySelector('[id^="Details-complementary-products-"]');
-    let contentContainer = null;
+    // First check if there's an element with ID "COMPLEMENTARY_PRODUCTS"
+    let targetContainer = document.querySelector('#COMPLEMENTARY_PRODUCTS');
 
-    // If we didn't find it by ID, try to find by title text
+    // If not found, try to find by standard ID pattern
+    if (!targetContainer) {
+      targetContainer = document.querySelector('[id^="Details-complementary-products-"]');
+    }
+
+    // If not found, look for any section containing complementary/recommendations
     if (!targetContainer) {
       const allAccordions = document.querySelectorAll('.product__accordion details');
       for (const accordion of allAccordions) {
@@ -199,6 +203,7 @@
     }
 
     // If we still don't have a container, create one
+    let contentContainer = null;
     if (!targetContainer) {
       console.log('Creating new complementary products section');
 
@@ -208,8 +213,8 @@
 
       // Create new complementary products accordion
       targetContainer = document.createElement('details');
-      targetContainer.id = 'Details-complementary-products-custom';
-      targetContainer.classList.add('accordion');
+      targetContainer.id = 'COMPLEMENTARY_PRODUCTS';
+      targetContainer.classList.add('accordion', 'product__accordion', 'complementary-products');
       targetContainer.setAttribute('open', 'true');
 
       // Create the summary/header
@@ -221,7 +226,7 @@
 
       const heading = document.createElement('h2');
       heading.classList.add('accordion__title');
-      heading.textContent = 'Complementary Products';
+      heading.textContent = 'COMPLEMENTARY PRODUCTS';
 
       titleDiv.appendChild(heading);
       summary.appendChild(titleDiv);
@@ -259,7 +264,7 @@
     `;
 
     // Determine the section ID
-    const sectionId = document.querySelector('[data-section-id]')?.dataset.sectionId || 'main-product';
+    const sectionId = document.querySelector('[data-section-id]')?.dataset.sectionId || 'main';
 
     // Fetch recommendations
     const url = `/recommendations/products?product_id=${productId}&section_id=${sectionId}&limit=6&intent=complementary`;
@@ -268,6 +273,9 @@
     fetch(url)
       .then((response) => response.text())
       .then((text) => {
+        // For debugging
+        console.log('Received response from recommendations API');
+
         const tempContainer = document.createElement('div');
         tempContainer.innerHTML = text;
 
@@ -275,6 +283,8 @@
         let recommendationsContent = extractRecommendationsContent(tempContainer);
 
         if (recommendationsContent) {
+          console.log('Found recommendations content, rendering to page');
+
           // Clear the container
           contentContainer.innerHTML = '';
 
@@ -283,6 +293,9 @@
 
           // Make sure accordion is open
           targetContainer.open = true;
+
+          // Force display block to ensure it's visible
+          targetContainer.style.display = 'block';
 
           // Initialize any quick add buttons
           contentContainer.querySelectorAll('.quick-add__submit').forEach((button) => {
@@ -297,8 +310,6 @@
               });
             }
           });
-
-          console.log('Successfully loaded and rendered complementary products');
         } else {
           console.log('No recommendations found in API response, inserting dummy products');
           contentContainer.innerHTML = createDummyProductsHTML();
@@ -314,7 +325,7 @@
    * Helper function to extract recommendations content
    */
   function extractRecommendationsContent(tempContainer) {
-    // Try different selectors to find product recommendations
+    // Look for content in the right places
     let recommendationsContent =
       tempContainer.querySelector('.complementary-products') ||
       tempContainer.querySelector('.product-recommendations') ||
@@ -330,13 +341,13 @@
       const productCards = tempContainer.querySelectorAll('.grid__item');
       if (productCards.length > 0) {
         const productGridContainer = document.createElement('div');
-        productGridContainer.className = 'grid product-grid grid--2-col-tablet-down grid--4-col-desktop';
+        productGridContainer.className = 'grid product-grid grid--2-col-tablet-down grid--3-col-desktop';
 
         productCards.forEach((card) => {
           productGridContainer.appendChild(card.cloneNode(true));
         });
 
-        // Add a title above the grid
+        // Add a container with correct class
         const container = document.createElement('div');
         container.className = 'complementary-products';
 
@@ -355,10 +366,7 @@
   function createDummyProductsHTML() {
     return `
       <div class="complementary-products">
-        <div class="complementary-products__promotional-message">
-          <p>Complete your look with these complementary products.</p>
-        </div>
-        <div class="grid product-grid grid--2-col-tablet-down grid--4-col-desktop">
+        <div class="product-grid grid--2-col-tablet-down grid--3-col-desktop">
           <!-- Dummy Product 1 -->
           <div class="grid__item">
             <div class="card-wrapper">

@@ -3022,37 +3022,116 @@ button.shopify-payment-button__button--unbranded:after,
   border-top: 1px solid rgba(var(--color-foreground), 0.1);
   margin-top: 0;
   margin-bottom: 0;
-  padding: 2rem 0;
+  padding: 1.5rem 0;
 }
 
+/* Improve the title styling */
+#COMPLEMENTARY_PRODUCTS,
+.product .complementary-products .accordion__title,
+.complementary-products h2 {
+  font-family: "Inter", sans-serif !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.05em !important;
+  text-transform: uppercase !important;
+  color: #3D2120 !important;
+  margin-bottom: 1.5rem !important;
+}
+
+/* Fix product grid layout */
 .product .complementary-products .product-grid {
-  padding: 0 0.5rem;
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+  gap: 1.5rem !important;
+  padding: 0 !important;
 }
 
+@media screen and (max-width: 749px) {
+  .product .complementary-products .product-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+/* Fix individual product cards */
 .product .complementary-products .grid__item {
-  padding-bottom: 2rem;
+  padding: 0 !important;
+  margin: 0 !important;
+  width: 100% !important;
+  max-width: 100% !important;
 }
 
+/* Improve card appearance */
+.product .complementary-products .card-wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.product .complementary-products .card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(var(--color-foreground), 0.1);
+  border-radius: 0;
+  overflow: hidden;
+}
+
+/* Image container styling */
+.product .complementary-products .card__media {
+  position: relative;
+  padding-bottom: 100%; /* Square aspect ratio */
+  height: 0;
+  overflow: hidden;
+}
+
+.product .complementary-products .card__media .media {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.product .complementary-products .card__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Text information styling */
 .product .complementary-products .card-information {
-  padding: 0;
+  padding: 1rem !important;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.product .complementary-products .card__heading {
+  font-family: "Inter", sans-serif !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  color: #3D2120 !important;
+  margin-bottom: 0.5rem !important;
 }
 
 .product .complementary-products .price {
-  font-size: calc(var(--font-heading-scale) * 1.2rem);
+  font-family: "Inter", sans-serif !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
 }
 
 .product .complementary-products .price .price-item {
-  color: #3D2120;
+  color: #3D2120 !important;
 }
 
-.product .complementary-products__promotional-message {
-  margin-bottom: 1.5rem;
-}
-
-/* Ensure accordion is always open */
+/* Ensure the section is always open */
 #Details-complementary-products-template--25041315070217__main,
-[id^="Details-complementary-products-"] {
+[id^="Details-complementary-products-"],
+.product .complementary-products.accordion {
   display: block !important;
+  border-top: 1px solid #3D2120 !important;
+  padding-top: 1.5rem !important;
 }
 
 /* Hide accordion controls since we want it always open */
@@ -3061,11 +3140,8 @@ button.shopify-payment-button__button--unbranded:after,
   display: none !important;
 }
 
-/* Fix font styling to match screenshot */
-.product .complementary-products .accordion__title {
-  font-size: 0.9rem;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  font-weight: normal;
-  color: #3D2120;
+/* Adjust spacing for the entire section */
+.product__accordion.complementary-products {
+  margin-top: 2rem !important;
+  margin-bottom: 2rem !important;
 }
