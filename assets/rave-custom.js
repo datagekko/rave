@@ -198,8 +198,46 @@
       }
     }
 
+    // If we still don't have a container, create one
+    if (!targetContainer) {
+      console.log('Creating new complementary products section');
+
+      // Find the product accordion container
+      const accordionContainer = document.querySelector('.product__accordion');
+      if (!accordionContainer) return;
+
+      // Create new complementary products accordion
+      targetContainer = document.createElement('details');
+      targetContainer.id = 'Details-complementary-products-custom';
+      targetContainer.classList.add('accordion');
+      targetContainer.setAttribute('open', 'true');
+
+      // Create the summary/header
+      const summary = document.createElement('summary');
+      summary.classList.add('accordion__summary');
+
+      const titleDiv = document.createElement('div');
+      titleDiv.classList.add('summary__title');
+
+      const heading = document.createElement('h2');
+      heading.classList.add('accordion__title');
+      heading.textContent = 'Complementary Products';
+
+      titleDiv.appendChild(heading);
+      summary.appendChild(titleDiv);
+      targetContainer.appendChild(summary);
+
+      // Create content container
+      contentContainer = document.createElement('div');
+      contentContainer.classList.add('accordion__content');
+      targetContainer.appendChild(contentContainer);
+
+      // Add to page
+      accordionContainer.appendChild(targetContainer);
+    }
+
     // If we found a container, get its content area
-    if (targetContainer) {
+    if (targetContainer && !contentContainer) {
       contentContainer = targetContainer.querySelector('.accordion__content');
 
       // Ensure the accordion is open
@@ -225,6 +263,7 @@
 
     // Fetch recommendations
     const url = `/recommendations/products?product_id=${productId}&section_id=${sectionId}&limit=6&intent=complementary`;
+    console.log('Fetching complementary products from:', url);
 
     fetch(url)
       .then((response) => response.text())
@@ -258,12 +297,16 @@
               });
             }
           });
+
+          console.log('Successfully loaded and rendered complementary products');
         } else {
-          contentContainer.innerHTML = '<p>No recommended products found</p>';
+          console.log('No recommendations found in API response, inserting dummy products');
+          contentContainer.innerHTML = createDummyProductsHTML();
         }
       })
       .catch((error) => {
-        contentContainer.innerHTML = '<p>Error loading recommendations</p>';
+        console.error('Error loading recommendations:', error);
+        contentContainer.innerHTML = createDummyProductsHTML();
       });
   }
 
@@ -304,6 +347,101 @@
     }
 
     return recommendationsContent;
+  }
+
+  /**
+   * Create dummy product HTML for debugging
+   */
+  function createDummyProductsHTML() {
+    return `
+      <div class="complementary-products">
+        <div class="complementary-products__promotional-message">
+          <p>Complete your look with these complementary products.</p>
+        </div>
+        <div class="grid product-grid grid--2-col-tablet-down grid--4-col-desktop">
+          <!-- Dummy Product 1 -->
+          <div class="grid__item">
+            <div class="card-wrapper">
+              <div class="card card--product">
+                <div class="card__inner">
+                  <div class="card__media">
+                    <div class="media">
+                      <img src="https://cdn.shopify.com/s/files/1/0743/5657/6300/files/placeholder-image.jpg" alt="Dummy Product 1" width="300" height="300">
+                    </div>
+                  </div>
+                </div>
+                <div class="card__content">
+                  <div class="card__information">
+                    <h3 class="card__heading">
+                      <a href="#" class="full-unstyled-link">Dummy Yoga Mat</a>
+                    </h3>
+                    <div class="card-information">
+                      <div class="price">
+                        <span class="price-item price-item--regular">$68.00</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Dummy Product 2 -->
+          <div class="grid__item">
+            <div class="card-wrapper">
+              <div class="card card--product">
+                <div class="card__inner">
+                  <div class="card__media">
+                    <div class="media">
+                      <img src="https://cdn.shopify.com/s/files/1/0743/5657/6300/files/placeholder-image.jpg" alt="Dummy Product 2" width="300" height="300">
+                    </div>
+                  </div>
+                </div>
+                <div class="card__content">
+                  <div class="card__information">
+                    <h3 class="card__heading">
+                      <a href="#" class="full-unstyled-link">Yoga Block</a>
+                    </h3>
+                    <div class="card-information">
+                      <div class="price">
+                        <span class="price-item price-item--regular">$24.00</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Dummy Product 3 -->
+          <div class="grid__item">
+            <div class="card-wrapper">
+              <div class="card card--product">
+                <div class="card__inner">
+                  <div class="card__media">
+                    <div class="media">
+                      <img src="https://cdn.shopify.com/s/files/1/0743/5657/6300/files/placeholder-image.jpg" alt="Dummy Product 3" width="300" height="300">
+                    </div>
+                  </div>
+                </div>
+                <div class="card__content">
+                  <div class="card__information">
+                    <h3 class="card__heading">
+                      <a href="#" class="full-unstyled-link">Meditation Cushion</a>
+                    </h3>
+                    <div class="card-information">
+                      <div class="price">
+                        <span class="price-item price-item--regular">$45.00</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    `;
   }
 
   /**
