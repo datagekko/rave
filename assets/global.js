@@ -1153,105 +1153,115 @@ class VariantSelects extends HTMLElement {
 
 customElements.define('variant-selects', VariantSelects);
 
-// Only define ProductRecommendations if it doesn't exist already
+// ProductRecommendations with conditional registration
 if (!customElements.get('product-recommendations')) {
   class ProductRecommendations extends HTMLElement {
     observer = undefined;
 
     constructor() {
       super();
+      this.loadRecommendations();
     }
 
     connectedCallback() {
-      const productId = this.dataset.productId;
-      if (productId) {
-        this.initializeRecommendations(productId);
-      } else {
-        console.warn('ProductRecommendations: No product ID provided');
-      }
+      this.observer = new MutationObserver((mutations) => {
+        if (mutations[0].target.querySelectorAll('.complementary-products__products .grid__item').length > 0) {
+          this.initializeQuickAddButtons();
+        }
+      });
+      this.observer.observe(this, { childList: true, subtree: true });
     }
 
     initializeRecommendations(productId) {
-      this.observer?.unobserve(this);
-      this.observer = new IntersectionObserver(
-        (entries, observer) => {
-          if (!entries[0].isIntersecting) return;
-          observer.unobserve(this);
-          this.loadRecommendations(productId);
-        },
-        { rootMargin: '0px 0px 400px 0px' }
-      );
-      this.observer.observe(this);
+      if (!productId) return;
+      const sectionId = this.dataset.sectionId || 'product-recommendations';
+      const intent = this.dataset.intent || 'complementary';
+      const limit = this.dataset.limit || '6';
+      const url = `/recommendations/products?product_id=${productId}&section_id=${sectionId}&limit=${limit}&intent=${intent}`;
+
+      this.loadRecommendations(productId, url);
     }
 
-    loadRecommendations(productId) {
-      // Fix the URL construction to ensure it's properly formatted
-      const baseUrl = this.dataset.url || '/recommendations/products';
-      const sectionId = this.dataset.sectionId || 'product-recommendations';
+    loadRecommendations(productId, url) {
+      if (!productId || !url) {
+        const selectedProduct = document.querySelector('product-info');
+        const productId = selectedProduct?.dataset.productId;
 
-      // Ensure the URL is properly formatted with ? or & for parameters
-      const separator = baseUrl.includes('?') ? '&' : '?';
-      const url = `${baseUrl}${separator}product_id=${productId}&section_id=${sectionId}`;
+        if (!productId) return;
+
+        const sectionId = this.dataset.sectionId || 'product-recommendations';
+        const intent = this.dataset.intent || 'complementary';
+        const limit = this.dataset.limit || '6';
+        url = `/recommendations/products?product_id=${productId}&section_id=${sectionId}&limit=${limit}&intent=${intent}`;
+      }
 
       console.log('Loading product recommendations from:', url);
 
       fetch(url)
-        .then((response) => {
-          if (!response.ok) {
-            throw new Error(`HTTP error! Status: ${response.status}`);
-          }
-          return response.text();
-        })
+        .then((response) => response.text())
         .then((text) => {
           const html = document.createElement('div');
           html.innerHTML = text;
-          const recommendations = html.querySelector('product-recommendations');
+          const recommendations = html.querySelector('.product-recommendations');
 
-          if (recommendations?.innerHTML.trim().length) {
+          if (recommendations && recommendations.innerHTML.trim().length) {
             this.innerHTML = recommendations.innerHTML;
-            this.initializeQuickAddButtons();
+          }
+
+          if (!this.innerHTML.trim().length) {
+            this.classList.add('hidden');
           } else {
-            console.warn('No recommendations found in response HTML');
-          }
+            this.classList.remove('hidden');
 
-          if (!this.querySelector('slideshow-component') && this.classList.contains('complementary-products')) {
-            this.remove();
-          }
-
-          if (html.querySelector('.grid__item')) {
-            this.classList.add('product-recommendations--loaded');
+            if (
+              this.querySelector('ul.complementary-products__products') &&
+              !this.querySelector('ul.complementary-products__products .grid__item')
+            ) {
+              this.classList.add('hidden');
+            } else {
+              this.classList.remove('hidden');
+              this.initializeQuickAddButtons();
+            }
           }
         })
         .catch((e) => {
-          console.error('Failed to load product recommendations:', e);
+          console.error(e);
+          this.classList.add('hidden');
         });
     }
 
     initializeQuickAddButtons() {
-      // Initialize any quick-add buttons after loading
-      this.querySelectorAll('.quick-add__submit').forEach((button) => {
-        if (!button.hasAttribute('data-listener-added')) {
-          button.setAttribute('data-listener-added', 'true');
-          button.addEventListener('click', (event) => {
-            // Prevent default only if not already handled
-            if (!event.defaultPrevented) {
-              event.preventDefault();
-              console.log('Quick add button clicked');
+      if (!customElements.get('product-form')) return;
 
-              // If there's a form, submit it
-              const form = button.closest('form');
-              if (form) {
-                form.submit();
-              }
-            }
-          });
-        }
-      });
+      const quickAddButtons = this.querySelectorAll('.card__information .quick-add');
+
+      for (const button of quickAddButtons) {
+        button.classList.remove('hidden');
+        button.addEventListener('click', this.loadQuickAddMarkup.bind(this));
+      }
+    }
+
+    loadQuickAddMarkup(event) {
+      const quickAddButton = event.currentTarget;
+      const productHandle = quickAddButton.dataset.productHandle;
+
+      if (!productHandle) return;
+
+      fetch(`/products/${productHandle}?view=quick-add`)
+        .then((response) => response.text())
+        .then((responseText) => {
+          const quickAddForm = new DOMParser().parseFromString(responseText, 'text/html').querySelector('product-form');
+
+          if (quickAddButton.nextElementSibling && quickAddButton.nextElementSibling.nodeName === 'PRODUCT-FORM') {
+            quickAddButton.nextElementSibling.remove();
+          }
+
+          quickAddButton.insertAdjacentElement('afterend', quickAddForm);
+        });
     }
   }
 
   customElements.define('product-recommendations', ProductRecommendations);
-  window.ProductRecommendations = ProductRecommendations;
 }
 
 class AccountIcon extends HTMLElement {
@@ -1396,97 +1406,101 @@ class CartPerformance {
   }
 }
 
-class StickyHeader extends HTMLElement {
-  constructor() {
-    super();
-    this.header = document.querySelector('.section-header');
-    this.headerBounds = {};
-    this.currentScrollTop = 0;
-    this.preventReveal = false;
-    this.pendingReveal = false;
-
-    this.onScrollHandler = this.onScroll.bind(this);
-    this.hideHeaderOnScrollUp = () => (this.preventReveal = true);
-
-    this.addEventListener('preventHeaderReveal', this.hideHeaderOnScrollUp);
-    window.addEventListener('scroll', this.onScrollHandler, false);
-
-    this.createObserver();
-  }
-
-  disconnectedCallback() {
-    this.removeEventListener('preventHeaderReveal', this.hideHeaderOnScrollUp);
-    window.removeEventListener('scroll', this.onScrollHandler);
-  }
-
-  createObserver() {
-    let observer = new IntersectionObserver((entries, observer) => {
-      this.headerBounds = entries[0].intersectionRect;
-      observer.disconnect();
-    });
-
-    observer.observe(this.header);
-  }
-
-  onScroll() {
-    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-
-    if (this.predictiveSearch && this.predictiveSearch.isOpen) return;
-
-    // Account for cases where the header might be hidden but we shouldn't reveal it
-    if (this.preventReveal) {
-      this.currentScrollTop = scrollTop;
-      return;
-    }
-
-    // Handle the sticky header behavior based on scroll direction
-    if (scrollTop > this.currentScrollTop && scrollTop > this.headerBounds.bottom) {
-      // Scrolling down past the header = hide it
-      requestAnimationFrame(this.hide.bind(this));
-    } else if (scrollTop < this.currentScrollTop && this.currentScrollTop - scrollTop > 50) {
-      // Scrolling up significantly = reveal it
-      requestAnimationFrame(this.reveal.bind(this));
-    }
-
-    this.currentScrollTop = scrollTop;
-  }
-
-  hide() {
-    this.header.classList.add('shopify-section-header-hidden', 'shopify-section-header-sticky');
-
-    // Safely close search modal if it exists
-    try {
-      if (this.searchModal && typeof this.closeSearchModal === 'function') {
-        this.closeSearchModal();
-      } else if (this.searchModal) {
-        // Use a more direct approach if method is missing
-        this.searchModal.classList.remove('search-modal__overlay--active');
-        document.body.classList.remove('overflow-hidden');
-      }
-    } catch (e) {
-      console.warn('Error closing search modal:', e);
-    }
-  }
-
-  reveal() {
-    this.header.classList.add('shopify-section-header-sticky', 'animate');
-    this.header.classList.remove('shopify-section-header-hidden');
-  }
-
-  closeSearchModal(event) {
-    // Add null check for search modal
-    if (!this.searchModal) return;
-
-    this.searchModal.classList.remove('search-modal__overlay--active');
-    document.body.classList.remove('overflow-hidden');
-
-    if (event === undefined) return;
-    this.searchModal.removeEventListener('keyup', this.eventHandlers.keyupHandler);
-    event.preventDefault();
-  }
-}
-
-// Ensure StickyHeader is properly registered
+// StickyHeader class with conditional registration
 if (!customElements.get('sticky-header')) {
+  class StickyHeader extends HTMLElement {
+    constructor() {
+      super();
+      this.header = document.querySelector('.section-header');
+      this.headerBounds = {};
+      this.currentScrollTop = 0;
+      this.preventReveal = false;
+      this.pendingReveal = false;
+
+      this.onScrollHandler = this.onScroll.bind(this);
+      this.hideHeaderOnScrollUp = () => (this.preventReveal = true);
+
+      this.addEventListener('preventHeaderReveal', this.hideHeaderOnScrollUp);
+      window.addEventListener('scroll', this.onScrollHandler, false);
+
+      this.createObserver();
+    }
+
+    disconnectedCallback() {
+      this.removeEventListener('preventHeaderReveal', this.hideHeaderOnScrollUp);
+      window.removeEventListener('scroll', this.onScrollHandler);
+    }
+
+    createObserver() {
+      let observer = new IntersectionObserver((entries) => {
+        this.headerBounds = entries[0].intersectionRect;
+        this.headerIntersected = entries[0].isIntersecting;
+      });
+
+      observer.observe(this.header);
+    }
+
+    onScroll() {
+      const scrollTop = window.scrollY || document.documentElement.scrollTop;
+
+      if (this.predictiveSearch && this.predictiveSearch.isOpen) return;
+
+      if (scrollTop > this.currentScrollTop && scrollTop > this.headerBounds.bottom) {
+        this.header.classList.add('shopify-section-header-hidden', 'shopify-section-header-sticky');
+        this.closeSearchModal();
+        this.closeMenuDrawer();
+        this.hide();
+      } else if (scrollTop < this.currentScrollTop && this.header.classList.contains('shopify-section-header-hidden')) {
+        this.header.classList.add('shopify-section-header-sticky');
+        if (!this.preventReveal) {
+          this.header.classList.remove('shopify-section-header-hidden');
+          this.pendingReveal = true;
+          this.reveal();
+        }
+      } else if (scrollTop <= this.headerBounds.top && this.pendingReveal) {
+        this.header.classList.remove('shopify-section-header-hidden', 'shopify-section-header-sticky');
+        this.pendingReveal = false;
+      }
+
+      this.currentScrollTop = scrollTop;
+    }
+
+    hide() {
+      this.header.classList.add('shopify-section-header-hidden');
+      this.closeSearchModal();
+    }
+
+    reveal() {
+      this.pendingReveal = false;
+      requestAnimationFrame(() => (this.preventReveal = false));
+    }
+
+    closeSearchModal(event) {
+      // Add null check for search modal
+      if (!this.searchModal) return;
+
+      this.searchModal.classList.remove('search-modal__overlay--active');
+      document.body.classList.remove('overflow-hidden');
+
+      if (event === undefined) return;
+      this.searchModal.removeEventListener('keyup', this.eventHandlers.keyupHandler);
+      event.preventDefault();
+    }
+
+    closeMenuDrawer() {
+      const activeDrawer = document.querySelector('details.menu-opening');
+      // Safety check
+      if (!activeDrawer) return;
+
+      // Use global methods if defined, or make a best effort
+      if (typeof closeDrawer === 'function') {
+        closeDrawer(activeDrawer);
+      } else {
+        activeDrawer.classList.remove('menu-opening');
+        activeDrawer.removeAttribute('open');
+      }
+    }
+  }
+
   customElements.define('sticky-header', StickyHeader);
 }
