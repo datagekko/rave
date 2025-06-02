@@ -31,6 +31,7 @@
 
     <script src="{{ 'constants.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'pubsub.js' | asset_url }}" defer="defer"></script>
+    <script src="{{ 'rave-custom.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'global.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'details-disclosure.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'details-modal.js' | asset_url }}" defer="defer"></script>
@@ -383,7 +384,7 @@
     {%- endif -%}
 
     <script src="{{ 'global.js' | asset_url }}" defer="defer"></script>
-    <script src="{{ 'rave-custom.js' | asset_url }}" defer="defer"></script>
+    {%- comment %}RAVE CUSTOM: rave-custom.js is already loaded at the top of the page{%- endcomment %}
 
     {% comment %} Klaviyo Back In Stock Snippet with Rave styling {% endcomment %}
     <script src="https://a.klaviyo.com/media/js/onsite/onsite.js" defer></script>
