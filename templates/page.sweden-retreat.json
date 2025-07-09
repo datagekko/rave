@@ -321,7 +321,7 @@
         "custom_text_RtmgiP": {
           "type": "custom_text",
           "settings": {
-            "text": "<p>For group bookings or to share a room, reach out to us directly at hello@rave-yoga.com. We’ll help you create your perfect retreat, together.</p>"
+            "text": "<p>For group bookings or to share a room, reach out to us directly at <a href=\"mailto:hello@rave-yoga.com\" title=\"mailto:hello@rave-yoga.com\">hello@rave-yoga.com</a>. We’ll help you create your perfect retreat, together.</p>"
           }
         }
       },
