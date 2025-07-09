@@ -317,12 +317,19 @@
             "waitlist_button_label": "SOLD OUT",
             "scarcity_badge_text": ""
           }
+        },
+        "custom_text_RtmgiP": {
+          "type": "custom_text",
+          "settings": {
+            "text": "<p>For group bookings or to share a room, reach out to us directly at hello@rave-yoga.com. We’ll help you create your perfect retreat, together.</p>"
+          }
         }
       },
       "block_order": [
         "booking_card_nJz4qR",
         "booking_card_EaE9aG",
-        "booking_card_jYb4Df"
+        "booking_card_jYb4Df",
+        "custom_text_RtmgiP"
       ],
       "settings": {
         "heading": "CHOOSE YOUR SPACE",
