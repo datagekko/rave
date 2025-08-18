@@ -12,7 +12,7 @@
     "main_hero_P9Dn3N": {
       "type": "main-hero",
       "settings": {
-        "image_desktop": "shopify://shop_images/DSC04562_71c77f19-f338-482c-bf93-83bc72f4228d.jpg",
+        "image_desktop": "shopify://shop_images/DSC04451.jpg",
         "video_url": "",
         "hero_link": "",
         "logo_width": 200,
@@ -223,7 +223,7 @@
             "sold_out_color": "#ff0000",
             "limited_spots": false,
             "limited_spots_color": "#ff8c00",
-            "text": "<p>The house is located 50 minuted from Copenhagen by car, 1 hour by train from Cph Central and 90 minujtes from the airport. Upon arrival in Sweden, you will be picked up in cars. We are happy to help you arrange your transport, car sharing and more. </p><p>More transport info will be shared after booking.</p>",
+            "text": "<p>The house is located 50 minutes from Copenhagen by car, 1 hour by train from Copenhagen Central and 90 minutes from the airport. Upon arrival in Sweden, you will be picked up in cars. We are happy to help you arrange your transport, car sharing and more. </p><p>More transport info will be shared after booking.</p>",
             "link_label": "",
             "link": ""
           }
