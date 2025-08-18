@@ -223,7 +223,7 @@
             "sold_out_color": "#ff0000",
             "limited_spots": false,
             "limited_spots_color": "#ff8c00",
-            "text": "<p>We will send you all transport info upon sign up. You can easily take a train from CPH central station close to the house, where you will be picked up. We will also be happy to help you arrange car sharing.</p>",
+            "text": "<p>The house is located 50 minuted from Copenhagen by car, 1 hour by train from Cph Central and 90 minujtes from the airport. Upon arrival in Sweden, you will be picked up in cars. We are happy to help you arrange your transport, car sharing and more. </p><p>More transport info will be shared after booking.</p>",
             "link_label": "",
             "link": ""
           }
@@ -238,7 +238,7 @@
             "sold_out_color": "#ff0000",
             "limited_spots": false,
             "limited_spots_color": "#ff8c00",
-            "text": "<p>Every single room in the house is beautiful and unique. There are lots of bathrooms all over the house so everyone can enjoy their privacy. Shared, double and private rooms available.</p><p>For any questions please e-mail <a href=\"mailto:hello@rave-yoga.com\">hello@rave-yoga.com</a></p>",
+            "text": "<p>Every single room in the house is beautiful and unique. There are lots of bathrooms all over the house so everyone can enjoy their privacy. </p><p>We have single private rooms, double private rooms as well as shared rooms available.</p><p>For any questions please e-mail <a href=\"mailto:hello@rave-yoga.com\">hello@rave-yoga.com</a></p>",
             "link_label": "",
             "link": ""
           }
@@ -289,12 +289,12 @@
         "booking_card_EaE9aG": {
           "type": "booking_card",
           "settings": {
-            "title": "DOUBLE ROOM",
+            "title": "DOUBLE PRIVATE ROOM",
             "subtitle": "Share with a Friend",
             "feature_1": "A private room with a king-size bed for two.",
             "feature_2": "Ideal for partners, friends, or family joining together.",
             "feature_3": "Price is for the entire room (2 people).",
-            "price": "9.000 DKK",
+            "price": "8.500 DKK",
             "button_label": "BOOK NOW",
             "button_link": "https://raveyoga.yogo.dk/frontend/index.html?itemType=event&itemId=18388#/login-with-cart",
             "sold_out": false,
