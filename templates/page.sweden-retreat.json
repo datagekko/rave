@@ -305,15 +305,15 @@
         "booking_card_jYb4Df": {
           "type": "booking_card",
           "settings": {
-            "title": "PRIVATE ROOM",
+            "title": "SINGLE PRIVATE ROOM",
             "subtitle": "Your Personal Sanctuary",
             "feature_1": "Your own private room for ultimate peace and quiet.",
             "feature_2": "A space to drop in and fully tune out.",
             "feature_3": "For that extra bit of privacy.",
-            "price": "5.500 DKK",
+            "price": "5.250 DKK",
             "button_label": "BOOK NOW",
             "button_link": "https://raveyoga.yogo.dk/frontend/index.html?itemType=event&itemId=18386#//login-with-cart",
-            "sold_out": true,
+            "sold_out": false,
             "waitlist_button_label": "SOLD OUT",
             "scarcity_badge_text": ""
           }
