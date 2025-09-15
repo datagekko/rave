@@ -281,7 +281,7 @@
             "price": "4.250 DKK",
             "button_label": "BOOK NOW",
             "button_link": "https://raveyoga.yogo.dk/frontend/index.html?itemType=event&itemId=18287#/login-with-cart",
-            "sold_out": false,
+            "sold_out": true,
             "waitlist_button_label": "Join Waitlist",
             "scarcity_badge_text": ""
           }
@@ -313,7 +313,7 @@
             "price": "5.500 DKK",
             "button_label": "BOOK NOW",
             "button_link": "https://raveyoga.yogo.dk/frontend/index.html?itemType=event&itemId=18386#//login-with-cart",
-            "sold_out": false,
+            "sold_out": true,
             "waitlist_button_label": "SOLD OUT",
             "scarcity_badge_text": ""
           }
