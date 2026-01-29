@@ -137,12 +137,120 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "collage_VVHGrU": {
+      "type": "collage",
+      "blocks": {
+        "image_4DCaih": {
+          "type": "image",
+          "settings": {}
+        },
+        "image_4aPCkh": {
+          "type": "image",
+          "settings": {}
+        },
+        "image_b3ENjE": {
+          "type": "image",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "image_4DCaih",
+        "image_4aPCkh",
+        "image_b3ENjE"
+      ],
+      "name": "t:sections.collage.presets.name",
+      "settings": {
+        "heading": "THE ROOMS & HOUSES",
+        "heading_size": "h1",
+        "desktop_layout": "left",
+        "mobile_layout": "column",
+        "card_styles": "product-card-wrapper",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multicolumn_r3wXHz": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_aLJLqG": {
+          "type": "column",
+          "settings": {
+            "title": "FOOD",
+            "price_text": "",
+            "price_color": "#3D2120",
+            "sold_out": false,
+            "sold_out_color": "#FF0000",
+            "limited_spots": false,
+            "limited_spots_color": "#FF8C00",
+            "text": "<p>Our retreat chef will prepare local and seasonal spreads with a focus on healthy and vegetarian produce.</p><p>Don't worry - there will be lots to fuel you during the day!</p><p>Snacks, coffee and tea will be available throughout the day. Every day there will be served a wholesome brunch and dinner, as well as a little afternoon snack or cake time.</p><p><br/></p><p>Please send us an e-mail with your dietary restrictions at <a href=\"mailto:hello@rave-yoga.com\">hello@rave-yoga.com</a></p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_hbxC8a": {
+          "type": "column",
+          "settings": {
+            "title": "TRANSPORT",
+            "price_text": "",
+            "price_color": "#3D2120",
+            "sold_out": false,
+            "sold_out_color": "#FF0000",
+            "limited_spots": false,
+            "limited_spots_color": "#FF8C00",
+            "text": "<p>The house is located 2h 30 minutes from Copenhagen by car and about the same by train.</p><p>A group will leave together from CPH central train station and be picked up with cars at the train station nearest to the house.</p><p></p><p>More transport info will be shared after booking.</p><p></p><p>We can help with all transport enquiries - just shoot us a mail at hello@rave-yoga.com</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_7irLFt": {
+          "type": "column",
+          "settings": {
+            "title": "ROOMS",
+            "price_text": "",
+            "price_color": "#3D2120",
+            "sold_out": false,
+            "sold_out_color": "#FF0000",
+            "limited_spots": false,
+            "limited_spots_color": "#FF8C00",
+            "text": "<p>All rooms in the houses are beautiful and unique. There are lots of bathrooms so everyone can enjoy their privacy. '</p><p>We have single private rooms, double private rooms as well as shared rooms available.</p><p>For any questions please e-mail <a href=\"mailto:hello@rave-yoga.com\">hello@rave-yoga.com</a></p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_aLJLqG",
+        "column_hbxC8a",
+        "column_7irLFt"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "PRACTICALITIES",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "Button label",
+        "button_link": "",
+        "custom_id": "",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "main",
     "rich_text_dceREC",
     "collage_CEhLEc",
-    "multirow_P4MafE"
+    "multirow_P4MafE",
+    "collage_VVHGrU",
+    "multicolumn_r3wXHz"
   ]
 }
