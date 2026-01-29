@@ -29,7 +29,23 @@
         "padding_top": 20,
         "padding_bottom": 20
       }
+    },
+    "main_hero_bAmikr": {
+      "type": "main-hero",
+      "name": "Main Hero",
+      "settings": {
+        "hero_link": "",
+        "logo_width": 200,
+        "subheadline": "RAVE ILLUMINATION",
+        "button1_text": "BOOK NOW",
+        "button1_link": "",
+        "button2_text": "",
+        "button2_link": ""
+      }
     }
   },
-  "order": ["header"]
+  "order": [
+    "header",
+    "main_hero_bAmikr"
+  ]
 }

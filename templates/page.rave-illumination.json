@@ -11,13 +11,138 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "rich_text_dceREC": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_bik6YE": {
+          "type": "heading",
+          "settings": {
+            "heading": "ILLUMINATION RETREAT",
+            "heading_size": "h1"
+          }
+        },
+        "text_eRULGQ": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_bik6YE",
+        "text_eRULGQ"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "collage_CEhLEc": {
+      "type": "collage",
+      "blocks": {
+        "image_zfyejn": {
+          "type": "image",
+          "settings": {}
+        },
+        "image_TU8tax": {
+          "type": "image",
+          "settings": {}
+        },
+        "image_6Xarer": {
+          "type": "image",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "image_zfyejn",
+        "image_TU8tax",
+        "image_6Xarer"
+      ],
+      "name": "t:sections.collage.presets.name",
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "desktop_layout": "left",
+        "mobile_layout": "column",
+        "card_styles": "product-card-wrapper",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multirow_P4MafE": {
+      "type": "multirow",
+      "blocks": {
+        "row_HV86Dh": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/4J7A1695.jpg",
+            "caption": "YOGA",
+            "heading": "HELEN ERICHSEN",
+            "text": "<p>Helen (@helenerichsen) is a vinyasa yoga teacher and the founder  RAVE Yoga. Combining her background in media and marketing with her passion for yoga and well-being, RAVE's unique angle is expressed through creating immersive wellness experiences in any space. Helen's creative energy lies within transforming spaces into yoga studios, using the RAVE equipment and attention to every detail. Her classes are dynamic and usually include upbeat music with an indie influence. She loves to incorporate breathwork as well as aromatherapy into her classes. Her classes are open to all levels and focus on finding balance through deeper mental and physical connection with the self. Rather than doing yoga to be good at yoga, the approach is to do yoga to be better at 'doing' life.</p>",
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        },
+        "row_YGYqTb": {
+          "type": "row",
+          "settings": {
+            "caption": "SOUND + ASTROLOGY",
+            "heading": "JENNY",
+            "text": "<p>Jenny is our retreat astrologer and sound bath facilitator, with a deep reverence for the transformative power of vibration. She will guide us on a journey of personal transformation through astrology workshops and one-to-one support—using your unique astrological blueprint as a tool for growth, insight, and evolution. With a background in intuitive sound therapy and sacred instruments, Jenny also creates immersive soundscapes that bring the body and mind into deep rest. Her sessions offer a space to soften, surrender, and attune to subtle inner shifts—where true transition begins.</p>",
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        },
+        "row_wP4RTC": {
+          "type": "row",
+          "settings": {
+            "caption": "FOOD",
+            "heading": "Row",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "row_HV86Dh",
+        "row_YGYqTb",
+        "row_wP4RTC"
+      ],
+      "name": "t:sections.multirow.presets.name",
+      "settings": {
+        "image_height": "medium",
+        "desktop_image_width": "medium",
+        "image_layout": "alternate-left",
+        "heading_size": "h1",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "row_color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "rich_text_dceREC",
+    "collage_CEhLEc",
+    "multirow_P4MafE"
   ]
 }
