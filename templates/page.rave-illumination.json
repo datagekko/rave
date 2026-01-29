@@ -231,7 +231,7 @@
         "heading_size": "h1",
         "image_width": "full",
         "image_ratio": "adapt",
-        "button_label": "Button label",
+        "button_label": "",
         "button_link": "",
         "custom_id": "",
         "columns_desktop": 3,
@@ -243,6 +243,74 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "rave_booking_cards_Rn6qCD": {
+      "type": "rave-booking-cards",
+      "blocks": {
+        "booking_card_6mkUrA": {
+          "type": "booking_card",
+          "settings": {
+            "title": "SHARED ROOM",
+            "subtitle": "The Communal Vibe",
+            "feature_1": "A cozy single bed in a beautiful shared space (2-4 people).",
+            "feature_2": "Perfect for solo travellers or those looking to connect.",
+            "feature_3": "All-inclusive retreat access.",
+            "price": "5.500 DKK",
+            "button_label": "Book Your Spot",
+            "button_link": "",
+            "sold_out": false,
+            "waitlist_button_label": "Join Waitlist",
+            "scarcity_badge_text": ""
+          }
+        },
+        "booking_card_QrCjKD": {
+          "type": "booking_card",
+          "settings": {
+            "title": "DOUBLE ROOM",
+            "subtitle": "Share with a Friend",
+            "feature_1": "A private room with a king-size bed for two.",
+            "feature_2": "Ideal for partners, friends, or family joining together.",
+            "feature_3": "Price is for the entire room (2 people).",
+            "price": "11.000 DKK",
+            "button_label": "Book Your Room",
+            "button_link": "",
+            "sold_out": false,
+            "waitlist_button_label": "Join Waitlist",
+            "scarcity_badge_text": "Only 2 spots left"
+          }
+        },
+        "booking_card_Hcpaye": {
+          "type": "booking_card",
+          "settings": {
+            "title": "PRIVATE ROOM",
+            "subtitle": "Your Personal Sanctuary",
+            "feature_1": "Your own private room for ultimate peace and quiet.",
+            "feature_2": "A space to drop in and fully tune out.",
+            "feature_3": "For that extra bit of privacy.",
+            "price": "5.500 DKK",
+            "button_label": "Book Your Spot",
+            "button_link": "",
+            "sold_out": true,
+            "waitlist_button_label": "Join Waitlist",
+            "scarcity_badge_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "booking_card_6mkUrA",
+        "booking_card_QrCjKD",
+        "booking_card_Hcpaye"
+      ],
+      "name": "Rave Booking Cards",
+      "settings": {
+        "heading": "CHOOSE YOUR SPACE",
+        "subtitle": "Come as you are. Find a reset that feels right for you.",
+        "testimonial_heading": "FEEL BETTER, TOGETHER",
+        "invitation_heading": "READY TO RESET?",
+        "invitation_text": "<p>We've created this space for you to disconnect from the noise and reconnect with what matters. Movement, mindfulness, and human connection—without the heaviness. We can't wait to share it with you.</p>",
+        "invitation_button_label": "View Room Options",
+        "invitation_button_link": ""
+      }
     }
   },
   "order": [
@@ -251,6 +319,7 @@
     "collage_CEhLEc",
     "multirow_P4MafE",
     "collage_VVHGrU",
-    "multicolumn_r3wXHz"
+    "multicolumn_r3wXHz",
+    "rave_booking_cards_Rn6qCD"
   ]
 }
