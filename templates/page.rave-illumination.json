@@ -17,6 +17,54 @@
         "padding_bottom": 28
       }
     },
+    "image_banner_b9tyUW": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_AHhYLx": {
+          "type": "heading",
+          "settings": {
+            "heading": "RAVE ILLUMINATION",
+            "heading_size": "h1"
+          }
+        },
+        "text_kTRUrd": {
+          "type": "text",
+          "settings": {
+            "text": "Dive into summer with us in an enchanted village in the swedish forest",
+            "text_style": "body"
+          }
+        },
+        "buttons_YX6hKc": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_AHhYLx",
+        "text_kTRUrd",
+        "buttons_YX6hKc"
+      ],
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": true,
+        "color_scheme": "",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": true
+      }
+    },
     "rich_text_dceREC": {
       "type": "rich-text",
       "blocks": {
@@ -179,11 +227,11 @@
           "settings": {
             "title": "FOOD",
             "price_text": "",
-            "price_color": "#3D2120",
+            "price_color": "#3d2120",
             "sold_out": false,
-            "sold_out_color": "#FF0000",
+            "sold_out_color": "#ff0000",
             "limited_spots": false,
-            "limited_spots_color": "#FF8C00",
+            "limited_spots_color": "#ff8c00",
             "text": "<p>Our retreat chef will prepare local and seasonal spreads with a focus on healthy and vegetarian produce.</p><p>Don't worry - there will be lots to fuel you during the day!</p><p>Snacks, coffee and tea will be available throughout the day. Every day there will be served a wholesome brunch and dinner, as well as a little afternoon snack or cake time.</p><p><br/></p><p>Please send us an e-mail with your dietary restrictions at <a href=\"mailto:hello@rave-yoga.com\">hello@rave-yoga.com</a></p>",
             "link_label": "",
             "link": ""
@@ -194,11 +242,11 @@
           "settings": {
             "title": "TRANSPORT",
             "price_text": "",
-            "price_color": "#3D2120",
+            "price_color": "#3d2120",
             "sold_out": false,
-            "sold_out_color": "#FF0000",
+            "sold_out_color": "#ff0000",
             "limited_spots": false,
-            "limited_spots_color": "#FF8C00",
+            "limited_spots_color": "#ff8c00",
             "text": "<p>The house is located 2h 30 minutes from Copenhagen by car and about the same by train.</p><p>A group will leave together from CPH central train station and be picked up with cars at the train station nearest to the house.</p><p></p><p>More transport info will be shared after booking.</p><p></p><p>We can help with all transport enquiries - just shoot us a mail at hello@rave-yoga.com</p>",
             "link_label": "",
             "link": ""
@@ -209,11 +257,11 @@
           "settings": {
             "title": "ROOMS",
             "price_text": "",
-            "price_color": "#3D2120",
+            "price_color": "#3d2120",
             "sold_out": false,
-            "sold_out_color": "#FF0000",
+            "sold_out_color": "#ff0000",
             "limited_spots": false,
-            "limited_spots_color": "#FF8C00",
+            "limited_spots_color": "#ff8c00",
             "text": "<p>All rooms in the houses are beautiful and unique. There are lots of bathrooms so everyone can enjoy their privacy. '</p><p>We have single private rooms, double private rooms as well as shared rooms available.</p><p>For any questions please e-mail <a href=\"mailto:hello@rave-yoga.com\">hello@rave-yoga.com</a></p>",
             "link_label": "",
             "link": ""
@@ -315,6 +363,7 @@
   },
   "order": [
     "main",
+    "image_banner_b9tyUW",
     "rich_text_dceREC",
     "collage_CEhLEc",
     "multirow_P4MafE",
