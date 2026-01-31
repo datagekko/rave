@@ -176,7 +176,7 @@
         "image_zfyejn": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/IMG_4944.jpg"
+            "image": "shopify://shop_images/30A2998-HDR.jpg"
           }
         },
         "image_TU8tax": {
@@ -188,7 +188,7 @@
         "image_6Xarer": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/070825_Residency_Upstairs_274.jpg"
+            "image": "shopify://shop_images/IMG_4944.jpg"
           }
         }
       },
@@ -271,15 +271,21 @@
       "blocks": {
         "image_4DCaih": {
           "type": "image",
-          "settings": {}
+          "settings": {
+            "image": "shopify://shop_images/070825_Residency_Interior_158.jpg"
+          }
         },
         "image_4aPCkh": {
           "type": "image",
-          "settings": {}
+          "settings": {
+            "image": "shopify://shop_images/070825_Residency_Upstairs_274.jpg"
+          }
         },
         "image_b3ENjE": {
           "type": "image",
-          "settings": {}
+          "settings": {
+            "image": "shopify://shop_images/Screenshot-2025-11-24-at-13.38.18.png"
+          }
         }
       },
       "block_order": [
