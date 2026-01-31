@@ -53,6 +53,7 @@
       ],
       "name": "t:sections.image-banner.presets.name",
       "settings": {
+        "image": "shopify://shop_images/070825_Residency_Upstairs_363.jpg",
         "image_overlay_opacity": 0,
         "image_height": "medium",
         "image_behavior": "none",
@@ -78,7 +79,7 @@
         "text_eRULGQ": {
           "type": "text",
           "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
+            "text": "<p>Join us under the bright summer sun for a weekend to reset, recharge, and illuminate.</p><p>Our next retreat takes place at Quarry Houses, a collection of traditional Swedish homes in Gylsboda, Skåne, set between forest and lakes.</p><p>Over the weekend, we will move, breathe, rest, and spend time outdoors. We'll immerse ourselves in a program of yoga, movement, breath, sauna and lake swims, nourishing meals, and long conversations that stretch into the long midsummer evening.</p><p>The theme for the retreat is Illumination. For us, that means creating space to feel clear, energised, and more aligned with your vision for the year of the Fire Horse. Through breath, sound, and intentional movement, we work with the body’s natural energy and nervous system to shift out of stagnation and into creation.</p><p>We’ll explore this further through workshops, astrology, and guided journalling. Everything is designed to spark creativity and reconnect you to your sense of expression.</p>"
           }
         }
       },
@@ -94,6 +95,79 @@
         "full_width": true,
         "padding_top": 40,
         "padding_bottom": 52
+      }
+    },
+    "multicolumn_DN4jXR": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_LyNrWt": {
+          "type": "column",
+          "settings": {
+            "title": "THE VILLAGE",
+            "price_text": "",
+            "price_color": "#3D2120",
+            "sold_out": false,
+            "sold_out_color": "#FF0000",
+            "limited_spots": false,
+            "limited_spots_color": "#FF8C00",
+            "text": "<p>Gylsboda is a rural village in Norra Skåne, surrounded by forests, quarries, and quiet lakes. The village has been home to writers, sculptors, and painters, who all left an imprint on this quiet village. The region, Norra Skåne, is known as the wild corner of the south, with forested hilly landscapes, historic rural architecture, and a diversity of wildlife.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_mri7qe": {
+          "type": "column",
+          "settings": {
+            "title": "THE HOUSES",
+            "price_text": "",
+            "price_color": "#3D2120",
+            "sold_out": false,
+            "sold_out_color": "#FF0000",
+            "limited_spots": false,
+            "limited_spots_color": "#FF8C00",
+            "text": "<p>The Quarry Houses in the enchanted Swedish forests are an incredible set of houses, carefully restored, with each one uniquely designed.</p><p>On the compound, there are several houses, lofts, and cottages, each with different bedrooms, sleeping lofts, and shared social spaces</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_ehNULD": {
+          "type": "column",
+          "settings": {
+            "title": "OUR RETREAT SCHEDULE",
+            "price_text": "",
+            "price_color": "#3D2120",
+            "sold_out": false,
+            "sold_out_color": "#FF0000",
+            "limited_spots": false,
+            "limited_spots_color": "#FF8C00",
+            "text": "<p>The price of the retreat includes 2 night’s accommodation at The Quarry Houses, all meals, snacks, tea, coffee, and water throughout the weekend, all retreat programming including daily yoga, daily sauna session with Löga Sauna, and workshops. Travel to and from Gylsboda will be at own cost, joint travel will be organised for those who want. </p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_LyNrWt",
+        "column_mri7qe",
+        "column_ehNULD"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "Button label",
+        "button_link": "",
+        "custom_id": "",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "collage_CEhLEc": {
@@ -232,7 +306,7 @@
             "sold_out_color": "#ff0000",
             "limited_spots": false,
             "limited_spots_color": "#ff8c00",
-            "text": "<p>Our retreat chef will prepare local and seasonal spreads with a focus on healthy and vegetarian produce.</p><p>Don't worry - there will be lots to fuel you during the day!</p><p>Snacks, coffee and tea will be available throughout the day. Every day there will be served a wholesome brunch and dinner, as well as a little afternoon snack or cake time.</p><p><br/></p><p>Please send us an e-mail with your dietary restrictions at <a href=\"mailto:hello@rave-yoga.com\">hello@rave-yoga.com</a></p>",
+            "text": "<p>Our chef is planning a full weekend of nourishing, plant focused meals driven by the season and nature around us. If you have any allergies or dietary restrictions, please let us know in advance so that we can accommodate. If you have any questions or special requests about the stay or practices in general, please reach out to us and we will guide you along the way. </p>",
             "link_label": "",
             "link": ""
           }
@@ -247,7 +321,7 @@
             "sold_out_color": "#ff0000",
             "limited_spots": false,
             "limited_spots_color": "#ff8c00",
-            "text": "<p>The house is located 2h 30 minutes from Copenhagen by car and about the same by train.</p><p>A group will leave together from CPH central train station and be picked up with cars at the train station nearest to the house.</p><p></p><p>More transport info will be shared after booking.</p><p></p><p>We can help with all transport enquiries - just shoot us a mail at hello@rave-yoga.com</p>",
+            "text": "<p>Gylsboda is located around 2.5 hours from Copenhagen. For those who wish to travel with us, we will arrange a joint trip with the Rave team on Friday early morning, coming back Sunday evening. Travel cost is not included in the retreat, but tickets can be purchased at the station, or in advance. </p><p></p><p></p><p>More transport info will be shared after booking.</p><p>We can help with all transport enquiries - just shoot us a mail at hello@rave-yoga.com</p>",
             "link_label": "",
             "link": ""
           }
@@ -262,7 +336,7 @@
             "sold_out_color": "#ff0000",
             "limited_spots": false,
             "limited_spots_color": "#ff8c00",
-            "text": "<p>All rooms in the houses are beautiful and unique. There are lots of bathrooms so everyone can enjoy their privacy. '</p><p>We have single private rooms, double private rooms as well as shared rooms available.</p><p>For any questions please e-mail <a href=\"mailto:hello@rave-yoga.com\">hello@rave-yoga.com</a></p>",
+            "text": "<p>On the compound, there are several houses, lofts, and cottages, each with different bedrooms, sleeping lofts, and shared social spaces.</p><p>Private rooms have closed access and shared bathrooms, while the sleeping lofts are charming loft spaces above shared living areas. Each space is unique in its own way.</p><p>For any questions please e-mail <a href=\"mailto:hello@rave-yoga.com\">hello@rave-yoga.com</a></p>",
             "link_label": "",
             "link": ""
           }
@@ -365,6 +439,7 @@
     "main",
     "image_banner_b9tyUW",
     "rich_text_dceREC",
+    "multicolumn_DN4jXR",
     "collage_CEhLEc",
     "multirow_P4MafE",
     "collage_VVHGrU",
