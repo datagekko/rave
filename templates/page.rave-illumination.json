@@ -175,15 +175,21 @@
       "blocks": {
         "image_zfyejn": {
           "type": "image",
-          "settings": {}
+          "settings": {
+            "image": "shopify://shop_images/IMG_4944.jpg"
+          }
         },
         "image_TU8tax": {
           "type": "image",
-          "settings": {}
+          "settings": {
+            "image": "shopify://shop_images/DSC05856.jpg"
+          }
         },
         "image_6Xarer": {
           "type": "image",
-          "settings": {}
+          "settings": {
+            "image": "shopify://shop_images/070825_Residency_Upstairs_274.jpg"
+          }
         }
       },
       "block_order": [
