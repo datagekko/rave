@@ -105,11 +105,11 @@
           "settings": {
             "title": "THE VILLAGE",
             "price_text": "",
-            "price_color": "#3D2120",
+            "price_color": "#3d2120",
             "sold_out": false,
-            "sold_out_color": "#FF0000",
+            "sold_out_color": "#ff0000",
             "limited_spots": false,
-            "limited_spots_color": "#FF8C00",
+            "limited_spots_color": "#ff8c00",
             "text": "<p>Gylsboda is a rural village in Norra Skåne, surrounded by forests, quarries, and quiet lakes. The village has been home to writers, sculptors, and painters, who all left an imprint on this quiet village. The region, Norra Skåne, is known as the wild corner of the south, with forested hilly landscapes, historic rural architecture, and a diversity of wildlife.</p>",
             "link_label": "",
             "link": ""
@@ -120,11 +120,11 @@
           "settings": {
             "title": "THE HOUSES",
             "price_text": "",
-            "price_color": "#3D2120",
+            "price_color": "#3d2120",
             "sold_out": false,
-            "sold_out_color": "#FF0000",
+            "sold_out_color": "#ff0000",
             "limited_spots": false,
-            "limited_spots_color": "#FF8C00",
+            "limited_spots_color": "#ff8c00",
             "text": "<p>The Quarry Houses in the enchanted Swedish forests are an incredible set of houses, carefully restored, with each one uniquely designed.</p><p>On the compound, there are several houses, lofts, and cottages, each with different bedrooms, sleeping lofts, and shared social spaces</p>",
             "link_label": "",
             "link": ""
@@ -135,11 +135,11 @@
           "settings": {
             "title": "OUR RETREAT SCHEDULE",
             "price_text": "",
-            "price_color": "#3D2120",
+            "price_color": "#3d2120",
             "sold_out": false,
-            "sold_out_color": "#FF0000",
+            "sold_out_color": "#ff0000",
             "limited_spots": false,
-            "limited_spots_color": "#FF8C00",
+            "limited_spots_color": "#ff8c00",
             "text": "<p>The price of the retreat includes 2 night’s accommodation at The Quarry Houses, all meals, snacks, tea, coffee throughout the weekend, all retreat programming including daily yoga, daily sauna session with Löga Sauna, and workshops. A consciously created goodie bag will be awaiting you as well.</p>",
             "link_label": "",
             "link": ""
@@ -320,7 +320,7 @@
             "sold_out_color": "#ff0000",
             "limited_spots": false,
             "limited_spots_color": "#ff8c00",
-            "text": "<p></p><p>This retreat can be booked as a single bed in a shared space, or as a double bed in either sleeping loft or private room–perfect for couples or friends who would like to stay together. If you are 3 or more friends looking to book and stay in the same house, contact us and we can look into room options. <br/><br/>Private rooms have closed access and shared bathrooms, while the sleeping lofts are charming loft spaces above shared living areas. Each space is unique in its own way.<br/></p><p>Each space is unique in its own way.</p><p>For any questions please e-mail <a href=\"mailto:hello@rave-yoga.com\">hello@rave-yoga.com</a></p>",
+            "text": "<p></p><p>This retreat can be booked as a single bed in a shared space, or as a double bed in either sleeping loft or private room–perfect for couples or friends who would like to stay together. If you are 3 or more friends looking to book and stay in the same house, contact us and we can look into room options. <br/><br/>Private rooms have closed access and shared bathrooms, while the sleeping lofts are charming loft spaces above shared living areas. <br/></p><p>Each space is unique in its own way.</p><p>For any questions please e-mail <a href=\"mailto:hello@rave-yoga.com\">hello@rave-yoga.com</a></p>",
             "link_label": "",
             "link": ""
           }
@@ -423,7 +423,7 @@
             "feature_1": "A double bed in a sleeping loft above a shared space for 2 people",
             "feature_2": "An open space for connection with all amenities",
             "feature_3": "Price is for 2 people in the sleeping loft and usage of shared space",
-            "price": "10.y00 DKK",
+            "price": "10.600 DKK",
             "button_label": "Book Your Spot",
             "button_link": "https://raveyoga.yogo.dk/frontend/index.html?itemType=event_first_installment&itemId=23274#/login-with-cart",
             "sold_out": false,
