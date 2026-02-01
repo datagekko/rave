@@ -226,6 +226,7 @@
         "row_YGYqTb": {
           "type": "row",
           "settings": {
+            "image": "shopify://shop_images/IMG_9118.heic",
             "caption": "SOUND + ASTROLOGY",
             "heading": "JENNY",
             "text": "<p>Jenny is our retreat astrologer and sound bath facilitator, with a deep reverence for the transformative power of vibration. She will guide us on a journey of personal transformation through astrology workshops and one-to-one support—using your unique astrological blueprint as a tool for growth, insight, and evolution. With a background in intuitive sound therapy and sacred instruments, Jenny also creates immersive soundscapes that bring the body and mind into deep rest. Her sessions offer a space to soften, surrender, and attune to subtle inner shifts—where true transition begins.</p>",
@@ -235,10 +236,11 @@
         },
         "row_wP4RTC": {
           "type": "row",
+          "disabled": true,
           "settings": {
-            "caption": "FOOD",
-            "heading": "Row",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "caption": "",
+            "heading": "",
+            "text": "",
             "button_label": "Button label",
             "button_link": ""
           }
@@ -308,6 +310,21 @@
     "multicolumn_r3wXHz": {
       "type": "multicolumn",
       "blocks": {
+        "column_7irLFt": {
+          "type": "column",
+          "settings": {
+            "title": "ROOMS",
+            "price_text": "",
+            "price_color": "#3d2120",
+            "sold_out": false,
+            "sold_out_color": "#ff0000",
+            "limited_spots": false,
+            "limited_spots_color": "#ff8c00",
+            "text": "<p></p><p>This retreat can be booked as a single bed in a shared space, or as a double bed in either sleeping loft or private room–perfect for couples or friends who would like to stay together. If you are 3 or more friends looking to book and stay in the same house, contact us and we can look into room options. <br/><br/>Private rooms have closed access and shared bathrooms, while the sleeping lofts are charming loft spaces above shared living areas. Each space is unique in its own way.<br/></p><p>Each space is unique in its own way.</p><p>For any questions please e-mail <a href=\"mailto:hello@rave-yoga.com\">hello@rave-yoga.com</a></p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
         "column_aLJLqG": {
           "type": "column",
           "settings": {
@@ -337,27 +354,12 @@
             "link_label": "",
             "link": ""
           }
-        },
-        "column_7irLFt": {
-          "type": "column",
-          "settings": {
-            "title": "ROOMS",
-            "price_text": "",
-            "price_color": "#3d2120",
-            "sold_out": false,
-            "sold_out_color": "#ff0000",
-            "limited_spots": false,
-            "limited_spots_color": "#ff8c00",
-            "text": "<p></p><p>This retreat can be booked as a single bed in a shared space, or as a double bed in either sleeping loft or private room–perfect for couples or friends who would like to stay together. If you are 3 or more friends looking to book and stay in the same house, contact us and we can look into room options. <br/><br/>Private rooms have closed access and shared bathrooms, while the sleeping lofts are charming loft spaces above shared living areas. Each space is unique in its own way.<br/></p><p>Each space is unique in its own way.</p><p>For any questions please e-mail <a href=\"mailto:hello@rave-yoga.com\">hello@rave-yoga.com</a></p>",
-            "link_label": "",
-            "link": ""
-          }
         }
       },
       "block_order": [
+        "column_7irLFt",
         "column_aLJLqG",
-        "column_hbxC8a",
-        "column_7irLFt"
+        "column_hbxC8a"
       ],
       "name": "t:sections.multicolumn.presets.name",
       "settings": {
