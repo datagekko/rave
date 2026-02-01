@@ -79,7 +79,7 @@
         "text_eRULGQ": {
           "type": "text",
           "settings": {
-            "text": "<p>Join us under the bright summer sun for a weekend to reset, recharge, and illuminate.</p><p>Our next retreat takes place at Quarry Houses, a collection of traditional Swedish homes in Gylsboda, Skåne, set between forest and lakes.</p><p>Over the weekend, we will move, breathe, rest, and spend time outdoors. We'll immerse ourselves in a program of yoga, movement, breath, sauna and lake swims, nourishing meals, and long conversations that stretch into the long midsummer evening.</p><p>The theme for the retreat is Illumination. For us, that means creating space to feel clear, energised, and more aligned with your vision for the year of the Fire Horse. Through breath, sound, and intentional movement, we work with the body’s natural energy and nervous system to shift out of stagnation and into creation.</p><p>We’ll explore this further through workshops, astrology, and guided journalling. Everything is designed to spark creativity and reconnect you to your sense of expression.</p>"
+            "text": "<p>Join us under the bright summer sun for a weekend to reset, recharge, and illuminate.</p><p>Our next retreat takes place at Quarry Houses, a collection of traditional Swedish homes in Gylsboda, Skåne, set between forest and lakes.</p><p>Over the weekend, we will move, breathe, rest, and spend time outdoors. We'll immerse ourselves in a program of yoga, movement, breath, sound healing, sauna and lake swims, nourishing meals, and long conversations that stretch into the long midsummer evening.</p><p>The theme for the retreat is Illumination. For us, that means creating space to feel clear, energised, and more aligned with your vision for the year and your high-vibrational self. Through breath, sound, and intentional movement, we work with the body’s natural energy and nervous system to shift out of stagnation and into creation. The creative energy of our surroundings will be a channel for us to go deep.</p><p>We’ll explore this further through workshops, astrology, and guided journalling. Everything is designed to spark creativity and reconnect you to your sense of expression.</p>"
           }
         }
       },
@@ -157,7 +157,7 @@
         "heading_size": "h1",
         "image_width": "full",
         "image_ratio": "adapt",
-        "button_label": "Button label",
+        "button_label": "",
         "button_link": "",
         "custom_id": "",
         "columns_desktop": 3,
