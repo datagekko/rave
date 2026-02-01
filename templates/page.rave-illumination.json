@@ -418,15 +418,15 @@
         "booking_card_Hcpaye": {
           "type": "booking_card",
           "settings": {
-            "title": "PRIVATE ROOM",
+            "title": "DOUBLE ROOM - SLEEPING LOFT",
             "subtitle": "Your Personal Sanctuary",
-            "feature_1": "Your own private room for ultimate peace and quiet.",
-            "feature_2": "A space to drop in and fully tune out.",
-            "feature_3": "For that extra bit of privacy.",
-            "price": "5.500 DKK",
+            "feature_1": "A double bed in a sleeping loft above a shared space for 2 people",
+            "feature_2": "An open space for connection with all amenities",
+            "feature_3": "Price is for 2 people in the sleeping loft and usage of shared space",
+            "price": "10.y00 DKK",
             "button_label": "Book Your Spot",
-            "button_link": "",
-            "sold_out": true,
+            "button_link": "https://raveyoga.yogo.dk/frontend/index.html?itemType=event_first_installment&itemId=23274#/login-with-cart",
+            "sold_out": false,
             "waitlist_button_label": "Join Waitlist",
             "scarcity_badge_text": ""
           }
