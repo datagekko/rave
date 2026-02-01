@@ -393,7 +393,7 @@
             "feature_3": "All-inclusive retreat access.",
             "price": "5.300 DKK",
             "button_label": "Book Your Spot",
-            "button_link": "https://raveyoga.yogo.dk/frontend/index.html?itemType=event_first_installment&itemId=23272#/login-with-cart",
+            "button_link": "https://raveyoga.yogo.dk/frontend/index.html?itemType=event&itemId=23272#/login-with-cart",
             "sold_out": false,
             "waitlist_button_label": "Join Waitlist",
             "scarcity_badge_text": ""
