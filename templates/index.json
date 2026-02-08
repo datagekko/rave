@@ -24,7 +24,7 @@
         "button1_text": "SHOP NOW",
         "button1_link": "shopify://collections/bestseller",
         "button2_text": "CLASSES",
-        "button2_link": "shopify://collections/bestseller"
+        "button2_link": "shopify://pages/schedule"
       }
     }
   },
