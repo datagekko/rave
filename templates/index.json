@@ -21,12 +21,14 @@
         "logo": "shopify://shop_images/RAVE-logo-white.png",
         "logo_width": 200,
         "subheadline": "SOCIAL WELLNESS EXPERIENCES",
-        "button1_text": "SCHEDULE",
-        "button1_link": "shopify://pages/schedule",
-        "button2_text": "SHOP NOW",
+        "button1_text": "SHOP NOW",
+        "button1_link": "shopify://collections/bestseller",
+        "button2_text": "CLASSES",
         "button2_link": "shopify://collections/bestseller"
       }
     }
   },
-  "order": ["main_hero_RwWdKr"]
+  "order": [
+    "main_hero_RwWdKr"
+  ]
 }
