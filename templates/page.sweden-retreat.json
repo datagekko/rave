@@ -278,10 +278,10 @@
             "feature_1": "A cozy single bed in a beautiful shared space (2-4 people).",
             "feature_2": "Perfect for solo travellers or those looking to connect.",
             "feature_3": "All-inclusive retreat access.",
-            "price": "4.250 DKK",
+            "price": "6.200 DKK",
             "button_label": "BOOK NOW",
             "button_link": "https://raveyoga.yogo.dk/frontend/index.html?itemType=event&itemId=18287#/login-with-cart",
-            "sold_out": true,
+            "sold_out": false,
             "waitlist_button_label": "Join Waitlist",
             "scarcity_badge_text": ""
           }
@@ -294,10 +294,10 @@
             "feature_1": "A private room with a king-size bed for two.",
             "feature_2": "Ideal for partners, friends, or family joining together.",
             "feature_3": "Price is for the entire room (2 people).",
-            "price": "8.500 DKK",
+            "price": "12.500 DKK",
             "button_label": "BOOK NOW",
             "button_link": "https://raveyoga.yogo.dk/frontend/index.html?itemType=event&itemId=18388#/login-with-cart",
-            "sold_out": true,
+            "sold_out": false,
             "waitlist_button_label": "SOLD OUT",
             "scarcity_badge_text": "Only few spots left"
           }
@@ -310,10 +310,10 @@
             "feature_1": "Your own private room for ultimate peace and quiet.",
             "feature_2": "A space to drop in and fully tune out.",
             "feature_3": "For that extra bit of privacy.",
-            "price": "5.500 DKK",
+            "price": "8.000 DKK",
             "button_label": "BOOK NOW",
             "button_link": "https://raveyoga.yogo.dk/frontend/index.html?itemType=event&itemId=18386#//login-with-cart",
-            "sold_out": true,
+            "sold_out": false,
             "waitlist_button_label": "SOLD OUT",
             "scarcity_badge_text": ""
           }
