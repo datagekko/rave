@@ -106,7 +106,7 @@
           "type": "row",
           "settings": {
             "image": "shopify://shop_images/LeonieAlma_Helen7.jpg",
-            "caption": "yoga",
+            "caption": "YANG PRACTICES: FLOW YOGA, SOUND, WORKSHOPS  + OUTDOOR ACTIVITIES",
             "heading": "helen erichsen",
             "text": "<p>Helen (@helenerichsen) is a vinyasa yoga teacher and the founder  RAVE Yoga. Combining her background in media and marketing with her passion for yoga and well-being, RAVE's unique angle is expressed through creating immersive wellness experiences in any space. Helen's creative energy lies within transforming spaces into yoga studios, using the RAVE equipment and attention to every detail. Her classes are dynamic and usually include upbeat music with an indie influence. She loves to incorporate breathwork as well as aromatherapy into her classes. Her classes are open to all levels and focus on finding balance through deeper mental and physical connection with the self. Rather than doing yoga to be good at yoga, the approach is to do yoga to be better at 'doing' life.</p>",
             "button_label": "Button label",
@@ -115,6 +115,7 @@
         },
         "row_qqwxUH": {
           "type": "row",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/IMG_6445.jpg",
             "caption": "FOOD",
@@ -128,7 +129,7 @@
           "type": "row",
           "settings": {
             "image": "shopify://shop_images/IMG_9118.heic",
-            "caption": "SOUND + ASTROLOGY",
+            "caption": "YIN PRACTICES: ASTROLOGY, SOUND + KUNDALINI",
             "heading": "JENNY",
             "text": "<p>Jenny is our retreat astrologer and sound bath facilitator, with a deep reverence for the transformative power of vibration. She will guide us on a journey of personal transformation through astrology workshops and one-to-one support—using your unique astrological blueprint as a tool for growth, insight, and evolution. With a background in intuitive sound therapy and sacred instruments, Jenny also creates immersive soundscapes that bring the body and mind into deep rest. Her sessions offer a space to soften, surrender, and attune to subtle inner shifts—where true transition begins.</p>",
             "button_label": "Button label",
