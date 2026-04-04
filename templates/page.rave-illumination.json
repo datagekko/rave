@@ -234,6 +234,17 @@
             "button_link": ""
           }
         },
+        "row_QrjfT7": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/Screenshot_2026-04-04_at_11.08.34.png",
+            "caption": "FOOD",
+            "heading": "TRINE",
+            "text": "<p>Trine has a passion for creating vibrant, feel-good meals that make you want to dance in your yoga pants. For the upcoming yoga retreat, she’s ready to whip up a feast that not only fuels your body but also lifts your spirit. Think of it as food that’s as zen as your downward dog—and as delicious as the first sip of water after a sun salutation.<br/><br/>With her Danish roots and Scandinavian flair, brings a little Nordic magic to the  retreat. Her cooking is inspired by the vibrant, seasonal produce of Denmark and Sweden, where fresh ingredients are celebrated in every meal, from foraged herbs and mushrooms to farm-fresh as well as tangy pickled vegetables. Each dish is a perfect match for the yoga vibes of the weekend—light, energizing, and oh-so-satisfying</p>",
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        },
         "row_wP4RTC": {
           "type": "row",
           "disabled": true,
@@ -249,6 +260,7 @@
       "block_order": [
         "row_HV86Dh",
         "row_YGYqTb",
+        "row_QrjfT7",
         "row_wP4RTC"
       ],
       "name": "t:sections.multirow.presets.name",
