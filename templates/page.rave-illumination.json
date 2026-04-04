@@ -580,7 +580,6 @@
         },
         "booking_card_mrxbgr": {
           "type": "booking_card",
-          "disabled": true,
           "settings": {
             "title": "GREEN SUITE",
             "subtitle": "Share with a group or group together <3",
