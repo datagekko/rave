@@ -402,12 +402,28 @@
         "booking_card_QrCjKD": {
           "type": "booking_card",
           "settings": {
-            "title": "PRIVATE DOUBLE ROOM",
-            "subtitle": "Share with a Friend",
-            "feature_1": "A private room with a king-size bed for two.",
+            "title": "PRIVATE DOUBLE LOFT ROOM",
+            "subtitle": "Share with a loved one",
+            "feature_1": "A private room with a king-size bed for two in a beautiful spacious penthouse.",
             "feature_2": "Ideal for partners, friends, or family joining together.",
             "feature_3": "Price is for the entire room (2 people).",
             "price": "10.600 DKK",
+            "button_label": "Book Your Spot",
+            "button_link": "https://raveyoga.yogo.dk/frontend/index.html?itemType=event_first_installment&itemId=23273#/login-with-cart",
+            "sold_out": false,
+            "waitlist_button_label": "Join Waitlist",
+            "scarcity_badge_text": ""
+          }
+        },
+        "booking_card_mrxbgr": {
+          "type": "booking_card",
+          "settings": {
+            "title": "GREEN SUITE",
+            "subtitle": "Share with a group or group together <3",
+            "feature_1": "A private apartment with 3 sleeping spaces. Ideal for partners, friends, or family joining together.",
+            "feature_2": "Features a private room with double bed, comfy day bed, private bathroom and shared kitchen.",
+            "feature_3": "Price is for the entire room (3 people). If you'd like to book this space in part, please reach out at hello@rave-yoga.com",
+            "price": "15.900 DKK",
             "button_label": "Book Your Spot",
             "button_link": "https://raveyoga.yogo.dk/frontend/index.html?itemType=event_first_installment&itemId=23273#/login-with-cart",
             "sold_out": false,
@@ -418,7 +434,8 @@
       },
       "block_order": [
         "booking_card_6mkUrA",
-        "booking_card_QrCjKD"
+        "booking_card_QrCjKD",
+        "booking_card_mrxbgr"
       ],
       "name": "Rave Booking Cards",
       "settings": {
