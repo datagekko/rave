@@ -386,7 +386,7 @@
         "booking_card_6mkUrA": {
           "type": "booking_card",
           "settings": {
-            "title": "SHARED ROOM",
+            "title": "SHARED LOFT ROOM",
             "subtitle": "The Communal Vibe",
             "feature_1": "A cozy single bed in a beautiful shared space. Sleeping loft shared with 1 other guest",
             "feature_2": "Perfect for solo travellers or those looking to connect.",
@@ -414,28 +414,11 @@
             "waitlist_button_label": "Join Waitlist",
             "scarcity_badge_text": ""
           }
-        },
-        "booking_card_Hcpaye": {
-          "type": "booking_card",
-          "settings": {
-            "title": "DOUBLE ROOM - SLEEPING LOFT",
-            "subtitle": "Your Personal Sanctuary",
-            "feature_1": "A double bed in a sleeping loft above a shared space for 2 people",
-            "feature_2": "An open space for connection with all amenities",
-            "feature_3": "Price is for 2 people in the sleeping loft and usage of shared space",
-            "price": "10.600 DKK",
-            "button_label": "Book Your Spot",
-            "button_link": "https://raveyoga.yogo.dk/frontend/index.html?itemType=event_first_installment&itemId=23274#/login-with-cart",
-            "sold_out": false,
-            "waitlist_button_label": "Join Waitlist",
-            "scarcity_badge_text": ""
-          }
         }
       },
       "block_order": [
         "booking_card_6mkUrA",
-        "booking_card_QrCjKD",
-        "booking_card_Hcpaye"
+        "booking_card_QrCjKD"
       ],
       "name": "Rave Booking Cards",
       "settings": {
