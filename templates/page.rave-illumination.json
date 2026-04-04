@@ -493,6 +493,141 @@
         "invitation_button_label": "",
         "invitation_button_link": ""
       }
+    },
+    "multicolumn_X6wikW": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_wUCQfn": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/070825_Residency_Upstairs_297.jpg",
+            "title": "PENTHOUSE DOUBLE",
+            "price_text": "",
+            "price_color": "#3D2120",
+            "sold_out": false,
+            "sold_out_color": "#FF0000",
+            "limited_spots": false,
+            "limited_spots_color": "#FF8C00",
+            "text": "",
+            "link_label": "book here",
+            "link": ""
+          }
+        },
+        "column_DUGpEH": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/070825_Residency_Upstairs_412.jpg",
+            "title": "SHARED LOFT ROOM",
+            "price_text": "",
+            "price_color": "#3D2120",
+            "sold_out": false,
+            "sold_out_color": "#FF0000",
+            "limited_spots": false,
+            "limited_spots_color": "#FF8C00",
+            "text": "",
+            "link_label": "book here",
+            "link": ""
+          }
+        },
+        "column_WakwTk": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/30A2983-HDR.jpg",
+            "title": "PRIVATE DOUBLE QUARRY HOUSE",
+            "price_text": "",
+            "price_color": "#3D2120",
+            "sold_out": false,
+            "sold_out_color": "#FF0000",
+            "limited_spots": false,
+            "limited_spots_color": "#FF8C00",
+            "text": "",
+            "link_label": "book here",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_wUCQfn",
+        "column_DUGpEH",
+        "column_WakwTk"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "custom_id": "",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multicolumn_bM43DC": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_XdbMwc": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/070825_Residency_Interior_021.jpg",
+            "title": "GREEN SUITE",
+            "price_text": "",
+            "price_color": "#3D2120",
+            "sold_out": false,
+            "sold_out_color": "#FF0000",
+            "limited_spots": false,
+            "limited_spots_color": "#FF8C00",
+            "text": "",
+            "link_label": "book here",
+            "link": ""
+          }
+        },
+        "column_TKkyD9": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/070825_Residency_Interior_126.jpg",
+            "title": "YELLOW SUITE",
+            "price_text": "",
+            "price_color": "#3D2120",
+            "sold_out": false,
+            "sold_out_color": "#FF0000",
+            "limited_spots": false,
+            "limited_spots_color": "#FF8C00",
+            "text": "",
+            "link_label": "book here",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_XdbMwc",
+        "column_TKkyD9"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "custom_id": "",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -504,6 +639,8 @@
     "multirow_P4MafE",
     "collage_VVHGrU",
     "multicolumn_r3wXHz",
-    "rave_booking_cards_Rn6qCD"
+    "rave_booking_cards_Rn6qCD",
+    "multicolumn_X6wikW",
+    "multicolumn_bM43DC"
   ]
 }
