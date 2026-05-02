@@ -546,22 +546,6 @@
             "scarcity_badge_text": "2 spots left"
           }
         },
-        "booking_card_QrCjKD": {
-          "type": "booking_card",
-          "settings": {
-            "title": "PRIVATE DOUBLE PENTHOUSE ROOM",
-            "subtitle": "Share with a loved one",
-            "feature_1": "A private room with a king-size bed for two in a beautiful spacious penthouse.",
-            "feature_2": "Ideal for partners, friends, or family joining together.",
-            "feature_3": "Price is for the entire room (2 people). Includes spacious loft and artist apartment, large kitchen and living space as well as balcony.",
-            "price": "10.700 DKK",
-            "button_label": "Book Your Spot",
-            "button_link": "https://raveyoga.yogo.dk/frontend/index.html?itemType=event_first_installment&itemId=24938#/login-with-cart",
-            "sold_out": true,
-            "waitlist_button_label": "Join Waitlist",
-            "scarcity_badge_text": ""
-          }
-        },
         "booking_card_Egr3yh": {
           "type": "booking_card",
           "settings": {
@@ -576,6 +560,22 @@
             "sold_out": false,
             "waitlist_button_label": "Join Waitlist",
             "scarcity_badge_text": "1 spot left"
+          }
+        },
+        "booking_card_QrCjKD": {
+          "type": "booking_card",
+          "settings": {
+            "title": "PRIVATE DOUBLE PENTHOUSE ROOM",
+            "subtitle": "Share with a loved one",
+            "feature_1": "A private room with a king-size bed for two in a beautiful spacious penthouse.",
+            "feature_2": "Ideal for partners, friends, or family joining together.",
+            "feature_3": "Price is for the entire room (2 people). Includes spacious loft and artist apartment, large kitchen and living space as well as balcony.",
+            "price": "10.700 DKK",
+            "button_label": "Book Your Spot",
+            "button_link": "https://raveyoga.yogo.dk/frontend/index.html?itemType=event_first_installment&itemId=24938#/login-with-cart",
+            "sold_out": true,
+            "waitlist_button_label": "Join Waitlist",
+            "scarcity_badge_text": ""
           }
         },
         "booking_card_mrxbgr": {
@@ -613,8 +613,8 @@
       },
       "block_order": [
         "booking_card_6mkUrA",
-        "booking_card_QrCjKD",
         "booking_card_Egr3yh",
+        "booking_card_QrCjKD",
         "booking_card_mrxbgr",
         "booking_card_QK3Bcd"
       ],
