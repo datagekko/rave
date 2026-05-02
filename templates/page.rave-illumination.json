@@ -401,11 +401,11 @@
             "image": "shopify://shop_images/070825_Residency_Upstairs_297.jpg",
             "title": "PENTHOUSE DOUBLE",
             "price_text": "",
-            "price_color": "#3D2120",
+            "price_color": "#3d2120",
             "sold_out": false,
-            "sold_out_color": "#FF0000",
+            "sold_out_color": "#ff0000",
             "limited_spots": false,
-            "limited_spots_color": "#FF8C00",
+            "limited_spots_color": "#ff8c00",
             "text": "",
             "link_label": "",
             "link": ""
@@ -417,11 +417,11 @@
             "image": "shopify://shop_images/070825_Residency_Upstairs_412.jpg",
             "title": "SHARED LOFT ROOM",
             "price_text": "",
-            "price_color": "#3D2120",
+            "price_color": "#3d2120",
             "sold_out": false,
-            "sold_out_color": "#FF0000",
+            "sold_out_color": "#ff0000",
             "limited_spots": false,
-            "limited_spots_color": "#FF8C00",
+            "limited_spots_color": "#ff8c00",
             "text": "",
             "link_label": "",
             "link": ""
@@ -433,11 +433,11 @@
             "image": "shopify://shop_images/30A2983-HDR.jpg",
             "title": "PRIVATE DOUBLE QUARRY HOUSE",
             "price_text": "",
-            "price_color": "#3D2120",
+            "price_color": "#3d2120",
             "sold_out": false,
-            "sold_out_color": "#FF0000",
+            "sold_out_color": "#ff0000",
             "limited_spots": false,
-            "limited_spots_color": "#FF8C00",
+            "limited_spots_color": "#ff8c00",
             "text": "",
             "link_label": "",
             "link": ""
@@ -477,11 +477,11 @@
             "image": "shopify://shop_images/070825_Residency_Interior_021.jpg",
             "title": "GREEN SUITE",
             "price_text": "",
-            "price_color": "#3D2120",
+            "price_color": "#3d2120",
             "sold_out": false,
-            "sold_out_color": "#FF0000",
+            "sold_out_color": "#ff0000",
             "limited_spots": false,
-            "limited_spots_color": "#FF8C00",
+            "limited_spots_color": "#ff8c00",
             "text": "",
             "link_label": "",
             "link": ""
@@ -493,11 +493,11 @@
             "image": "shopify://shop_images/070825_Residency_Interior_126.jpg",
             "title": "YELLOW SUITE",
             "price_text": "",
-            "price_color": "#3D2120",
+            "price_color": "#3d2120",
             "sold_out": false,
-            "sold_out_color": "#FF0000",
+            "sold_out_color": "#ff0000",
             "limited_spots": false,
-            "limited_spots_color": "#FF8C00",
+            "limited_spots_color": "#ff8c00",
             "text": "",
             "link_label": "",
             "link": ""
@@ -557,7 +557,7 @@
             "price": "10.700 DKK",
             "button_label": "Book Your Spot",
             "button_link": "https://raveyoga.yogo.dk/frontend/index.html?itemType=event_first_installment&itemId=24938#/login-with-cart",
-            "sold_out": false,
+            "sold_out": true,
             "waitlist_button_label": "Join Waitlist",
             "scarcity_badge_text": ""
           }
@@ -575,7 +575,7 @@
             "button_link": "",
             "sold_out": false,
             "waitlist_button_label": "Join Waitlist",
-            "scarcity_badge_text": ""
+            "scarcity_badge_text": "1 spot left"
           }
         },
         "booking_card_mrxbgr": {
