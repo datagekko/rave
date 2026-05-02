@@ -605,7 +605,7 @@
             "price": "16.000 DKK",
             "button_label": "Book Your Spot",
             "button_link": "https://raveyoga.yogo.dk/frontend/index.html?itemType=event_first_installment&itemId=23273#/login-with-cart",
-            "sold_out": false,
+            "sold_out": true,
             "waitlist_button_label": "Join Waitlist",
             "scarcity_badge_text": ""
           }
