@@ -533,17 +533,17 @@
         "booking_card_6mkUrA": {
           "type": "booking_card",
           "settings": {
-            "title": "SHARED LOFT ROOM",
+            "title": "SHARED ROOM",
             "subtitle": "The Communal Vibe",
-            "feature_1": "A cozy single bed in a beautiful shared space. Sleeping loft shared with 1 other guest.",
+            "feature_1": "A cozy single bed in a beautiful shared space. Sleeping loft shared with 1 other guest or daybed.",
             "feature_2": "Perfect for solo travellers or those looking to connect.",
             "feature_3": "Includes spacious loft and artist apartment, large kitchen and living space as well as balcony.",
             "price": "5.300 DKK",
             "button_label": "Book Your Spot",
             "button_link": "https://raveyoga.yogo.dk/frontend/index.html?itemType=event_first_installment&itemId=23272#/login-with-cart",
-            "sold_out": true,
+            "sold_out": false,
             "waitlist_button_label": "Join Waitlist",
-            "scarcity_badge_text": "2 spots left"
+            "scarcity_badge_text": "1 spot left"
           }
         },
         "booking_card_mrxbgr": {
