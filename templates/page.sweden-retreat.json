@@ -313,7 +313,7 @@
             "feature_3": "For that extra bit of privacy.",
             "price": "7.100 DKK",
             "button_label": "BOOK NOW",
-            "button_link": "https://raveyoga.yogo.dk/frontend/index.html?itemType=event&itemId=18386#//login-with-cart",
+            "button_link": "https://raveyoga.yogo.dk/frontend/index.html?itemType=event_first_installment&itemId=26565#/login-with-cart",
             "sold_out": false,
             "waitlist_button_label": "SOLD OUT",
             "scarcity_badge_text": ""
