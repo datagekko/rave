@@ -199,6 +199,21 @@
     "multicolumn_c4aEYN": {
       "type": "multicolumn",
       "blocks": {
+        "column_RW3KF6": {
+          "type": "column",
+          "settings": {
+            "title": "WHAT'S INCLUDED",
+            "price_text": "",
+            "price_color": "#3d2120",
+            "sold_out": false,
+            "sold_out_color": "#ff0000",
+            "limited_spots": false,
+            "limited_spots_color": "#ff8c00",
+            "text": "<p>Your ticket purchase includes the entire retreat weekend with accomodation at the house, all practices, food, a goodie bag and assistance with transport arrangements.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
         "column_LU48tL": {
           "type": "column",
           "settings": {
@@ -246,6 +261,7 @@
         }
       },
       "block_order": [
+        "column_RW3KF6",
         "column_LU48tL",
         "column_ApWG37",
         "column_WTAQee"
