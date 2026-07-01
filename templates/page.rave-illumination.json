@@ -554,12 +554,12 @@
             "feature_1": "A private apartment with 3 sleeping spaces. Ideal for friends or family joining together.",
             "feature_2": "Features a private room with double bed, a comfy day bed, private bathroom and shared kitchen.",
             "feature_3": "Price is for 2 people. If you'd like to book this space partly, or add a third, please reach out at hello@rave-yoga.com",
-            "price": "10.700 DKK for 2 people",
+            "price": "10.700 DKK",
             "button_label": "Book Your Spot",
             "button_link": "https://raveyoga.yogo.dk/frontend/index.html?itemType=event_first_installment&itemId=24939#/login-with-cart",
             "sold_out": false,
             "waitlist_button_label": "Join Waitlist",
-            "scarcity_badge_text": ""
+            "scarcity_badge_text": "1 spot left"
           }
         },
         "booking_card_Egr3yh": {
