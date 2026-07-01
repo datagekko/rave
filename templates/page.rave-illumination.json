@@ -53,7 +53,7 @@
       ],
       "name": "t:sections.image-banner.presets.name",
       "settings": {
-        "image": "shopify://shop_images/070825_Residency_Upstairs_363.jpg",
+        "image": "shopify://shop_images/20260606_RaveYogaRetreat_Gyldsboda_0424.jpg",
         "image_overlay_opacity": 0,
         "image_height": "medium",
         "image_behavior": "none",
@@ -176,13 +176,13 @@
         "image_zfyejn": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/30A2986-HDR-2.jpg"
+            "image": "shopify://shop_images/20260606_RaveYogaRetreat_Gyldsboda_0002.jpg"
           }
         },
         "image_TU8tax": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/IMG_2003.jpg"
+            "image": "shopify://shop_images/20260606_RaveYogaRetreat_Gyldsboda_0266.jpg"
           }
         },
         "image_6Xarer": {
