@@ -470,6 +470,38 @@
                   </div>
                 </div>
               </div>
+
+              {% if block.settings.retreat3_title != blank %}
+                <div class="retreats-grid__item">
+                  {% if block.settings.retreat3_image != blank %}
+                    <a href="{{ block.settings.retreat3_url }}" class="retreats-grid__image-link">
+                      <div class="retreats-grid__image">
+                        {% assign img_url = block.settings.retreat3_image | img_url: '1600x' %}
+                        <img
+                          srcset="{{ img_url }} 1x, {{ block.settings.retreat3_image | img_url: '1600x', scale: 2 }} 2x"
+                          src="{{ img_url }}"
+                          alt="{{ block.settings.retreat3_image.alt | escape }}"
+                          loading="lazy"
+                          width="{{ block.settings.retreat3_image.width }}"
+                          height="{{ block.settings.retreat3_image.height }}"
+                        >
+                      </div>
+                    </a>
+                  {% endif %}
+                  <div class="retreats-grid__info">
+                    <div class="retreats-grid__left">
+                      <h2 class="retreats-grid__title">{{ block.settings.retreat3_title }}</h2>
+                      <a href="{{ block.settings.retreat3_url }}" class="retreats-grid__link">
+                        {{- 'sections.custom_page_blocks.read_more' | t -}}
+                      </a>
+                    </div>
+                    <div class="retreats-grid__right">
+                      <div class="retreats-grid__location">{{ block.settings.retreat3_location }}</div>
+                      <div class="retreats-grid__date">{{ block.settings.retreat3_date }}</div>
+                    </div>
+                  </div>
+                </div>
+              {% endif %}
             </div>
           </div>
         </div>
@@ -1119,6 +1151,38 @@
         {
           "type": "text",
           "id": "retreat2_date",
+          "label": "Date",
+          "default": "Date"
+        },
+        {
+          "type": "header",
+          "content": "Retreat 3"
+        },
+        {
+          "type": "image_picker",
+          "id": "retreat3_image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "retreat3_title",
+          "label": "Title",
+          "default": "Retreat Title"
+        },
+        {
+          "type": "url",
+          "id": "retreat3_url",
+          "label": "Link URL"
+        },
+        {
+          "type": "text",
+          "id": "retreat3_location",
+          "label": "Location",
+          "default": "Location"
+        },
+        {
+          "type": "text",
+          "id": "retreat3_date",
           "label": "Date",
           "default": "Date"
         }
