@@ -1449,11 +1449,3 @@
   }
 }
 
-/* Drittes Retreat: volle Breite, eigene Zeile darunter (unter Retreat 1 & 2) */
-@media screen and (min-width: 750px) {
-  .retreats-grid__item:nth-child(3) {
-    width: 100%;
-    border-right: none !important;
-    border-top: 1px solid var(--rave-color-accent, #412f26);
-  }
-}
