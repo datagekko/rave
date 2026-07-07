@@ -572,7 +572,7 @@
             "feature_3": "Price is for the entire room (2 people).",
             "price": "10.700 DKK",
             "button_label": "Book Your Spot",
-            "button_link": "https://raveyoga.yogo.dk/frontend/index.html?itemType=event&itemId=23273#/login-with-cart",
+            "button_link": "https://raveyoga.yogo.dk/frontend/index.html?itemType=event_first_installment&itemId=27261#/login-with-cart",
             "sold_out": false,
             "waitlist_button_label": "Join Waitlist",
             "scarcity_badge_text": "2 spots left"
