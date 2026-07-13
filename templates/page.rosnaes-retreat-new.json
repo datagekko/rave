@@ -44,7 +44,7 @@
         "text_zpWxmK": {
           "type": "text",
           "settings": {
-            "text": "<p>Escape the city and join us for a full day of slowing down in the beautiful countryside of Rosnæs, Denmark.</p><p>Together with Veatery and mindfulness guide Alex Watson, we'll spend the day moving, breathing and reconnecting through yoga, mindfulness, sound healing, sauna rituals, time in nature and nourishing seasonal food.</p><p>As a special treat, every guest will receive a curated goodie bag featuring products from our main sponsor Mantle, alongside gifts from some of our favorite partner brands.</p><p>A day to pause, recharge and connect—with yourself, nature and a like-minded community.</p>"
+            "text": "<p>Join us for a full day of slowing down in the beautiful countryside of Rosnæs, Denmark. A chance to step away from the pace of everyday life and reconnect through movement, nature, nourishing food, and meaningful moments.</p><p>The day begins with a grounding yoga flow led by Helen, designed to awaken the body, calm the mind, and set an intentional tone for the day. Later, Helen will guide a deeply restorative sound healing session, creating space for stillness, relaxation, and deep rest.</p><p>Mindfulness guide Alex Watson will lead you through mindful practices and breathwork, offering tools to reconnect with the breath, regulate the nervous system, and cultivate a greater sense of presence and inner calm.</p><p>Between sessions, there will be plenty of time to unwind — enjoy the peaceful surroundings, join the sauna ritual, connect with others, read, rest, or simply take a quiet moment for yourself.</p><p>Throughout the day, Camille from Veatery will nourish us with vibrant, seasonal meals created from fresh ingredients. Expect wholesome dishes, healthy snacks, tea, and coffee, all designed to support your energy and complement the retreat experience.</p><p>As a special gift, every guest will receive a thoughtfully curated goodie bag featuring products from our main sponsor Mantle, together with handpicked favorites from some of the brands we love.</p><p>Whether you’re joining alone or with a friend, this day retreat is an invitation to slow down, recharge, and leave feeling grounded, inspired, and deeply nourished in body, mind, and soul.</p><p>Guests arriving by train will be picked up from the station and brought to the retreat location, making your journey as smooth and relaxed as possible. Further information will be sent upon sign-up &lt;3</p>"
           }
         }
       },
@@ -99,77 +99,6 @@
         "padding_bottom": 36
       }
     },
-    "multirow_UNJfmQ": {
-      "type": "multirow",
-      "blocks": {
-        "row_DzFE4w": {
-          "type": "row",
-          "settings": {
-            "image": "shopify://shop_images/LeonieAlma_Helen7.jpg",
-            "caption": "FLOW YOGA AND SOUND",
-            "heading": "helen erichsen",
-            "text": "<p>Helen (@helenerichsen) is a vinyasa yoga teacher and the founder of RAVE Yoga. Combining creativity, movement and wellness, she creates immersive yoga experiences that transform any space into a place of connection and presence. Her dynamic classes blend breathwork, music and mindful movement, inviting all levels to reconnect with themselves and bring more balance into everyday life.</p>",
-            "button_label": "Button label",
-            "button_link": ""
-          }
-        },
-        "row_qqwxUH": {
-          "type": "row",
-          "disabled": true,
-          "settings": {
-            "image": "shopify://shop_images/IMG_6445.jpg",
-            "caption": "FOOD",
-            "heading": "PHOEBE - VENN DINING",
-            "text": "<p>VENN is a dining concept that unites people through the shared experience of eating. Founded by Phoebe Elsa Jordan, where a background in building community and lifelong passion for organic food forms a meeting point, a Venn diagram. VENN crafts nourishing, authentic and indulgent dining experiences where shared platters forge an immediate connection amongst diners. Rooted in a natural holistic approach, VENN is founded on the principles of organic, seasonal produce, highlighting the magic, diversity and bold flavours of the vegetable world.</p>",
-            "button_label": "Button label",
-            "button_link": ""
-          }
-        },
-        "row_mWmkRh": {
-          "type": "row",
-          "settings": {
-            "image": "shopify://shop_images/MP_AWY_Desert_52_JPEG.png",
-            "caption": "MINDFULNESS AND BREATH",
-            "heading": "ALEX WATSON",
-            "text": "<p>Alex creates spaces for slowing down, reconnecting, and turning inward. Through mindful practices and intentional guidance, she invites participants to step away from the noise of everyday life and cultivate a deeper connection with themselves.</p><p>Her sessions combine elements of mindfulness, breathwork, meditation, and embodied practices to support relaxation, awareness, and emotional balance. With a gentle and intuitive approach, Alex guides participants toward a greater sense of calm, clarity, and presence.</p><p>Her work is grounded in the belief that creating space within ourselves allows us to move through life with more ease and connection. By bringing attention back to the breath and the body, she offers a nurturing environment where stillness, reflection, and inner balance can naturally unfold.</p>",
-            "button_label": "Button label",
-            "button_link": ""
-          }
-        },
-        "row_KkimNJ": {
-          "type": "row",
-          "settings": {
-            "image": "shopify://shop_images/IMG_6549.jpg",
-            "caption": "FOOD AND DRINKS",
-            "heading": "VEATERY",
-            "text": "<p>Camille from Veatery brings a deep appreciation for food as a way to nourish, connect, and create meaningful moments together. With a passion for seasonal, plant-based cuisine, she creates dishes that are thoughtful, vibrant, and full of flavor.</p><p>Through Veatery, Camille transforms meals into experiences — celebrating fresh ingredients, beautiful presentation, and the joy of gathering around the table. Each dish is created with care, inviting guests to slow down, savor the moment, and reconnect through food.</p><p>For our retreat, Camille will prepare fresh and nourishing meals designed to support the day’s practices and leave you feeling energized, grounded, and deeply cared for.</p><p>Her work is grounded in the belief that creating space within ourselves allows us to move through life with more ease and connection. By bringing attention back to the breath and the body, she offers a nurturing environment where stillness, reflection, and inner balance can naturally unfold.</p>",
-            "button_label": "Button label",
-            "button_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "row_DzFE4w",
-        "row_qqwxUH",
-        "row_mWmkRh",
-        "row_KkimNJ"
-      ],
-      "settings": {
-        "image_height": "medium",
-        "desktop_image_width": "medium",
-        "image_layout": "align-left",
-        "heading_size": "h1",
-        "text_style": "body",
-        "button_style": "secondary",
-        "desktop_content_position": "middle",
-        "desktop_content_alignment": "left",
-        "mobile_content_alignment": "left",
-        "section_color_scheme": "",
-        "row_color_scheme": "",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "multicolumn_c4aEYN": {
       "type": "multicolumn",
       "blocks": {
@@ -208,7 +137,7 @@
         "column_X8rPEq": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/MP_AWY_Desert_52_JPEG.png",
+            "image": "shopify://shop_images/IMG_6549.jpg",
             "title": "NOURISHMENT",
             "price_text": "",
             "price_color": "#3d2120",
@@ -245,6 +174,81 @@
         "padding_bottom": 36
       }
     },
+    "multirow_UNJfmQ": {
+      "type": "multirow",
+      "blocks": {
+        "row_DzFE4w": {
+          "type": "row",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/LeonieAlma_Helen7.jpg",
+            "caption": "FLOW YOGA AND SOUND",
+            "heading": "helen erichsen",
+            "text": "<p>Helen (@helenerichsen) is a vinyasa yoga teacher and the founder of RAVE Yoga. Combining creativity, movement and wellness, she creates immersive yoga experiences that transform any space into a place of connection and presence. Her dynamic classes blend breathwork, music and mindful movement, inviting all levels to reconnect with themselves and bring more balance into everyday life.</p>",
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        },
+        "row_qqwxUH": {
+          "type": "row",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/IMG_6445.jpg",
+            "caption": "FOOD",
+            "heading": "PHOEBE - VENN DINING",
+            "text": "<p>VENN is a dining concept that unites people through the shared experience of eating. Founded by Phoebe Elsa Jordan, where a background in building community and lifelong passion for organic food forms a meeting point, a Venn diagram. VENN crafts nourishing, authentic and indulgent dining experiences where shared platters forge an immediate connection amongst diners. Rooted in a natural holistic approach, VENN is founded on the principles of organic, seasonal produce, highlighting the magic, diversity and bold flavours of the vegetable world.</p>",
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        },
+        "row_mWmkRh": {
+          "type": "row",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/MP_AWY_Desert_52_JPEG.png",
+            "caption": "MINDFULNESS AND BREATH",
+            "heading": "ALEX WATSON",
+            "text": "<p>Alex creates spaces for slowing down, reconnecting, and turning inward. Through mindful practices and intentional guidance, she invites participants to step away from the noise of everyday life and cultivate a deeper connection with themselves.</p><p>Her sessions combine elements of mindfulness, breathwork, meditation, and embodied practices to support relaxation, awareness, and emotional balance. With a gentle and intuitive approach, Alex guides participants toward a greater sense of calm, clarity, and presence.</p><p>Her work is grounded in the belief that creating space within ourselves allows us to move through life with more ease and connection. By bringing attention back to the breath and the body, she offers a nurturing environment where stillness, reflection, and inner balance can naturally unfold.</p>",
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        },
+        "row_KkimNJ": {
+          "type": "row",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/IMG_6549.jpg",
+            "caption": "FOOD AND DRINKS",
+            "heading": "VEATERY",
+            "text": "<p>Camille from Veatery brings a deep appreciation for food as a way to nourish, connect, and create meaningful moments together. With a passion for seasonal, plant-based cuisine, she creates dishes that are thoughtful, vibrant, and full of flavor.</p><p>Through Veatery, Camille transforms meals into experiences — celebrating fresh ingredients, beautiful presentation, and the joy of gathering around the table. Each dish is created with care, inviting guests to slow down, savor the moment, and reconnect through food.</p><p>For our retreat, Camille will prepare fresh and nourishing meals designed to support the day’s practices and leave you feeling energized, grounded, and deeply cared for.</p><p>Her work is grounded in the belief that creating space within ourselves allows us to move through life with more ease and connection. By bringing attention back to the breath and the body, she offers a nurturing environment where stillness, reflection, and inner balance can naturally unfold.</p>",
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "row_DzFE4w",
+        "row_qqwxUH",
+        "row_mWmkRh",
+        "row_KkimNJ"
+      ],
+      "disabled": true,
+      "settings": {
+        "image_height": "medium",
+        "desktop_image_width": "medium",
+        "image_layout": "align-left",
+        "heading_size": "h1",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "row_color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "rich_text_h8pYEA": {
       "type": "rich-text",
       "name": "t:sections.rich-text.presets.name",
@@ -263,8 +267,8 @@
     "main",
     "rich_text_NKRaMA",
     "collage_JUL6gg",
-    "multirow_UNJfmQ",
     "multicolumn_c4aEYN",
+    "multirow_UNJfmQ",
     "rich_text_h8pYEA"
   ]
 }
