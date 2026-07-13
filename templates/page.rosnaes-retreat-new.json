@@ -1,0 +1,385 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main_hero_P9Dn3N": {
+      "type": "main-hero",
+      "settings": {
+        "image_desktop": "shopify://shop_images/4J7A2783_d93d4903-1d47-43df-9dc4-3e3b012936e1.jpg",
+        "video_url": "",
+        "hero_link": "",
+        "logo_width": 200,
+        "subheadline": "RAVE TRANSITION - END OF SUMMER RETREAT",
+        "button1_text": "BOOK HERE",
+        "button1_link": "#room-options",
+        "button2_text": "",
+        "button2_link": ""
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "rich_text_NKRaMA": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_Cc4Jk9": {
+          "type": "heading",
+          "settings": {
+            "heading": "RAVE TRANSITION",
+            "heading_size": "h1"
+          }
+        },
+        "text_zpWxmK": {
+          "type": "text",
+          "settings": {
+            "text": "<p>A weekend of movement, nature and transition. Yoga practices, trail runs, breathwork, meditation, nourishing meals, workshops and time spent immersed in nature.</p><p>In late August, we retreat into the oasis that is our retreat mansion in Sweden. A majestic house set within sprawling land in the Swedish countryside, only an hour from Copenhagen. We will spend a long weekend soaking up the last of the summer warmth and light together.</p><p>The house offers the perfect setting to settle into the rhythm of the forest around us and the present moment. Explore the hidden corners of the estate, practice yoga in the old ballroom, move through the surrounding forests, light a fire in the tipi by the private lake, and sleep deeply after days spent outdoors. This weekend is for those who want to reset, reconnect and recharge as we transition into the colder months.</p><p>We start our mornings with longer yoga practices, each carrying a different theme to tune into the energy of the day. You will receive clear guidance into movement and practices suited to your individual body and level of experience.</p><p>The day continues with a beautiful brunch prepared indoors or outdoors by our wonderful chef. Afternoons are filled with forest hikes, trail runs, breathwork and meditation practices, reading, journaling, or simply slowing down in nature.</p><p>As evening arrives, we gather for delicious long-table dinners, share conversations around the fire, and soften into evening sound journeys.</p><p>Throughout the weekend, drinks and snacks will be available at all times, and you will receive a thoughtfully curated goodie bag including a retreat shirt and products from some of our favourite brands to accompany you beyond the retreat.<br/></p><p><br/><strong>Check-in:</strong> Thursday between 15:00-17:00.<br/><strong>Check-out:</strong> Sunday between 12:00–13:00.<br/><br/>Further information will be send out via email when signing up.<br/></p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_Cc4Jk9",
+        "text_zpWxmK"
+      ],
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "collage_JUL6gg": {
+      "type": "collage",
+      "blocks": {
+        "image_bHTmXf": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/4J7A2603.jpg"
+          }
+        },
+        "image_XyJT7X": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/4J7A2870.jpg"
+          }
+        },
+        "image_GEebTx": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/4J7A2902.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "image_bHTmXf",
+        "image_XyJT7X",
+        "image_GEebTx"
+      ],
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "desktop_layout": "left",
+        "mobile_layout": "column",
+        "card_styles": "product-card-wrapper",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multirow_UNJfmQ": {
+      "type": "multirow",
+      "blocks": {
+        "row_DzFE4w": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/LeonieAlma_Helen7.jpg",
+            "caption": "YANG PRACTICES: FLOW YOGA, SOUND, WORKSHOPS  + OUTDOOR ACTIVITIES",
+            "heading": "helen erichsen",
+            "text": "<p>Helen (@helenerichsen) is a vinyasa yoga teacher and the founder  RAVE Yoga. Combining her background in media and marketing with her passion for yoga and well-being, RAVE's unique angle is expressed through creating immersive wellness experiences in any space. Helen's creative energy lies within transforming spaces into yoga studios, using the RAVE equipment and attention to every detail. Her classes are dynamic and usually include upbeat music with an indie influence. She loves to incorporate breathwork as well as aromatherapy into her classes. Her classes are open to all levels and focus on finding balance through deeper mental and physical connection with the self. Rather than doing yoga to be good at yoga, the approach is to do yoga to be better at 'doing' life.</p>",
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        },
+        "row_qqwxUH": {
+          "type": "row",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/IMG_6445.jpg",
+            "caption": "FOOD",
+            "heading": "PHOEBE - VENN DINING",
+            "text": "<p>VENN is a dining concept that unites people through the shared experience of eating. Founded by Phoebe Elsa Jordan, where a background in building community and lifelong passion for organic food forms a meeting point, a Venn diagram. VENN crafts nourishing, authentic and indulgent dining experiences where shared platters forge an immediate connection amongst diners. Rooted in a natural holistic approach, VENN is founded on the principles of organic, seasonal produce, highlighting the magic, diversity and bold flavours of the vegetable world.</p>",
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        },
+        "row_mWmkRh": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/4J7A2973.jpg",
+            "caption": "YIN PRACTICES: SOUND + KUNDALINI",
+            "heading": "JENNY",
+            "text": "<p>Jenny is our retreat sound bath facilitator, with a deep reverence for the transformative power of vibration. With a background in intuitive sound therapy and sacred instruments, she creates immersive soundscapes that guide the body and mind into deep rest.</p><p>Her sessions offer a space to soften, surrender, and reconnect — allowing you to release, restore, and attune to subtle inner shifts. Through sound, presence, and deep listening, Jenny creates moments of stillness where true transformation can begin.</p>",
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "row_DzFE4w",
+        "row_qqwxUH",
+        "row_mWmkRh"
+      ],
+      "settings": {
+        "image_height": "medium",
+        "desktop_image_width": "medium",
+        "image_layout": "align-left",
+        "heading_size": "h1",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "row_color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "collage_T67BEJ": {
+      "type": "collage",
+      "blocks": {
+        "image_EkLQhq": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/4J7A2615.jpg"
+          }
+        },
+        "image_zM74x6": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/4J7A2623.jpg"
+          }
+        },
+        "image_yXxGcP": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/4J7A2632.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "image_EkLQhq",
+        "image_zM74x6",
+        "image_yXxGcP"
+      ],
+      "settings": {
+        "heading": "THE ROOMS",
+        "heading_size": "h1",
+        "desktop_layout": "left",
+        "mobile_layout": "column",
+        "card_styles": "product-card-wrapper",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multicolumn_c4aEYN": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_RW3KF6": {
+          "type": "column",
+          "settings": {
+            "title": "WHAT'S INCLUDED",
+            "price_text": "",
+            "price_color": "#3d2120",
+            "sold_out": false,
+            "sold_out_color": "#ff0000",
+            "limited_spots": false,
+            "limited_spots_color": "#ff8c00",
+            "text": "<p>Your ticket purchase includes the entire retreat weekend with accomodation at the house, all practices, food, a goodie bag and assistance with transport arrangements.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_LU48tL": {
+          "type": "column",
+          "settings": {
+            "title": "FOOD",
+            "price_text": "",
+            "price_color": "#3d2120",
+            "sold_out": false,
+            "sold_out_color": "#ff0000",
+            "limited_spots": false,
+            "limited_spots_color": "#ff8c00",
+            "text": "<p>We will prepare local and seasonal spreads with a focus on healthy and vegetarian produce.</p><p>Don't worry - there will be lots to fuel you during the day!</p><p>Snacks, coffee and tea will be available throughout the day. Every day there will be served a wholesome brunch and dinner, as well as a little afternoon snack or cake time.</p><p><br/></p><p>Please send us an e-mail with your dietary restrictions at <a href=\"mailto:hello@rave-yoga.com\">hello@rave-yoga.com</a></p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_ApWG37": {
+          "type": "column",
+          "settings": {
+            "title": "TRANSPORT",
+            "price_text": "",
+            "price_color": "#3d2120",
+            "sold_out": false,
+            "sold_out_color": "#ff0000",
+            "limited_spots": false,
+            "limited_spots_color": "#ff8c00",
+            "text": "<p>The house is located 50 minutes from Copenhagen by car, 1 hour by train from Copenhagen Central and 90 minutes from the airport. Upon arrival in Sweden, you will be picked up in cars. We are happy to help you arrange your transport, car sharing and more. </p><p>More transport info will be shared after booking.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_WTAQee": {
+          "type": "column",
+          "settings": {
+            "title": "YOUR ROOM",
+            "price_text": "",
+            "price_color": "#3d2120",
+            "sold_out": false,
+            "sold_out_color": "#ff0000",
+            "limited_spots": false,
+            "limited_spots_color": "#ff8c00",
+            "text": "<p>Every single room in the house is beautiful and unique. There are lots of bathrooms all over the house so everyone can enjoy their privacy. </p><p>We have single private rooms, double private rooms as well as shared rooms available.</p><p>For any questions please e-mail <a href=\"mailto:hello@rave-yoga.com\">hello@rave-yoga.com</a></p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_RW3KF6",
+        "column_LU48tL",
+        "column_ApWG37",
+        "column_WTAQee"
+      ],
+      "settings": {
+        "title": "PRACTICALITIES",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "custom_id": "",
+        "columns_desktop": 2,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rave_booking_cards_LqTDBm": {
+      "type": "rave-booking-cards",
+      "blocks": {
+        "booking_card_nJz4qR": {
+          "type": "booking_card",
+          "settings": {
+            "title": "SHARED ROOM",
+            "subtitle": "The Communal Vibe",
+            "feature_1": "A cozy single bed in a beautiful shared space (2-4 people).",
+            "feature_2": "Perfect for solo travellers or those looking to connect.",
+            "feature_3": "All-inclusive retreat access.",
+            "price": "5.300 DKK",
+            "button_label": "BOOK NOW",
+            "button_link": "https://raveyoga.yogo.dk/frontend/index.html?itemType=event_first_installment&itemId=26566#/login-with-cart",
+            "sold_out": false,
+            "waitlist_button_label": "Join Waitlist",
+            "scarcity_badge_text": ""
+          }
+        },
+        "booking_card_EaE9aG": {
+          "type": "booking_card",
+          "settings": {
+            "title": "DOUBLE PRIVATE ROOM",
+            "subtitle": "Share with a Friend",
+            "feature_1": "A private room with a king-size bed for two.",
+            "feature_2": "Ideal for partners, friends, or family joining together.",
+            "feature_3": "Price is for the entire room (2 people).",
+            "price": "10.700 DKK",
+            "button_label": "BOOK NOW",
+            "button_link": "https://raveyoga.yogo.dk/frontend/index.html?itemType=event_first_installment&itemId=26567#/login-with-cart",
+            "sold_out": false,
+            "waitlist_button_label": "SOLD OUT",
+            "scarcity_badge_text": ""
+          }
+        },
+        "booking_card_jYb4Df": {
+          "type": "booking_card",
+          "settings": {
+            "title": "SINGLE PRIVATE ROOM",
+            "subtitle": "Your Personal Sanctuary",
+            "feature_1": "Your own private room for ultimate peace and quiet.",
+            "feature_2": "A space to drop in and fully tune out.",
+            "feature_3": "For that extra bit of privacy.",
+            "price": "7.100 DKK",
+            "button_label": "BOOK NOW",
+            "button_link": "https://raveyoga.yogo.dk/frontend/index.html?itemType=event_first_installment&itemId=26565#/login-with-cart",
+            "sold_out": false,
+            "waitlist_button_label": "SOLD OUT",
+            "scarcity_badge_text": ""
+          }
+        },
+        "custom_text_RtmgiP": {
+          "type": "custom_text",
+          "settings": {
+            "text": "<p>For group bookings or to share a room, reach out to us directly at <a href=\"mailto:hello@rave-yoga.com\" title=\"mailto:hello@rave-yoga.com\">hello@rave-yoga.com</a>. We’ll help you create your perfect retreat, together.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "booking_card_nJz4qR",
+        "booking_card_EaE9aG",
+        "booking_card_jYb4Df",
+        "custom_text_RtmgiP"
+      ],
+      "settings": {
+        "heading": "CHOOSE YOUR SPACE",
+        "subtitle": "Come as you are. Find a reset that feels right for you. Pay in full or installments.",
+        "testimonial_heading": "FEEL BETTER, TOGETHER",
+        "invitation_heading": "",
+        "invitation_text": "",
+        "invitation_button_label": "",
+        "invitation_button_link": "#room-options"
+      }
+    },
+    "rich_text_h8pYEA": {
+      "type": "rich-text",
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": [
+    "main_hero_P9Dn3N",
+    "main",
+    "rich_text_NKRaMA",
+    "collage_JUL6gg",
+    "multirow_UNJfmQ",
+    "collage_T67BEJ",
+    "multicolumn_c4aEYN",
+    "rave_booking_cards_LqTDBm",
+    "rich_text_h8pYEA"
+  ]
+}
