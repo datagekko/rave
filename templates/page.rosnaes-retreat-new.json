@@ -251,6 +251,37 @@
     },
     "rich_text_h8pYEA": {
       "type": "rich-text",
+      "blocks": {
+        "heading_UU64wq": {
+          "type": "heading",
+          "settings": {
+            "heading": "Join us in ROSNÆS",
+            "heading_size": "h1"
+          }
+        },
+        "button_NjMY6C": {
+          "type": "button",
+          "settings": {
+            "button_label": "BOOK NOW",
+            "button_link": "https://raveyoga.yogo.dk/frontend/index.html?itemType=event&itemId=23915#/login-with-cart",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        },
+        "text_PnQY7w": {
+          "type": "text",
+          "settings": {
+            "text": "<p>If you have any questions, don’t hesitate to reach out to us at hello@rave-yoga.com &lt;3</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_UU64wq",
+        "button_NjMY6C",
+        "text_PnQY7w"
+      ],
       "name": "t:sections.rich-text.presets.name",
       "settings": {
         "desktop_content_position": "center",
