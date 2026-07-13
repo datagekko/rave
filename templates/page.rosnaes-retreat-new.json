@@ -12,13 +12,13 @@
     "main_hero_P9Dn3N": {
       "type": "main-hero",
       "settings": {
-        "image_desktop": "shopify://shop_images/4J7A2783_d93d4903-1d47-43df-9dc4-3e3b012936e1.jpg",
+        "image_desktop": "shopify://shop_images/IMG_2305.jpg",
         "video_url": "",
         "hero_link": "",
         "logo_width": 200,
-        "subheadline": "RAVE TRANSITION - END OF SUMMER RETREAT",
+        "subheadline": "ROSNÆS 1-DAY RETREAT",
         "button1_text": "BOOK HERE",
-        "button1_link": "#room-options",
+        "button1_link": "https://raveyoga.yogo.dk/frontend/index.html?itemType=event&itemId=23915#/login-with-cart",
         "button2_text": "",
         "button2_link": ""
       }
@@ -37,14 +37,14 @@
         "heading_Cc4Jk9": {
           "type": "heading",
           "settings": {
-            "heading": "RAVE TRANSITION",
+            "heading": "ROSNÆS 1-DAY RETREAT",
             "heading_size": "h1"
           }
         },
         "text_zpWxmK": {
           "type": "text",
           "settings": {
-            "text": "<p>A weekend of movement, nature and transition. Yoga practices, trail runs, breathwork, meditation, nourishing meals, workshops and time spent immersed in nature.</p><p>In late August, we retreat into the oasis that is our retreat mansion in Sweden. A majestic house set within sprawling land in the Swedish countryside, only an hour from Copenhagen. We will spend a long weekend soaking up the last of the summer warmth and light together.</p><p>The house offers the perfect setting to settle into the rhythm of the forest around us and the present moment. Explore the hidden corners of the estate, practice yoga in the old ballroom, move through the surrounding forests, light a fire in the tipi by the private lake, and sleep deeply after days spent outdoors. This weekend is for those who want to reset, reconnect and recharge as we transition into the colder months.</p><p>We start our mornings with longer yoga practices, each carrying a different theme to tune into the energy of the day. You will receive clear guidance into movement and practices suited to your individual body and level of experience.</p><p>The day continues with a beautiful brunch prepared indoors or outdoors by our wonderful chef. Afternoons are filled with forest hikes, trail runs, breathwork and meditation practices, reading, journaling, or simply slowing down in nature.</p><p>As evening arrives, we gather for delicious long-table dinners, share conversations around the fire, and soften into evening sound journeys.</p><p>Throughout the weekend, drinks and snacks will be available at all times, and you will receive a thoughtfully curated goodie bag including a retreat shirt and products from some of our favourite brands to accompany you beyond the retreat.<br/></p><p><br/><strong>Check-in:</strong> Thursday between 15:00-17:00.<br/><strong>Check-out:</strong> Sunday between 12:00–13:00.<br/><br/>Further information will be send out via email when signing up.<br/></p>"
+            "text": "<p>Escape the city and join us for a full day of slowing down in the beautiful countryside of Rosnæs, Denmark.</p><p>Together with Veatery and mindfulness guide Alex Watson, we'll spend the day moving, breathing and reconnecting through yoga, mindfulness, sound healing, sauna rituals, time in nature and nourishing seasonal food.</p><p>As a special treat, every guest will receive a curated goodie bag featuring products from our main sponsor Mantle, alongside gifts from some of our favorite partner brands.</p><p>A day to pause, recharge and connect—with yourself, nature and a like-minded community.</p>"
           }
         }
       },
@@ -67,19 +67,19 @@
         "image_bHTmXf": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/4J7A2603.jpg"
+            "image": "shopify://shop_images/IMG_1973.jpg"
           }
         },
         "image_XyJT7X": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/4J7A2870.jpg"
+            "image": "shopify://shop_images/IMG_1267.jpg"
           }
         },
         "image_GEebTx": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/4J7A2902.jpg"
+            "image": "shopify://shop_images/IMG_6547.jpg"
           }
         }
       },
@@ -106,9 +106,9 @@
           "type": "row",
           "settings": {
             "image": "shopify://shop_images/LeonieAlma_Helen7.jpg",
-            "caption": "YANG PRACTICES: FLOW YOGA, SOUND, WORKSHOPS  + OUTDOOR ACTIVITIES",
+            "caption": "FLOW YOGA AND SOUND",
             "heading": "helen erichsen",
-            "text": "<p>Helen (@helenerichsen) is a vinyasa yoga teacher and the founder  RAVE Yoga. Combining her background in media and marketing with her passion for yoga and well-being, RAVE's unique angle is expressed through creating immersive wellness experiences in any space. Helen's creative energy lies within transforming spaces into yoga studios, using the RAVE equipment and attention to every detail. Her classes are dynamic and usually include upbeat music with an indie influence. She loves to incorporate breathwork as well as aromatherapy into her classes. Her classes are open to all levels and focus on finding balance through deeper mental and physical connection with the self. Rather than doing yoga to be good at yoga, the approach is to do yoga to be better at 'doing' life.</p>",
+            "text": "<p>Helen (@helenerichsen) is a vinyasa yoga teacher and the founder of RAVE Yoga. Combining creativity, movement and wellness, she creates immersive yoga experiences that transform any space into a place of connection and presence. Her dynamic classes blend breathwork, music and mindful movement, inviting all levels to reconnect with themselves and bring more balance into everyday life.</p>",
             "button_label": "Button label",
             "button_link": ""
           }
@@ -128,10 +128,21 @@
         "row_mWmkRh": {
           "type": "row",
           "settings": {
-            "image": "shopify://shop_images/4J7A2973.jpg",
-            "caption": "YIN PRACTICES: SOUND + KUNDALINI",
-            "heading": "JENNY",
-            "text": "<p>Jenny is our retreat sound bath facilitator, with a deep reverence for the transformative power of vibration. With a background in intuitive sound therapy and sacred instruments, she creates immersive soundscapes that guide the body and mind into deep rest.</p><p>Her sessions offer a space to soften, surrender, and reconnect — allowing you to release, restore, and attune to subtle inner shifts. Through sound, presence, and deep listening, Jenny creates moments of stillness where true transformation can begin.</p>",
+            "image": "shopify://shop_images/MP_AWY_Desert_52_JPEG.png",
+            "caption": "MINDFULNESS AND BREATH",
+            "heading": "ALEX WATSON",
+            "text": "<p>Alex creates spaces for slowing down, reconnecting, and turning inward. Through mindful practices and intentional guidance, she invites participants to step away from the noise of everyday life and cultivate a deeper connection with themselves.</p><p>Her sessions combine elements of mindfulness, breathwork, meditation, and embodied practices to support relaxation, awareness, and emotional balance. With a gentle and intuitive approach, Alex guides participants toward a greater sense of calm, clarity, and presence.</p><p>Her work is grounded in the belief that creating space within ourselves allows us to move through life with more ease and connection. By bringing attention back to the breath and the body, she offers a nurturing environment where stillness, reflection, and inner balance can naturally unfold.</p>",
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        },
+        "row_KkimNJ": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/IMG_6549.jpg",
+            "caption": "FOOD AND DRINKS",
+            "heading": "VEATERY",
+            "text": "<p>Camille from Veatery brings a deep appreciation for food as a way to nourish, connect, and create meaningful moments together. With a passion for seasonal, plant-based cuisine, she creates dishes that are thoughtful, vibrant, and full of flavor.</p><p>Through Veatery, Camille transforms meals into experiences — celebrating fresh ingredients, beautiful presentation, and the joy of gathering around the table. Each dish is created with care, inviting guests to slow down, savor the moment, and reconnect through food.</p><p>For our retreat, Camille will prepare fresh and nourishing meals designed to support the day’s practices and leave you feeling energized, grounded, and deeply cared for.</p><p>Her work is grounded in the belief that creating space within ourselves allows us to move through life with more ease and connection. By bringing attention back to the breath and the body, she offers a nurturing environment where stillness, reflection, and inner balance can naturally unfold.</p>",
             "button_label": "Button label",
             "button_link": ""
           }
@@ -140,7 +151,8 @@
       "block_order": [
         "row_DzFE4w",
         "row_qqwxUH",
-        "row_mWmkRh"
+        "row_mWmkRh",
+        "row_KkimNJ"
       ],
       "settings": {
         "image_height": "medium",
@@ -158,58 +170,21 @@
         "padding_bottom": 36
       }
     },
-    "collage_T67BEJ": {
-      "type": "collage",
-      "blocks": {
-        "image_EkLQhq": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/4J7A2615.jpg"
-          }
-        },
-        "image_zM74x6": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/4J7A2623.jpg"
-          }
-        },
-        "image_yXxGcP": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/4J7A2632.jpg"
-          }
-        }
-      },
-      "block_order": [
-        "image_EkLQhq",
-        "image_zM74x6",
-        "image_yXxGcP"
-      ],
-      "settings": {
-        "heading": "THE ROOMS",
-        "heading_size": "h1",
-        "desktop_layout": "left",
-        "mobile_layout": "column",
-        "card_styles": "product-card-wrapper",
-        "color_scheme": "",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "multicolumn_c4aEYN": {
       "type": "multicolumn",
       "blocks": {
         "column_RW3KF6": {
           "type": "column",
           "settings": {
-            "title": "WHAT'S INCLUDED",
+            "image": "shopify://shop_images/LeonieAlma_Helen7.jpg",
+            "title": "YOGA AND SOUND",
             "price_text": "",
             "price_color": "#3d2120",
             "sold_out": false,
             "sold_out_color": "#ff0000",
             "limited_spots": false,
             "limited_spots_color": "#ff8c00",
-            "text": "<p>Your ticket purchase includes the entire retreat weekend with accomodation at the house, all practices, food, a goodie bag and assistance with transport arrangements.</p>",
+            "text": "<p>Helen (@helenerichsen) is a vinyasa yoga teacher and the founder of RAVE Yoga. Combining creativity, movement and wellness, she creates immersive yoga experiences that transform any space into a place of connection and presence. Her dynamic classes blend breathwork, music and mindful movement, inviting all levels to reconnect with themselves and bring more balance into everyday life.</p>",
             "link_label": "",
             "link": ""
           }
@@ -217,44 +192,31 @@
         "column_LU48tL": {
           "type": "column",
           "settings": {
-            "title": "FOOD",
+            "image": "shopify://shop_images/MP_AWY_Desert_52_JPEG.png",
+            "title": "MINDFULNESS",
             "price_text": "",
             "price_color": "#3d2120",
             "sold_out": false,
             "sold_out_color": "#ff0000",
             "limited_spots": false,
             "limited_spots_color": "#ff8c00",
-            "text": "<p>We will prepare local and seasonal spreads with a focus on healthy and vegetarian produce.</p><p>Don't worry - there will be lots to fuel you during the day!</p><p>Snacks, coffee and tea will be available throughout the day. Every day there will be served a wholesome brunch and dinner, as well as a little afternoon snack or cake time.</p><p><br/></p><p>Please send us an e-mail with your dietary restrictions at <a href=\"mailto:hello@rave-yoga.com\">hello@rave-yoga.com</a></p>",
+            "text": "<p>Alex (@alexwatsonyoga) creates spaces for slowing down, reconnecting, and finding presence through mindfulness, breathwork and meditation. Her gentle and intuitive approach supports deep rest, inner clarity, and emotional balance. By guiding participants back to the breath and body, she creates a nurturing space for stillness, reflection, and connection.</p>",
             "link_label": "",
             "link": ""
           }
         },
-        "column_ApWG37": {
+        "column_X8rPEq": {
           "type": "column",
           "settings": {
-            "title": "TRANSPORT",
+            "image": "shopify://shop_images/MP_AWY_Desert_52_JPEG.png",
+            "title": "NOURISHMENT",
             "price_text": "",
             "price_color": "#3d2120",
             "sold_out": false,
             "sold_out_color": "#ff0000",
             "limited_spots": false,
             "limited_spots_color": "#ff8c00",
-            "text": "<p>The house is located 50 minutes from Copenhagen by car, 1 hour by train from Copenhagen Central and 90 minutes from the airport. Upon arrival in Sweden, you will be picked up in cars. We are happy to help you arrange your transport, car sharing and more. </p><p>More transport info will be shared after booking.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_WTAQee": {
-          "type": "column",
-          "settings": {
-            "title": "YOUR ROOM",
-            "price_text": "",
-            "price_color": "#3d2120",
-            "sold_out": false,
-            "sold_out_color": "#ff0000",
-            "limited_spots": false,
-            "limited_spots_color": "#ff8c00",
-            "text": "<p>Every single room in the house is beautiful and unique. There are lots of bathrooms all over the house so everyone can enjoy their privacy. </p><p>We have single private rooms, double private rooms as well as shared rooms available.</p><p>For any questions please e-mail <a href=\"mailto:hello@rave-yoga.com\">hello@rave-yoga.com</a></p>",
+            "text": "<p>Camille from Veatery brings a passion for creating nourishing food experiences that connect people through fresh, seasonal, and plant-focused cuisine. Her thoughtfully crafted dishes celebrate flavor, creativity, and the joy of gathering around the table. For our retreat, Camille will prepare wholesome meals that support the day’s practices and leave you feeling nourished, grounded, and cared for.</p>",
             "link_label": "",
             "link": ""
           }
@@ -263,11 +225,10 @@
       "block_order": [
         "column_RW3KF6",
         "column_LU48tL",
-        "column_ApWG37",
-        "column_WTAQee"
+        "column_X8rPEq"
       ],
       "settings": {
-        "title": "PRACTICALITIES",
+        "title": "FACILITATORS",
         "heading_size": "h1",
         "image_width": "full",
         "image_ratio": "adapt",
@@ -282,80 +243,6 @@
         "swipe_on_mobile": false,
         "padding_top": 36,
         "padding_bottom": 36
-      }
-    },
-    "rave_booking_cards_LqTDBm": {
-      "type": "rave-booking-cards",
-      "blocks": {
-        "booking_card_nJz4qR": {
-          "type": "booking_card",
-          "settings": {
-            "title": "SHARED ROOM",
-            "subtitle": "The Communal Vibe",
-            "feature_1": "A cozy single bed in a beautiful shared space (2-4 people).",
-            "feature_2": "Perfect for solo travellers or those looking to connect.",
-            "feature_3": "All-inclusive retreat access.",
-            "price": "5.300 DKK",
-            "button_label": "BOOK NOW",
-            "button_link": "https://raveyoga.yogo.dk/frontend/index.html?itemType=event_first_installment&itemId=26566#/login-with-cart",
-            "sold_out": false,
-            "waitlist_button_label": "Join Waitlist",
-            "scarcity_badge_text": ""
-          }
-        },
-        "booking_card_EaE9aG": {
-          "type": "booking_card",
-          "settings": {
-            "title": "DOUBLE PRIVATE ROOM",
-            "subtitle": "Share with a Friend",
-            "feature_1": "A private room with a king-size bed for two.",
-            "feature_2": "Ideal for partners, friends, or family joining together.",
-            "feature_3": "Price is for the entire room (2 people).",
-            "price": "10.700 DKK",
-            "button_label": "BOOK NOW",
-            "button_link": "https://raveyoga.yogo.dk/frontend/index.html?itemType=event_first_installment&itemId=26567#/login-with-cart",
-            "sold_out": false,
-            "waitlist_button_label": "SOLD OUT",
-            "scarcity_badge_text": ""
-          }
-        },
-        "booking_card_jYb4Df": {
-          "type": "booking_card",
-          "settings": {
-            "title": "SINGLE PRIVATE ROOM",
-            "subtitle": "Your Personal Sanctuary",
-            "feature_1": "Your own private room for ultimate peace and quiet.",
-            "feature_2": "A space to drop in and fully tune out.",
-            "feature_3": "For that extra bit of privacy.",
-            "price": "7.100 DKK",
-            "button_label": "BOOK NOW",
-            "button_link": "https://raveyoga.yogo.dk/frontend/index.html?itemType=event_first_installment&itemId=26565#/login-with-cart",
-            "sold_out": false,
-            "waitlist_button_label": "SOLD OUT",
-            "scarcity_badge_text": ""
-          }
-        },
-        "custom_text_RtmgiP": {
-          "type": "custom_text",
-          "settings": {
-            "text": "<p>For group bookings or to share a room, reach out to us directly at <a href=\"mailto:hello@rave-yoga.com\" title=\"mailto:hello@rave-yoga.com\">hello@rave-yoga.com</a>. We’ll help you create your perfect retreat, together.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "booking_card_nJz4qR",
-        "booking_card_EaE9aG",
-        "booking_card_jYb4Df",
-        "custom_text_RtmgiP"
-      ],
-      "settings": {
-        "heading": "CHOOSE YOUR SPACE",
-        "subtitle": "Come as you are. Find a reset that feels right for you. Pay in full or installments.",
-        "testimonial_heading": "FEEL BETTER, TOGETHER",
-        "invitation_heading": "",
-        "invitation_text": "",
-        "invitation_button_label": "",
-        "invitation_button_link": "#room-options"
       }
     },
     "rich_text_h8pYEA": {
@@ -377,9 +264,7 @@
     "rich_text_NKRaMA",
     "collage_JUL6gg",
     "multirow_UNJfmQ",
-    "collage_T67BEJ",
     "multicolumn_c4aEYN",
-    "rave_booking_cards_LqTDBm",
     "rich_text_h8pYEA"
   ]
 }
