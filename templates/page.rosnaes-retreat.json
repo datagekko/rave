@@ -1,0 +1,646 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "image_banner_b9tyUW": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_AHhYLx": {
+          "type": "heading",
+          "settings": {
+            "heading": "AUTUMN SWEDEN ESCAPE",
+            "heading_size": "h1"
+          }
+        },
+        "text_kTRUrd": {
+          "type": "text",
+          "settings": {
+            "text": "Move through the seasons with us in an enchanted village in the swedish forest",
+            "text_style": "body"
+          }
+        },
+        "buttons_YX6hKc": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_AHhYLx",
+        "text_kTRUrd",
+        "buttons_YX6hKc"
+      ],
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/20260606_RaveYogaRetreat_Gyldsboda_0424.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": true,
+        "color_scheme": "",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": true
+      }
+    },
+    "rich_text_dceREC": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_bik6YE": {
+          "type": "heading",
+          "settings": {
+            "heading": "",
+            "heading_size": "h1"
+          }
+        },
+        "text_eRULGQ": {
+          "type": "text",
+          "settings": {
+            "text": "<p>c</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_bik6YE",
+        "text_eRULGQ"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "multicolumn_DN4jXR": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_LyNrWt": {
+          "type": "column",
+          "settings": {
+            "title": "THE VILLAGE",
+            "price_text": "",
+            "price_color": "#3d2120",
+            "sold_out": false,
+            "sold_out_color": "#ff0000",
+            "limited_spots": false,
+            "limited_spots_color": "#ff8c00",
+            "text": "<p>Gylsboda is a rural village in Norra Skåne, surrounded by forests, quarries, and quiet lakes. The village has been home to writers, sculptors, and painters, who all left an imprint on this quiet village. The region, Norra Skåne, is known as the wild corner of the south, with forested hilly landscapes, historic rural architecture, and a diversity of wildlife.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_mri7qe": {
+          "type": "column",
+          "settings": {
+            "title": "THE HOUSES",
+            "price_text": "",
+            "price_color": "#3d2120",
+            "sold_out": false,
+            "sold_out_color": "#ff0000",
+            "limited_spots": false,
+            "limited_spots_color": "#ff8c00",
+            "text": "<p>The Quarry Houses in the enchanted Swedish forests are an incredible set of houses, carefully restored, with each one uniquely designed.</p><p>On the compound, there are several houses, lofts, and cottages, each with different bedrooms, sleeping lofts, and shared social spaces</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_ehNULD": {
+          "type": "column",
+          "settings": {
+            "title": "OUR RETREAT SCHEDULE",
+            "price_text": "",
+            "price_color": "#3d2120",
+            "sold_out": false,
+            "sold_out_color": "#ff0000",
+            "limited_spots": false,
+            "limited_spots_color": "#ff8c00",
+            "text": "<p>The price of the retreat includes 2 night’s accommodation at The Quarry Houses, all meals, snacks, tea, coffee throughout the weekend, all retreat programming including daily yoga, daily sauna session with Löga Sauna, and workshops. A consciously created goodie bag will be awaiting you as well.</p><p>Arrival time is scheduled for Friday morning between 10-12. <br/>Check-out is Sunday morning after Yoga and brunch.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_LyNrWt",
+        "column_mri7qe",
+        "column_ehNULD"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "custom_id": "",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "collage_CEhLEc": {
+      "type": "collage",
+      "blocks": {
+        "image_zfyejn": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/20260606_RaveYogaRetreat_Gyldsboda_0002.jpg"
+          }
+        },
+        "image_TU8tax": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/20260606_RaveYogaRetreat_Gyldsboda_0266.jpg"
+          }
+        },
+        "image_6Xarer": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/saunain.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "image_zfyejn",
+        "image_TU8tax",
+        "image_6Xarer"
+      ],
+      "name": "t:sections.collage.presets.name",
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "desktop_layout": "left",
+        "mobile_layout": "column",
+        "card_styles": "product-card-wrapper",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multirow_P4MafE": {
+      "type": "multirow",
+      "blocks": {
+        "row_HV86Dh": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/4J7A1695.jpg",
+            "caption": "YOGA + SOUND",
+            "heading": "HELEN ERICHSEN",
+            "text": "<p>Helen (@helenerichsen) is a vinyasa yoga teacher and the founder  RAVE Yoga. Combining her background in media and marketing with her passion for yoga and well-being, RAVE's unique angle is expressed through creating immersive wellness experiences in any space. Helen's creative energy lies within transforming spaces into yoga studios, using the RAVE equipment and attention to every detail. Her classes are dynamic and usually include upbeat music with an indie influence. She loves to incorporate breathwork as well as aromatherapy into her classes. Her classes are open to all levels and focus on finding balance through deeper mental and physical connection with the self. Rather than doing yoga to be good at yoga, the approach is to do yoga to be better at 'doing' life.</p>",
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        },
+        "row_YGYqTb": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/4J7A2973_390e4b9e-0e6c-4289-9da8-59b5b0356bc3.jpg",
+            "caption": "YOGA, SOUND + ASTROLOGY",
+            "heading": "JENNY",
+            "text": "<p>Jenny is our retreat astrologer and sound bath facilitator, with a deep reverence for the transformative power of vibration. She will guide us on a journey of personal transformation through astrology workshops and one-to-one support—using your unique astrological blueprint as a tool for growth, insight, and evolution. With a background in intuitive sound therapy and sacred instruments, Jenny also creates immersive soundscapes that bring the body and mind into deep rest. Her sessions offer a space to soften, surrender, and attune to subtle inner shifts—where true transition begins.</p>",
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        },
+        "row_QrjfT7": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/Screenshot_2026-04-04_at_11.08.34.png",
+            "caption": "FOOD",
+            "heading": "TRINE",
+            "text": "<p>Trine has a passion for creating vibrant, feel-good meals that make you want to dance in your yoga pants. For the upcoming yoga retreat, she’s ready to whip up a feast that not only fuels your body but also lifts your spirit. Think of it as food that’s as zen as your downward dog—and as delicious as the first sip of water after a sun salutation.<br/><br/>With her Danish roots and Scandinavian flair, brings a little Nordic magic to the  retreat. Her cooking is inspired by the vibrant, seasonal produce of Denmark and Sweden, where fresh ingredients are celebrated in every meal, from foraged herbs and mushrooms to farm-fresh as well as tangy pickled vegetables. Each dish is a perfect match for the yoga vibes of the weekend—light, energizing, and oh-so-satisfying</p>",
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        },
+        "row_wP4RTC": {
+          "type": "row",
+          "disabled": true,
+          "settings": {
+            "caption": "",
+            "heading": "",
+            "text": "",
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "row_HV86Dh",
+        "row_YGYqTb",
+        "row_QrjfT7",
+        "row_wP4RTC"
+      ],
+      "name": "t:sections.multirow.presets.name",
+      "settings": {
+        "image_height": "medium",
+        "desktop_image_width": "medium",
+        "image_layout": "alternate-left",
+        "heading_size": "h1",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "row_color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "collage_VVHGrU": {
+      "type": "collage",
+      "blocks": {
+        "image_4DCaih": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/IMG_2024.jpg"
+          }
+        },
+        "image_4aPCkh": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/30A3013-HDR.jpg"
+          }
+        },
+        "image_b3ENjE": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/IMG_2022.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "image_4DCaih",
+        "image_4aPCkh",
+        "image_b3ENjE"
+      ],
+      "name": "t:sections.collage.presets.name",
+      "settings": {
+        "heading": "THE ROOMS & HOUSES",
+        "heading_size": "h1",
+        "desktop_layout": "left",
+        "mobile_layout": "column",
+        "card_styles": "product-card-wrapper",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multicolumn_r3wXHz": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_7irLFt": {
+          "type": "column",
+          "settings": {
+            "title": "ROOMS",
+            "price_text": "",
+            "price_color": "#3d2120",
+            "sold_out": false,
+            "sold_out_color": "#ff0000",
+            "limited_spots": false,
+            "limited_spots_color": "#ff8c00",
+            "text": "<p></p><p>This retreat can be booked as a single bed in a shared space, or as a double bed in either sleeping loft or private room–perfect for couples or friends who would like to stay together. If you are 3 or more friends looking to book and stay in the same house, contact us and we can look into room options. <br/><br/>Private rooms have closed access and shared bathrooms, while the sleeping lofts are charming loft spaces above shared living areas. </p><p>Payment happens in installments. The second half of your payment will be deducted April 1st.</p><p>Each space is unique in its own way.</p><p>For any questions please e-mail <a href=\"mailto:hello@rave-yoga.com\">hello@rave-yoga.com</a></p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_aLJLqG": {
+          "type": "column",
+          "settings": {
+            "title": "FOOD",
+            "price_text": "",
+            "price_color": "#3d2120",
+            "sold_out": false,
+            "sold_out_color": "#ff0000",
+            "limited_spots": false,
+            "limited_spots_color": "#ff8c00",
+            "text": "<p>Our chef is planning a full weekend of nourishing, plant focused meals driven by the season and nature around us. If you have any allergies or dietary restrictions, please let us know in advance so that we can accommodate. If you have any questions or special requests about the stay or practices in general, please reach out to us and we will guide you along the way. </p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_hbxC8a": {
+          "type": "column",
+          "settings": {
+            "title": "TRANSPORT",
+            "price_text": "",
+            "price_color": "#3d2120",
+            "sold_out": false,
+            "sold_out_color": "#ff0000",
+            "limited_spots": false,
+            "limited_spots_color": "#ff8c00",
+            "text": "<p>Gylsboda is located around 2.5 hours from Copenhagen. For those who wish to travel with us, we will arrange a joint trip with the Rave team on Friday early morning, coming back Sunday evening. Travel cost is not included in the retreat, but tickets can be purchased at the station, or in advance. </p><p></p><p></p><p>More transport info will be shared after booking.</p><p>We can help with all transport enquiries - just shoot us a mail at hello@rave-yoga.com</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_7irLFt",
+        "column_aLJLqG",
+        "column_hbxC8a"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "PRACTICALITIES",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "custom_id": "",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multicolumn_X6wikW": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_wUCQfn": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/070825_Residency_Upstairs_297.jpg",
+            "title": "PENTHOUSE DOUBLE",
+            "price_text": "",
+            "price_color": "#3d2120",
+            "sold_out": false,
+            "sold_out_color": "#ff0000",
+            "limited_spots": false,
+            "limited_spots_color": "#ff8c00",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_DUGpEH": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/070825_Residency_Upstairs_363.jpg",
+            "title": "SHARED LOFT ROOM",
+            "price_text": "",
+            "price_color": "#3d2120",
+            "sold_out": false,
+            "sold_out_color": "#ff0000",
+            "limited_spots": false,
+            "limited_spots_color": "#ff8c00",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_WakwTk": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/30A2998-HDR.jpg",
+            "title": "PRIVATE DOUBLE QUARRY HOUSE",
+            "price_text": "",
+            "price_color": "#3d2120",
+            "sold_out": false,
+            "sold_out_color": "#ff0000",
+            "limited_spots": false,
+            "limited_spots_color": "#ff8c00",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_wUCQfn",
+        "column_DUGpEH",
+        "column_WakwTk"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "custom_id": "",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multicolumn_bM43DC": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_XdbMwc": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/070825_Residency_Interior_021.jpg",
+            "title": "GREEN SUITE",
+            "price_text": "",
+            "price_color": "#3d2120",
+            "sold_out": false,
+            "sold_out_color": "#ff0000",
+            "limited_spots": false,
+            "limited_spots_color": "#ff8c00",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_TKkyD9": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/070825_Residency_Interior_126.jpg",
+            "title": "YELLOW SUITE",
+            "price_text": "",
+            "price_color": "#3d2120",
+            "sold_out": false,
+            "sold_out_color": "#ff0000",
+            "limited_spots": false,
+            "limited_spots_color": "#ff8c00",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_XdbMwc",
+        "column_TKkyD9"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "custom_id": "",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rave_booking_cards_Rn6qCD": {
+      "type": "rave-booking-cards",
+      "blocks": {
+        "booking_card_6mkUrA": {
+          "type": "booking_card",
+          "settings": {
+            "title": "SHARED ROOM",
+            "subtitle": "The Communal Vibe",
+            "feature_1": "A cozy single bed in a beautiful shared space. Sleeping loft shared with 1 other guest or daybed.",
+            "feature_2": "Perfect for solo travellers or those looking to connect.",
+            "feature_3": "Includes spacious loft and artist apartment, large kitchen and living space as well as balcony.",
+            "price": "5.300 DKK",
+            "button_label": "Book Your Spot",
+            "button_link": "https://raveyoga.yogo.dk/frontend/index.html?itemType=event_first_installment&itemId=27260#/login-with-cart",
+            "sold_out": false,
+            "waitlist_button_label": "Join Waitlist",
+            "scarcity_badge_text": ""
+          }
+        },
+        "booking_card_mrxbgr": {
+          "type": "booking_card",
+          "settings": {
+            "title": "GREEN SUITE DOUBLE BED",
+            "subtitle": "Share with a group or group together <3",
+            "feature_1": "A private apartment with 3 sleeping spaces. Ideal for friends or family joining together.",
+            "feature_2": "Features a private room with double bed, a comfy day bed, private bathroom and shared kitchen.",
+            "feature_3": "Price is for 2 people. If you'd like to book this space partly, or add a third, please reach out at hello@rave-yoga.com",
+            "price": "10.700 DKK",
+            "button_label": "Book Your Spot",
+            "button_link": "https://raveyoga.yogo.dk/frontend/index.html?itemType=event_first_installment&itemId=27263#/login-with-cart",
+            "sold_out": false,
+            "waitlist_button_label": "Join Waitlist",
+            "scarcity_badge_text": "1 spot left"
+          }
+        },
+        "booking_card_Egr3yh": {
+          "type": "booking_card",
+          "settings": {
+            "title": "PRIVATE DOUBLE ROOM QUARRY HOUSE",
+            "subtitle": "Share with a loved one",
+            "feature_1": "A private room with a king-size bed for two in a beautiful spacious house with lavishing views and bathtub. Large downstairs area with kitchen and living space.",
+            "feature_2": "Ideal for partners, friends, or family joining together. Please note another 2 guests will be sharing the floor and bathroom.",
+            "feature_3": "Price is for the entire room (2 people).",
+            "price": "10.700 DKK",
+            "button_label": "Book Your Spot",
+            "button_link": "https://raveyoga.yogo.dk/frontend/index.html?itemType=event_first_installment&itemId=27261#/login-with-cart",
+            "sold_out": false,
+            "waitlist_button_label": "Join Waitlist",
+            "scarcity_badge_text": "2 spots left"
+          }
+        },
+        "booking_card_QrCjKD": {
+          "type": "booking_card",
+          "settings": {
+            "title": "PRIVATE DOUBLE PENTHOUSE ROOM",
+            "subtitle": "Share with a loved one",
+            "feature_1": "A private room with a king-size bed for two in a beautiful spacious penthouse.",
+            "feature_2": "Ideal for partners, friends, or family joining together.",
+            "feature_3": "Price is for the entire room (2 people). Includes spacious loft and artist apartment, large kitchen and living space as well as balcony.",
+            "price": "10.700 DKK",
+            "button_label": "Book Your Spot",
+            "button_link": "https://raveyoga.yogo.dk/frontend/index.html?itemType=event_first_installment&itemId=27262#/login-with-cart",
+            "sold_out": false,
+            "waitlist_button_label": "Join Waitlist",
+            "scarcity_badge_text": "1 spot left"
+          }
+        },
+        "booking_card_QK3Bcd": {
+          "type": "booking_card",
+          "settings": {
+            "title": "YELLOW SUITE",
+            "subtitle": "Share with a group or group together <3",
+            "feature_1": "A private apartment with 3 sleeping spaces. Ideal for friends or family joining together.",
+            "feature_2": "Features a private room with double bed, a comfy day bed, private bathroom and shared kitchen.",
+            "feature_3": "Price is for the entire room (3 people). If you'd like to book this space partly, please reach out at hello@rave-yoga.com",
+            "price": "16.000 DKK",
+            "button_label": "Book Your Spot",
+            "button_link": "https://raveyoga.yogo.dk/frontend/index.html?itemType=event_first_installment&itemId=27263#/login-with-cart",
+            "sold_out": false,
+            "waitlist_button_label": "Join Waitlist",
+            "scarcity_badge_text": "1 spot left"
+          }
+        }
+      },
+      "block_order": [
+        "booking_card_6mkUrA",
+        "booking_card_mrxbgr",
+        "booking_card_Egr3yh",
+        "booking_card_QrCjKD",
+        "booking_card_QK3Bcd"
+      ],
+      "name": "Rave Booking Cards",
+      "settings": {
+        "heading": "CHOOSE YOUR SPACE",
+        "subtitle": "Come as you are. Find a reset that feels right for you.",
+        "testimonial_heading": "FEEL BETTER, TOGETHER",
+        "invitation_heading": "READY TO RESET?",
+        "invitation_text": "<p>We've created this space for you to disconnect from the noise and reconnect with what matters. Movement, mindfulness, and human connection—without the heaviness. We can't wait to share it with you.</p>",
+        "invitation_button_label": "",
+        "invitation_button_link": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_banner_b9tyUW",
+    "rich_text_dceREC",
+    "multicolumn_DN4jXR",
+    "collage_CEhLEc",
+    "multirow_P4MafE",
+    "collage_VVHGrU",
+    "multicolumn_r3wXHz",
+    "multicolumn_X6wikW",
+    "multicolumn_bM43DC",
+    "rave_booking_cards_Rn6qCD"
+  ]
+}
