@@ -73,13 +73,13 @@
         "image_XyJT7X": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/IMG_1267.jpg"
+            "image": "shopify://shop_images/IMG_6547.jpg"
           }
         },
         "image_GEebTx": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/IMG_6547.jpg"
+            "image": "shopify://shop_images/IMG_4597.jpg"
           }
         }
       },
@@ -145,7 +145,7 @@
             "sold_out_color": "#ff0000",
             "limited_spots": false,
             "limited_spots_color": "#ff8c00",
-            "text": "<p>Camille from Veatery brings a passion for creating nourishing food experiences that connect people through fresh, seasonal, and plant-focused cuisine. Her thoughtfully crafted dishes celebrate flavor, creativity, and the joy of gathering around the table. For our retreat, Camille will prepare wholesome meals that support the day’s practices and leave you feeling nourished, grounded, and cared for.</p>",
+            "text": "<p>Camilla from Veatery brings a passion for creating nourishing food experiences that connect people through fresh, seasonal, and plant-focused cuisine. Her thoughtfully crafted dishes celebrate flavor, creativity, and the joy of gathering around the table. For our retreat, Camilla will prepare wholesome meals that support the day’s practices and leave you feeling nourished, grounded, and cared for.</p>",
             "link_label": "",
             "link": ""
           }
