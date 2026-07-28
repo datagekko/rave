@@ -120,6 +120,7 @@
         },
         "column_LU48tL": {
           "type": "column",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/MP_AWY_Desert_52_JPEG.png",
             "title": "MINDFULNESS",
