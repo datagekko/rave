@@ -53,7 +53,7 @@
       ],
       "name": "t:sections.image-banner.presets.name",
       "settings": {
-        "image": "shopify://shop_images/20260606_RaveYogaRetreat_Gyldsboda_0424.jpg",
+        "image": "shopify://shop_images/30A2900.jpg",
         "image_overlay_opacity": 0,
         "image_height": "medium",
         "image_behavior": "none",
@@ -64,6 +64,29 @@
         "stack_images_on_mobile": true,
         "mobile_content_alignment": "center",
         "show_text_below": true
+      }
+    },
+    "rich_text_KF6HCB": {
+      "type": "rich-text",
+      "blocks": {
+        "text_B4yDdH": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Join us under the autumn  sun for a weekend of Illumination. </p><p></p><p>Our next retreat will be housed in Quarry Houses, a unique set of traditional Swedish houses in Gylsboda in Skåne, surrounded by forest and lakes.</p><p></p><p>We will immerse ourselves in a weekend of yoga, movement, breath, saunas and lake swims, nourishing food and stories and moments shared with each other. </p><p></p><p>Each day and practice will be centred around the theme of Illumination: through pranic breath, sound, and movement, we’re tapping into our life-force—the energetic current that moves through us and is waiting to be expressed. We’ll be diving deeper into this theme through workshops, astrology, and journalling—all designed to bring us closer to our playfulness and creativity. </p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_B4yDdH"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     },
     "rich_text_dceREC": {
@@ -177,19 +200,19 @@
         "image_zfyejn": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/20260606_RaveYogaRetreat_Gyldsboda_0002.jpg"
+            "image": "shopify://shop_images/Gross_20260606_RaveYogaRetreat_Gyldsboda_0307.jpg"
           }
         },
         "image_TU8tax": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/20260606_RaveYogaRetreat_Gyldsboda_0266.jpg"
+            "image": "shopify://shop_images/Gross_20260606_RaveYogaRetreat_Gyldsboda_0391.jpg"
           }
         },
         "image_6Xarer": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/saunain.jpg"
+            "image": "shopify://shop_images/Gross_20260606_RaveYogaRetreat_Gyldsboda_0023_70daf31a-3fa3-422d-bc3f-d9db7989579e.jpg"
           }
         }
       },
@@ -198,6 +221,46 @@
         "image_TU8tax",
         "image_6Xarer"
       ],
+      "name": "t:sections.collage.presets.name",
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "desktop_layout": "right",
+        "mobile_layout": "column",
+        "card_styles": "product-card-wrapper",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "collage_6gNWQY": {
+      "type": "collage",
+      "blocks": {
+        "image_xKXrCr": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/20260606_RaveYogaRetreat_Gyldsboda_0002.jpg"
+          }
+        },
+        "image_X8TrKP": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/20260606_RaveYogaRetreat_Gyldsboda_0266.jpg"
+          }
+        },
+        "image_P3G9jY": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/saunain.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "image_xKXrCr",
+        "image_X8TrKP",
+        "image_P3G9jY"
+      ],
+      "disabled": true,
       "name": "t:sections.collage.presets.name",
       "settings": {
         "heading": "",
@@ -216,7 +279,7 @@
         "row_HV86Dh": {
           "type": "row",
           "settings": {
-            "image": "shopify://shop_images/4J7A1695.jpg",
+            "image": "shopify://shop_images/Gross_20260606_RaveYogaRetreat_Gyldsboda_0320_2.jpg",
             "caption": "YOGA + SOUND",
             "heading": "HELEN ERICHSEN",
             "text": "<p>Helen (@helenerichsen) is a vinyasa yoga teacher and the founder  RAVE Yoga. Combining her background in media and marketing with her passion for yoga and well-being, RAVE's unique angle is expressed through creating immersive wellness experiences in any space. Helen's creative energy lies within transforming spaces into yoga studios, using the RAVE equipment and attention to every detail. Her classes are dynamic and usually include upbeat music with an indie influence. She loves to incorporate breathwork as well as aromatherapy into her classes. Her classes are open to all levels and focus on finding balance through deeper mental and physical connection with the self. Rather than doing yoga to be good at yoga, the approach is to do yoga to be better at 'doing' life.</p>",
@@ -287,19 +350,19 @@
         "image_4DCaih": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/IMG_2024.jpg"
+            "image": "shopify://shop_images/Gross_20260606_RaveYogaRetreat_Gyldsboda_0115.jpg"
           }
         },
         "image_4aPCkh": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/30A3013-HDR.jpg"
+            "image": "shopify://shop_images/Gross_20260606_RaveYogaRetreat_Gyldsboda_0225.jpg"
           }
         },
         "image_b3ENjE": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/IMG_2022.jpg"
+            "image": "shopify://shop_images/Gross_20260606_RaveYogaRetreat_Gyldsboda_0109.jpg"
           }
         }
       },
@@ -312,7 +375,7 @@
       "settings": {
         "heading": "THE ROOMS & HOUSES",
         "heading_size": "h1",
-        "desktop_layout": "left",
+        "desktop_layout": "right",
         "mobile_layout": "column",
         "card_styles": "product-card-wrapper",
         "color_scheme": "",
@@ -629,19 +692,36 @@
         "invitation_button_label": "",
         "invitation_button_link": ""
       }
+    },
+    "slideshow_9WKiWY": {
+      "type": "slideshow",
+      "name": "t:sections.slideshow.presets.name",
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "medium",
+        "slider_visual": "counter",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "image_behavior": "none",
+        "show_text_below": true,
+        "accessibility_info": "Slideshow about our brand"
+      }
     }
   },
   "order": [
     "main",
     "image_banner_b9tyUW",
+    "rich_text_KF6HCB",
     "rich_text_dceREC",
     "multicolumn_DN4jXR",
     "collage_CEhLEc",
+    "collage_6gNWQY",
     "multirow_P4MafE",
     "collage_VVHGrU",
     "multicolumn_r3wXHz",
     "multicolumn_X6wikW",
     "multicolumn_bM43DC",
-    "rave_booking_cards_Rn6qCD"
+    "rave_booking_cards_Rn6qCD",
+    "slideshow_9WKiWY"
   ]
 }
