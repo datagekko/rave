@@ -13,7 +13,7 @@
       "type": "main-hero",
       "custom_css": [
         ".button--primary,.button--secondary {background-color: transparent !important; border: 1px solid white !important; color: white !important;}",
-        ".button--primary:hover,.button--secondary:hover {background-color: white !important; color: black !important;}"
+        ".button--primary:hover,.button--secondary:hover {background-color: #412F26 !important; border-color: #412F26 !important; color: white !important;}"
       ],
       "name": "Main Hero",
       "settings": {
