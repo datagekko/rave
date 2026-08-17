@@ -11,6 +11,10 @@
   "sections": {
     "main_hero_RwWdKr": {
       "type": "main-hero",
+      "custom_css": [
+        ".button--primary,.button--secondary {background-color: transparent !important; border: 1px solid white !important; color: white !important;}",
+        ".button--primary:hover,.button--secondary:hover {background-color: white !important; color: black !important;}"
+      ],
       "name": "Main Hero",
       "settings": {
         "image_desktop": "shopify://shop_images/image-af2b48bc-0290-4942-856d-0ea6ea648887_53dbaf24-c823-44be-b16e-5e7f16528f2c.webp",
