@@ -706,6 +706,119 @@
         "show_text_below": true,
         "accessibility_info": "Slideshow about our brand"
       }
+    },
+    "slideshow_fhVTdb": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_mz9LaT": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Gross_20260606_RaveYogaRetreat_Gyldsboda_0362.jpg",
+            "image_overlay_opacity": 0,
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "show_text_box": false,
+            "box_align": "middle-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": "scheme-1"
+          }
+        },
+        "slide_3UJeKf": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Gross_20260606_RaveYogaRetreat_Gyldsboda_0263.jpg",
+            "image_overlay_opacity": 0,
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "show_text_box": false,
+            "box_align": "middle-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": "scheme-1"
+          }
+        },
+        "slide_CHVQJx": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Gross_20260606_RaveYogaRetreat_Gyldsboda_0010.jpg",
+            "image_overlay_opacity": 0,
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "show_text_box": false,
+            "box_align": "middle-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": "scheme-1"
+          }
+        },
+        "slide_h66V89": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Gross_20260606_RaveYogaRetreat_Gyldsboda_0407.jpg",
+            "image_overlay_opacity": 0,
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "show_text_box": false,
+            "box_align": "middle-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": ""
+          }
+        },
+        "slide_zAzEJY": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Gross_20260606_RaveYogaRetreat_Gyldsboda_0059.jpg",
+            "image_overlay_opacity": 0,
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "show_text_box": true,
+            "box_align": "middle-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": "scheme-1"
+          }
+        }
+      },
+      "block_order": [
+        "slide_mz9LaT",
+        "slide_3UJeKf",
+        "slide_CHVQJx",
+        "slide_h66V89",
+        "slide_zAzEJY"
+      ],
+      "name": "t:sections.slideshow.presets.name",
+      "settings": {
+        "layout": "grid",
+        "slide_height": "medium",
+        "slider_visual": "dots",
+        "auto_rotate": true,
+        "change_slides_speed": 5,
+        "image_behavior": "none",
+        "show_text_below": true,
+        "accessibility_info": "Slideshow about our brand"
+      }
     }
   },
   "order": [
@@ -722,6 +835,7 @@
     "multicolumn_X6wikW",
     "multicolumn_bM43DC",
     "rave_booking_cards_Rn6qCD",
-    "slideshow_9WKiWY"
+    "slideshow_9WKiWY",
+    "slideshow_fhVTdb"
   ]
 }
