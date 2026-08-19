@@ -710,10 +710,10 @@
     "slideshow_fhVTdb": {
       "type": "slideshow",
       "blocks": {
-        "slide_mz9LaT": {
+        "slide_3UJeKf": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/Gross_20260606_RaveYogaRetreat_Gyldsboda_0362.jpg",
+            "image": "shopify://shop_images/Gross_20260606_RaveYogaRetreat_Gyldsboda_0263.jpg",
             "image_overlay_opacity": 0,
             "heading": "",
             "heading_size": "h1",
@@ -728,10 +728,10 @@
             "color_scheme": "scheme-1"
           }
         },
-        "slide_3UJeKf": {
+        "slide_mz9LaT": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/Gross_20260606_RaveYogaRetreat_Gyldsboda_0263.jpg",
+            "image": "shopify://shop_images/Gross_20260606_RaveYogaRetreat_Gyldsboda_0362.jpg",
             "image_overlay_opacity": 0,
             "heading": "",
             "heading_size": "h1",
@@ -786,14 +786,14 @@
           "type": "slide",
           "settings": {
             "image": "shopify://shop_images/Gross_20260606_RaveYogaRetreat_Gyldsboda_0059.jpg",
-            "image_overlay_opacity": 0,
+            "image_overlay_opacity": 30,
             "heading": "",
             "heading_size": "h1",
             "subheading": "",
             "button_label": "",
             "link": "",
             "button_style_secondary": false,
-            "show_text_box": true,
+            "show_text_box": false,
             "box_align": "middle-center",
             "text_alignment": "center",
             "text_alignment_mobile": "center",
@@ -802,8 +802,8 @@
         }
       },
       "block_order": [
-        "slide_mz9LaT",
         "slide_3UJeKf",
+        "slide_mz9LaT",
         "slide_CHVQJx",
         "slide_h66V89",
         "slide_zAzEJY"
@@ -812,7 +812,7 @@
       "name": "t:sections.slideshow.presets.name",
       "settings": {
         "layout": "grid",
-        "slide_height": "medium",
+        "slide_height": "large",
         "slider_visual": "dots",
         "auto_rotate": true,
         "change_slides_speed": 5,
