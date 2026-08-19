@@ -808,6 +808,7 @@
         "slide_h66V89",
         "slide_zAzEJY"
       ],
+      "disabled": true,
       "name": "t:sections.slideshow.presets.name",
       "settings": {
         "layout": "grid",
