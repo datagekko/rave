@@ -594,6 +594,22 @@
     "rave_booking_cards_Rn6qCD": {
       "type": "rave-booking-cards",
       "blocks": {
+        "booking_card_YxHLMb": {
+          "type": "booking_card",
+          "settings": {
+            "title": "THE COTTAGE",
+            "subtitle": "A private cottage in the forest",
+            "feature_1": "A private double bedroom with shared living, kitchen and bathroom space.",
+            "feature_2": "Loft room can be added for a fully private cottage for 3-4 guests.",
+            "feature_3": "Price is for 2 people. If you'd like to add a group, please reach out to hello@rave-yoga.com",
+            "price": "4.500 DKK",
+            "button_label": "Book Your Spot",
+            "button_link": "",
+            "sold_out": false,
+            "waitlist_button_label": "Join Waitlist",
+            "scarcity_badge_text": ""
+          }
+        },
         "booking_card_GgJadk": {
           "type": "booking_card",
           "settings": {
@@ -692,6 +708,7 @@
         }
       },
       "block_order": [
+        "booking_card_YxHLMb",
         "booking_card_GgJadk",
         "booking_card_6mkUrA",
         "booking_card_mrxbgr",
