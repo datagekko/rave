@@ -24,16 +24,15 @@
           "type": "retreats_grid",
           "settings": {
             "heading": "",
-            "retreat1_image": "shopify://shop_images/IMG_2305.jpg",
-            "retreat1_title": "ROSNÆS 1 DAY RETREAT",
-            "retreat1_url": "https://rave-yoga.com/pages/rosnaes-retreat",
-            "retreat1_location": "Copenhagen",
-            "retreat1_date": "22 AUGUST 2026",
-            "retreat2_image": "shopify://shop_images/IMG_2024.jpg",
-            "retreat2_title": "QUARRY HOUSES",
+            "retreat1_image": "shopify://shop_images/IMG_2024.jpg",
+            "retreat1_title": "QUARRY HOUSES",
+            "retreat1_url": "shopify://pages/rave-autumn-retreat",
+            "retreat1_location": "SWEDEN",
+            "retreat1_date": "29 OCTOBER - 1 NOVEMBER 2026",
+            "retreat2_title": "",
             "retreat2_url": "shopify://pages/rave-autumn-retreat",
-            "retreat2_location": "SWEDEN",
-            "retreat2_date": "29 OCTOBER - 1 NOVEMBER 2026"
+            "retreat2_location": "",
+            "retreat2_date": ""
           }
         }
       },
