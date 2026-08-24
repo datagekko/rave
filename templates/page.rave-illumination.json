@@ -594,6 +594,22 @@
     "rave_booking_cards_Rn6qCD": {
       "type": "rave-booking-cards",
       "blocks": {
+        "booking_card_GgJadk": {
+          "type": "booking_card",
+          "settings": {
+            "title": "PRIVATE CUBE",
+            "subtitle": "Your own forest retreat",
+            "feature_1": "A secluded cottage in the forest just for you.",
+            "feature_2": "Perfect for those looking to withdraw in nature and love to have their own cozy space.",
+            "feature_3": "Includes a fully private room and a shared bathroom in a nearby, separate house.",
+            "price": "6.800 DKK",
+            "button_label": "Book Your Spot",
+            "button_link": "",
+            "sold_out": false,
+            "waitlist_button_label": "Join Waitlist",
+            "scarcity_badge_text": ""
+          }
+        },
         "booking_card_6mkUrA": {
           "type": "booking_card",
           "settings": {
@@ -676,6 +692,7 @@
         }
       },
       "block_order": [
+        "booking_card_GgJadk",
         "booking_card_6mkUrA",
         "booking_card_mrxbgr",
         "booking_card_Egr3yh",
