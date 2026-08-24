@@ -475,6 +475,22 @@
             "link": ""
           }
         },
+        "column_ajjknH": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Screenshot-2025-11-24-at-13.38.18.png",
+            "title": "COTTAGE",
+            "price_text": "",
+            "price_color": "#3d2120",
+            "sold_out": false,
+            "sold_out_color": "#ff0000",
+            "limited_spots": false,
+            "limited_spots_color": "#ff8c00",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
         "column_DUGpEH": {
           "type": "column",
           "settings": {
@@ -510,6 +526,7 @@
       },
       "block_order": [
         "column_wUCQfn",
+        "column_ajjknH",
         "column_DUGpEH",
         "column_WakwTk"
       ],
@@ -551,6 +568,22 @@
             "link": ""
           }
         },
+        "column_mLhxYx": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/IMG_4944.jpg",
+            "title": "CUBE",
+            "price_text": "",
+            "price_color": "#3d2120",
+            "sold_out": false,
+            "sold_out_color": "#ff0000",
+            "limited_spots": false,
+            "limited_spots_color": "#ff8c00",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
         "column_TKkyD9": {
           "type": "column",
           "settings": {
@@ -570,6 +603,7 @@
       },
       "block_order": [
         "column_XdbMwc",
+        "column_mLhxYx",
         "column_TKkyD9"
       ],
       "name": "t:sections.multicolumn.presets.name",
