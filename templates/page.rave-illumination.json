@@ -491,22 +491,6 @@
             "link": ""
           }
         },
-        "column_DUGpEH": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/070825_Residency_Upstairs_363.jpg",
-            "title": "SHARED LOFT ROOM",
-            "price_text": "",
-            "price_color": "#3d2120",
-            "sold_out": false,
-            "sold_out_color": "#ff0000",
-            "limited_spots": false,
-            "limited_spots_color": "#ff8c00",
-            "text": "",
-            "link_label": "",
-            "link": ""
-          }
-        },
         "column_WakwTk": {
           "type": "column",
           "settings": {
@@ -522,13 +506,29 @@
             "link_label": "",
             "link": ""
           }
+        },
+        "column_DUGpEH": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/070825_Residency_Upstairs_363.jpg",
+            "title": "SHARED LOFT ROOM",
+            "price_text": "",
+            "price_color": "#3d2120",
+            "sold_out": false,
+            "sold_out_color": "#ff0000",
+            "limited_spots": false,
+            "limited_spots_color": "#ff8c00",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
         }
       },
       "block_order": [
         "column_wUCQfn",
         "column_ajjknH",
-        "column_DUGpEH",
-        "column_WakwTk"
+        "column_WakwTk",
+        "column_DUGpEH"
       ],
       "name": "t:sections.multicolumn.presets.name",
       "settings": {
