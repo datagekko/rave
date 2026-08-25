@@ -477,6 +477,7 @@
         },
         "column_ajjknH": {
           "type": "column",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Screenshot-2025-11-24-at-13.38.18.png",
             "title": "COTTAGE",
@@ -529,6 +530,102 @@
         "column_ajjknH",
         "column_WakwTk",
         "column_DUGpEH"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "custom_id": "",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multicolumn_Xy4ciL": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_9gMhDJ": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/070825_Residency_Upstairs_297.jpg",
+            "title": "PENTHOUSE DOUBLE",
+            "price_text": "",
+            "price_color": "#3d2120",
+            "sold_out": false,
+            "sold_out_color": "#ff0000",
+            "limited_spots": false,
+            "limited_spots_color": "#ff8c00",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_E8cVDn": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Screenshot-2025-11-24-at-13.38.18.png",
+            "title": "COTTAGE",
+            "price_text": "",
+            "price_color": "#3d2120",
+            "sold_out": false,
+            "sold_out_color": "#ff0000",
+            "limited_spots": false,
+            "limited_spots_color": "#ff8c00",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_AhTgQy": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/30A2998-HDR.jpg",
+            "title": "PRIVATE DOUBLE QUARRY HOUSE",
+            "price_text": "",
+            "price_color": "#3d2120",
+            "sold_out": false,
+            "sold_out_color": "#ff0000",
+            "limited_spots": false,
+            "limited_spots_color": "#ff8c00",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_iKHWyM": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/070825_Residency_Upstairs_363.jpg",
+            "title": "SHARED LOFT ROOM",
+            "price_text": "",
+            "price_color": "#3d2120",
+            "sold_out": false,
+            "sold_out_color": "#ff0000",
+            "limited_spots": false,
+            "limited_spots_color": "#ff8c00",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_9gMhDJ",
+        "column_E8cVDn",
+        "column_AhTgQy",
+        "column_iKHWyM"
       ],
       "name": "t:sections.multicolumn.presets.name",
       "settings": {
@@ -903,6 +1000,7 @@
     "multicolumn_r3wXHz",
     "multicolumn_X6wikW",
     "multicolumn_bM43DC",
+    "multicolumn_Xy4ciL",
     "rave_booking_cards_Rn6qCD",
     "slideshow_9WKiWY",
     "slideshow_fhVTdb"
