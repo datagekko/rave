@@ -13,12 +13,12 @@
   for block in blocks
     if block.type == 'link_list' and menu_block_assigned_to_left == false
       assign temp_block_array = '' | split: ''
-      assign temp_block_array = temp_block_array | concat: [block]
+      assign temp_block_array = temp_block_array | concat: self[block]
       assign left_column_blocks = left_column_blocks | concat: temp_block_array
       assign menu_block_assigned_to_left = true
     elsif block.type == 'text' or block.type == 'custom_text' or block.type == 'image' or block.type == 'brand_information'
       assign temp_block_array = '' | split: ''
-      assign temp_block_array = temp_block_array | concat: [block]
+      assign temp_block_array = temp_block_array | concat: self[block]
       assign right_column_blocks = right_column_blocks | concat: temp_block_array
     endif
   endfor
@@ -97,3 +97,16 @@
     {%- endif -%}
   </div>
 </div>
+{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "      assign temp_block_array = temp_block_array | concat: [block]"
+  to: "      assign temp_block_array = temp_block_array | concat: self[block]"
+  position: 537..607
+- from: "      assign temp_block_array = temp_block_array | concat: [block]"
+  to: "      assign temp_block_array = temp_block_array | concat: self[block]"
+  position: 907..977
+{% endcomment %}
