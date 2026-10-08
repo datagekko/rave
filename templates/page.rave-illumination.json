@@ -751,7 +751,7 @@
             "feature_3": "Includes a fully private room and a shared bathroom in a nearby, separate house.",
             "price": "6.800 DKK",
             "button_label": "Book Your Spot",
-            "button_link": "",
+            "button_link": "https://raveyoga.yogo.dk/frontend/index.html?itemType=event_first_installment&itemId=28354#/login-with-cart",
             "sold_out": false,
             "waitlist_button_label": "Join Waitlist",
             "scarcity_badge_text": "1 spot left"
