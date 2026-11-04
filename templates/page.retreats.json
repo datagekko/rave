@@ -22,6 +22,7 @@
       "blocks": {
         "retreats-grid": {
           "type": "retreats_grid",
+          "disabled": true,
           "settings": {
             "heading": "",
             "retreat1_image": "shopify://shop_images/Gross_20260606_RaveYogaRetreat_Gyldsboda_0407.jpg",
