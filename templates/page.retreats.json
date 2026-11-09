@@ -81,7 +81,7 @@
         "text_nHBGtJ": {
           "type": "text",
           "settings": {
-            "text": "<p>We’re in the planning stages of our next retreat and can’t wait to share it with you. sign up here to be the first one to know about it.&nbsp;</p>"
+            "text": "<p>We’re in the planning stages of our next retreat and can’t wait to share it with you. Sign up here to be the first one to know about it.&nbsp;</p>"
           }
         }
       },
@@ -96,7 +96,7 @@
         "color_scheme": "",
         "full_width": true,
         "padding_top": 40,
-        "padding_bottom": 52
+        "padding_bottom": 4
       }
     },
     "custom_liquid_KpDNNC": {
