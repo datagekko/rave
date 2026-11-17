@@ -29,9 +29,43 @@
         "padding_top": 20,
         "padding_bottom": 20
       }
+    },
+    "announcement_bar_KY6P9t": {
+      "type": "announcement-bar",
+      "blocks": {
+        "announcement_W6fY9T": {
+          "type": "announcement",
+          "settings": {
+            "text": "FREE RAVE LIGHTER WITH EVERY ORDER",
+            "link": ""
+          }
+        },
+        "announcement_Nej4gy": {
+          "type": "announcement",
+          "settings": {
+            "text": "FREE SHIPPING THROUGHOUT DECEMBER",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "announcement_W6fY9T",
+        "announcement_Nej4gy"
+      ],
+      "name": "t:sections.announcement-bar.presets.name",
+      "settings": {
+        "auto_rotate": true,
+        "change_slides_speed": 4,
+        "color_scheme": "scheme-4",
+        "show_line_separator": true,
+        "show_social": false,
+        "enable_country_selector": false,
+        "enable_language_selector": false
+      }
     }
   },
   "order": [
-    "header"
+    "header",
+    "announcement_bar_KY6P9t"
   ]
 }
