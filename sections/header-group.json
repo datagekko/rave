@@ -36,15 +36,15 @@
         "announcement_W6fY9T": {
           "type": "announcement",
           "settings": {
-            "text": "FREE RAVE LIGHTER WITH EVERY ORDER",
-            "link": ""
+            "text": "FREE RAVE TOTE BAG WITH EVERY ORDER",
+            "link": "shopify://collections/all"
           }
         },
         "announcement_Nej4gy": {
           "type": "announcement",
           "settings": {
-            "text": "FREE SHIPPING THROUGHOUT DECEMBER",
-            "link": ""
+            "text": "FREE SHIPPING FOR EVERY ORDER OVER 699DKK",
+            "link": "shopify://collections/all"
           }
         }
       },
