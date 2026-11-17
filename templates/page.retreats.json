@@ -80,6 +80,7 @@
         },
         "text_nHBGtJ": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "<h2><strong>SPRING RETREAT COMING SOON</strong></h2><h5>We’re going back to Sweden! Join us for a 3-day retreat at the Quarry Houses from April 9-11.&nbsp;</h5><h5>This retreat will be sign-up exclusive to our community. Enter your email below to be among the first to receive all booking information and how to secure your spot.</h5>"
           }
@@ -99,6 +100,55 @@
         "padding_bottom": 4
       }
     },
+    "image_with_text_xbMJwh": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_yQY3bP": {
+          "type": "heading",
+          "settings": {
+            "heading": "SPRING RETREAT COMING SOON&nbsp;",
+            "heading_size": "h1"
+          }
+        },
+        "text_GNNRe3": {
+          "type": "text",
+          "settings": {
+            "text": "<h5>We’re going back to Sweden! Join us for a 3-day retreat at the Quarry Houses from April 9-11.&nbsp;</h5><h5>This retreat will be sign-up exclusive to our community. Enter your email below to be among the first to receive all booking information and how to secure your spot.</h5>",
+            "text_style": "body"
+          }
+        },
+        "button_fMQkmJ": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_yQY3bP",
+        "text_GNNRe3",
+        "button_fMQkmJ"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/Gross_20260606_RaveYogaRetreat_Gyldsboda_0046.jpg",
+        "height": "medium",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "custom_liquid_KpDNNC": {
       "type": "custom-liquid",
       "name": "t:sections.custom-liquid.presets.name",
@@ -115,6 +165,7 @@
     "page-blocks",
     "custom_page_blocks_BVYYfN",
     "rich_text_AtFGeG",
+    "image_with_text_xbMJwh",
     "custom_liquid_KpDNNC"
   ]
 }
